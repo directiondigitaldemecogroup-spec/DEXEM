@@ -77,39 +77,21 @@
             </div>
         </section>
 
-        <!-- Section 3: Décroché par Jour/Heure -->
+        <!-- Section 3: Décroché par Heure -->
         <section class="dashboard-section">
-            <h2>🕐 Taux de Décroché par Jour et Heure</h2>
-            <div class="chart-grid">
-                <div class="chart-container">
-                    <h3>Par Jour de la Semaine</h3>
-                    <canvas id="decrocheJourChart"></canvas>
-                </div>
-                <div class="chart-container">
-                    <h3>Par Heure de la Journée</h3>
-                    <canvas id="decrocheHeureChart"></canvas>
-                </div>
+            <h2>🕐 Taux de Décroché par Heure (Lundi - Vendredi, 8h-20h)</h2>
+            <div class="chart-container large">
+                <canvas id="decrocheHeureChart"></canvas>
             </div>
         </section>
 
-        <!-- Section 4: Top Agences Performance -->
+        <!-- Section 4: Tableau Unique Volume + Performance -->
         <section class="dashboard-section">
-            <h2>🏆 Agences les Plus Performantes (par Société)</h2>
+            <h2>📊 Agences : Volume d'Appels et Taux de Décroché</h2>
             <div class="table-controls">
-                <input type="text" id="searchPerf" placeholder="Rechercher une société ou agence..." class="search-input">
+                <input type="text" id="searchTable" placeholder="Rechercher une société ou agence..." class="search-input">
             </div>
-            <div class="accordion-container" id="perfAccordion">
-                <!-- Accordéons générés dynamiquement -->
-            </div>
-        </section>
-
-        <!-- Section 5: Top Agences Volume -->
-        <section class="dashboard-section">
-            <h2>📈 Agences avec le Plus d'Appels (par Société)</h2>
-            <div class="table-controls">
-                <input type="text" id="searchVolume" placeholder="Rechercher une société ou agence..." class="search-input">
-            </div>
-            <div class="accordion-container" id="volumeAccordion">
+            <div class="accordion-container" id="mainAccordion">
                 <!-- Accordéons générés dynamiquement -->
             </div>
         </section>
