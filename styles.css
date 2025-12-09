@@ -355,6 +355,205 @@ tbody tr:last-child td {
     color: var(--text-primary);
 }
 
+/* Accordion */
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.accordion-item {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+    transition: all 0.3s;
+}
+
+.accordion-item:hover {
+    box-shadow: var(--shadow);
+}
+
+.accordion-header {
+    padding: 1rem 1.5rem;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+    user-select: none;
+}
+
+.accordion-header:hover {
+    background: linear-gradient(135deg, #e9ecef, #dee2e6);
+}
+
+.accordion-header.active {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    color: white;
+}
+
+.accordion-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+}
+
+.accordion-stats {
+    display: flex;
+    gap: 2rem;
+    font-size: 0.9rem;
+}
+
+.accordion-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accordion-stat-label {
+    font-size: 0.75rem;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.accordion-stat-value {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.accordion-icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+}
+
+.accordion-icon.active {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion-content.active {
+    max-height: 2000px;
+    transition: max-height 0.5s ease-in;
+}
+
+.accordion-body {
+    padding: 1.5rem;
+}
+
+.canal-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: var(--bg-color);
+    border-radius: 6px;
+}
+
+.canal-stat-card {
+    padding: 1rem;
+    background: white;
+    border-radius: 6px;
+    border: 2px solid var(--border-color);
+}
+
+.canal-stat-card.highlight {
+    border-color: var(--primary-color);
+}
+
+.canal-stat-header {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.canal-stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.canal-stat-detail {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 0.25rem;
+}
+
+.agences-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.agence-row {
+    padding: 1rem;
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.agence-row:hover {
+    background: #f8fafc;
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow);
+}
+
+.agence-name {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.agence-canal-value {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.agence-canal-label {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+}
+
+.agence-canal-number {
+    display: block;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.agence-canal-taux {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--success-color);
+}
+
+.company-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
 /* Footer */
 footer {
     text-align: center;
