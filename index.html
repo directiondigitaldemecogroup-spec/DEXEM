@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Appels CT - 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📞 Dashboard d'Analyse des Appels</h1>
+            <p class="subtitle">Période : Septembre - Décembre 2025</p>
+        </header>
+
+        <!-- Section 1: Taux de Spam -->
+        <section class="dashboard-section">
+            <h2>📊 Taux d'Appels Spam</h2>
+            <div class="chart-grid">
+                <div class="chart-container">
+                    <h3>Évolution Globale du Taux de Spam</h3>
+                    <canvas id="spamGlobalChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Taux de Spam par Canal</h3>
+                    <canvas id="spamCanalChart"></canvas>
+                </div>
+            </div>
+            <div class="stats-row">
+                <div class="stat-card">
+                    <div class="stat-value" id="spamGlobalRate">-</div>
+                    <div class="stat-label">Taux Spam Global</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="totalCalls">-</div>
+                    <div class="stat-label">Total d'Appels</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Taux de Décroché -->
+        <section class="dashboard-section">
+            <h2>✅ Taux de Décroché (Appels Non-Spam)</h2>
+            
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="agenceFilter">Agence :</label>
+                    <select id="agenceFilter">
+                        <option value="all">Toutes les agences</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="canalFilter">Canal :</label>
+                    <select id="canalFilter">
+                        <option value="all">Tous les canaux</option>
+                    </select>
+                </div>
+                <button id="resetFilters" class="btn-reset">Réinitialiser</button>
+            </div>
+
+            <div class="chart-container">
+                <h3>Évolution du Taux de Décroché par Mois</h3>
+                <canvas id="decrocheChart"></canvas>
+            </div>
+
+            <div class="stats-row">
+                <div class="stat-card">
+                    <div class="stat-value" id="decrocheRate">-</div>
+                    <div class="stat-label">Taux Décroché Moyen</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="nonSpamCalls">-</div>
+                    <div class="stat-label">Appels Non-Spam</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Décroché par Jour/Heure -->
+        <section class="dashboard-section">
+            <h2>🕐 Taux de Décroché par Jour et Heure</h2>
+            <div class="chart-container large">
+                <canvas id="heatmapChart"></canvas>
+            </div>
+        </section>
+
+        <!-- Section 4: Top Agences Performance -->
+        <section class="dashboard-section">
+            <h2>🏆 Agences les Plus Performantes</h2>
+            <div class="table-controls">
+                <input type="text" id="searchPerf" placeholder="Rechercher une société ou agence..." class="search-input">
+            </div>
+            <div class="table-wrapper">
+                <table id="perfTable">
+                    <thead>
+                        <tr>
+                            <th>Rang</th>
+                            <th>Société</th>
+                            <th>Agence</th>
+                            <th>Appels Décrochés</th>
+                            <th>Total Appels</th>
+                            <th>Taux Décroché</th>
+                        </tr>
+                    </thead>
+                    <tbody id="perfTableBody">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 5: Top Agences Volume -->
+        <section class="dashboard-section">
+            <h2>📈 Agences avec le Plus d'Appels</h2>
+            
+            <div class="tabs">
+                <button class="tab-button active" data-tab="volume">Volume Total</button>
+                <button class="tab-button" data-tab="canaux">Répartition par Canal</button>
+            </div>
+
+            <div class="tab-content active" id="volumeTab">
+                <div class="table-controls">
+                    <input type="text" id="searchVolume" placeholder="Rechercher une société ou agence..." class="search-input">
+                </div>
+                <div class="table-wrapper">
+                    <table id="volumeTable">
+                        <thead>
+                            <tr>
+                                <th>Rang</th>
+                                <th>Société</th>
+                                <th>Agence</th>
+                                <th>Total Appels</th>
+                            </tr>
+                        </thead>
+                        <tbody id="volumeTableBody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="tab-content" id="canauxTab">
+                <div class="table-controls">
+                    <input type="text" id="searchCanaux" placeholder="Rechercher une société ou agence..." class="search-input">
+                </div>
+                <div class="table-wrapper">
+                    <table id="canauxTable">
+                        <thead>
+                            <tr>
+                                <th>Société</th>
+                                <th>Agence</th>
+                                <th>GMB</th>
+                                <th>Pages Jaunes</th>
+                                <th>Store Locator</th>
+                                <th>Autres</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="canauxTableBody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Dashboard généré le <?php echo date('d/m/Y'); ?> | Données : Septembre - Décembre 2025</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
