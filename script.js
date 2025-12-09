@@ -19,13 +19,16 @@ const colors = {
 // Charger les données
 async function loadData() {
     try {
-        if (typeof dashboardData !== 'undefined') {
+        // Vérifier si les données sont déjà chargées depuis dashboard_data.js
+        if (typeof dashboardData !== 'undefined' && dashboardData) {
             console.log('✅ Données chargées depuis dashboard_data.js');
+            console.log('Sociétés:', Object.keys(dashboardData.hierarchy_combined || {}).length);
             initializeDashboard();
             return;
         }
         
-        console.log('Tentative de chargement depuis dashboard_data.json...');
+        // Fallback: essayer de charger depuis JSON
+        console.log('⚠️ dashboardData non trouvé, tentative depuis JSON...');
         const response = await fetch('dashboard_data.json');
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
@@ -34,15 +37,21 @@ async function loadData() {
         console.log('✅ Données chargées depuis dashboard_data.json');
         initializeDashboard();
     } catch (error) {
-        console.error('❌ Erreur de chargement des données:', error);
+        console.error('❌ Erreur de chargement:', error);
         document.body.innerHTML = `
             <div style="padding: 40px; max-width: 800px; margin: 0 auto; font-family: Arial, sans-serif;">
-                <h1 style="color: #ef4444;">❌ Erreur de chargement des données</h1>
+                <h1 style="color: #ef4444;">❌ Erreur de chargement</h1>
                 <p style="color: #666;">Impossible de charger les données du dashboard.</p>
                 <div style="background: #f8d7da; padding: 15px; border-radius: 8px; margin: 20px 0;">
                     <strong>Détails:</strong><br>${error.message}
                 </div>
-                <p>Vérifiez que dashboard_data.js est dans le même dossier.</p>
+                <h3>Solutions :</h3>
+                <ul style="line-height: 1.8;">
+                    <li>Vérifiez que <code>dashboard_data.js</code> est dans le même dossier</li>
+                    <li>Testez avec un serveur HTTP : <code>python -m http.server 8000</code></li>
+                    <li>Ouvrez la console (F12) pour plus de détails</li>
+                </ul>
+                <p><strong>Note:</strong> Sur Vercel, tout fonctionnera automatiquement.</p>
             </div>
         `;
     }
