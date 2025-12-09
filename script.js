@@ -5,14 +5,17 @@ let filteredData = null;
 
 // Couleurs du thème
 const colors = {
-    primary: '#2563eb',
-    secondary: '#3b82f6',
-    success: '#10b981',
+    primary: '#65b32e',
+    primaryDark: '#529626',
+    primaryLight: '#7ac945',
+    secondary: '#9ca3af',
+    success: '#65b32e',
     warning: '#f59e0b',
     danger: '#ef4444',
     purple: '#8b5cf6',
     pink: '#ec4899',
-    teal: '#14b8a6'
+    teal: '#14b8a6',
+    grey: '#6b7280'
 };
 
 // Charger les données
@@ -142,7 +145,7 @@ function createSpamCanalChart() {
             return item ? item.taux_spam : 0;
         });
         
-        const colorPalette = [colors.primary, colors.success, colors.warning, colors.purple];
+        const colorPalette = [colors.primary, colors.secondary, colors.warning, colors.grey];
         
         return {
             label: canal,
@@ -366,12 +369,12 @@ function createHeatmapChart() {
 function getColorForDay(index) {
     const colorPalette = [
         colors.primary,
-        colors.success,
+        colors.primaryLight,
+        colors.secondary,
         colors.warning,
         colors.danger,
         colors.purple,
-        colors.pink,
-        colors.teal
+        colors.grey
     ];
     return colorPalette[index % colorPalette.length];
 }
