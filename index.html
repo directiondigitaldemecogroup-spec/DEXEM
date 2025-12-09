@@ -6,12 +6,13 @@
     <title>Dashboard Appels CT - 2025</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="dashboard_data.js"></script>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>📞 Dashboard d'Analyse des Appels</h1>
-            <p class="subtitle">Période : Septembre - Décembre 2025</p>
+            <p class="subtitle">Période : Janvier - Décembre 2025</p>
         </header>
 
         <!-- Section 1: Taux de Spam -->
@@ -79,90 +80,42 @@
         <!-- Section 3: Décroché par Jour/Heure -->
         <section class="dashboard-section">
             <h2>🕐 Taux de Décroché par Jour et Heure</h2>
-            <div class="chart-container large">
-                <canvas id="heatmapChart"></canvas>
+            <div class="chart-grid">
+                <div class="chart-container">
+                    <h3>Par Jour de la Semaine</h3>
+                    <canvas id="decrocheJourChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Par Heure de la Journée</h3>
+                    <canvas id="decrocheHeureChart"></canvas>
+                </div>
             </div>
         </section>
 
         <!-- Section 4: Top Agences Performance -->
         <section class="dashboard-section">
-            <h2>🏆 Agences les Plus Performantes</h2>
+            <h2>🏆 Agences les Plus Performantes (par Société)</h2>
             <div class="table-controls">
                 <input type="text" id="searchPerf" placeholder="Rechercher une société ou agence..." class="search-input">
             </div>
-            <div class="table-wrapper">
-                <table id="perfTable">
-                    <thead>
-                        <tr>
-                            <th>Rang</th>
-                            <th>Société</th>
-                            <th>Agence</th>
-                            <th>Appels Décrochés</th>
-                            <th>Total Appels</th>
-                            <th>Taux Décroché</th>
-                        </tr>
-                    </thead>
-                    <tbody id="perfTableBody">
-                    </tbody>
-                </table>
+            <div class="accordion-container" id="perfAccordion">
+                <!-- Accordéons générés dynamiquement -->
             </div>
         </section>
 
         <!-- Section 5: Top Agences Volume -->
         <section class="dashboard-section">
-            <h2>📈 Agences avec le Plus d'Appels</h2>
-            
-            <div class="tabs">
-                <button class="tab-button active" data-tab="volume">Volume Total</button>
-                <button class="tab-button" data-tab="canaux">Répartition par Canal</button>
+            <h2>📈 Agences avec le Plus d'Appels (par Société)</h2>
+            <div class="table-controls">
+                <input type="text" id="searchVolume" placeholder="Rechercher une société ou agence..." class="search-input">
             </div>
-
-            <div class="tab-content active" id="volumeTab">
-                <div class="table-controls">
-                    <input type="text" id="searchVolume" placeholder="Rechercher une société ou agence..." class="search-input">
-                </div>
-                <div class="table-wrapper">
-                    <table id="volumeTable">
-                        <thead>
-                            <tr>
-                                <th>Rang</th>
-                                <th>Société</th>
-                                <th>Agence</th>
-                                <th>Total Appels</th>
-                            </tr>
-                        </thead>
-                        <tbody id="volumeTableBody">
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="tab-content" id="canauxTab">
-                <div class="table-controls">
-                    <input type="text" id="searchCanaux" placeholder="Rechercher une société ou agence..." class="search-input">
-                </div>
-                <div class="table-wrapper">
-                    <table id="canauxTable">
-                        <thead>
-                            <tr>
-                                <th>Société</th>
-                                <th>Agence</th>
-                                <th>GMB</th>
-                                <th>Pages Jaunes</th>
-                                <th>Store Locator</th>
-                                <th>Autres</th>
-                                <th>Total</th>
-                            </tr>
-                        </thead>
-                        <tbody id="canauxTableBody">
-                        </tbody>
-                    </table>
-                </div>
+            <div class="accordion-container" id="volumeAccordion">
+                <!-- Accordéons générés dynamiquement -->
             </div>
         </section>
 
         <footer>
-            <p>Dashboard généré le <?php echo date('d/m/Y'); ?> | Données : Septembre - Décembre 2025</p>
+            <p>Dashboard généré le 09/12/2025 | Données : Janvier - Décembre 2025</p>
         </footer>
     </div>
 
