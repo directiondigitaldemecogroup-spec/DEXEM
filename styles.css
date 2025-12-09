@@ -490,6 +490,13 @@ tbody tr:last-child td {
     margin-top: 0.25rem;
 }
 
+.canal-stat-taux {
+    font-size: 0.9rem;
+    color: var(--success-color);
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
 .agences-list {
     display: flex;
     flex-direction: column;
