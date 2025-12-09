@@ -1,4 +1,4 @@
-{
+const dashboardData = {
   "spam_global_mois": [
     {
       "mois": "2025-01",
@@ -65313,4 +65313,4 @@
     "Pages Jaunes",
     "Store Locator"
   ]
-}
+};
