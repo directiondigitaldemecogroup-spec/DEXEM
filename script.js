@@ -1,5 +1,5 @@
 // Dashboard Call Tracking - Script Principal
-let dashboardData = null;
+// Les données sont chargées depuis dashboard_data.js
 let charts = {};
 
 // Couleurs du thème
@@ -20,12 +20,40 @@ const colors = {
 // Charger les données
 async function loadData() {
     try {
+        // Les données sont déjà chargées depuis dashboard_data.js
+        if (typeof dashboardData !== 'undefined') {
+            console.log('✅ Données chargées depuis dashboard_data.js');
+            initializeDashboard();
+            return;
+        }
+        
+        // Fallback: essayer de charger depuis JSON
+        console.log('Tentative de chargement depuis dashboard_data.json...');
         const response = await fetch('dashboard_data.json');
-        dashboardData = await response.json();
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
+        window.dashboardData = await response.json();
+        console.log('✅ Données chargées depuis dashboard_data.json');
         initializeDashboard();
     } catch (error) {
-        console.error('Erreur de chargement des données:', error);
-        alert('Erreur lors du chargement des données.');
+        console.error('❌ Erreur de chargement des données:', error);
+        document.body.innerHTML = `
+            <div style="padding: 40px; max-width: 800px; margin: 0 auto; font-family: Arial, sans-serif;">
+                <h1 style="color: #ef4444;">❌ Erreur de chargement des données</h1>
+                <p style="color: #666;">Impossible de charger les données du dashboard.</p>
+                <div style="background: #f8d7da; padding: 15px; border-radius: 8px; margin: 20px 0;">
+                    <strong>Détails de l'erreur:</strong><br>
+                    ${error.message}
+                </div>
+                <h3>Solutions possibles :</h3>
+                <ul style="line-height: 1.8;">
+                    <li>Vérifiez que les fichiers <code>dashboard_data.js</code> et <code>dashboard_data.json</code> sont dans le même dossier que <code>index.html</code></li>
+                    <li>Si vous testez en local, utilisez un serveur HTTP local (ex: <code>python -m http.server 8000</code>)</li>
+                    <li>Sur Vercel, tous les fichiers seront automatiquement accessibles</li>
+                </ul>
+            </div>
+        `;
     }
 }
 
