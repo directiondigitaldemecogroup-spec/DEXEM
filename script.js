@@ -1,5 +1,4 @@
 // Dashboard Call Tracking - Script Principal
-// Les données sont chargées depuis dashboard_data.js
 let charts = {};
 
 // Couleurs du thème
@@ -11,23 +10,21 @@ const colors = {
     success: '#65b32e',
     warning: '#f59e0b',
     danger: '#ef4444',
+    grey: '#6b7280',
+    blue: '#3b82f6',
     purple: '#8b5cf6',
-    pink: '#ec4899',
-    teal: '#14b8a6',
-    grey: '#6b7280'
+    teal: '#14b8a6'
 };
 
 // Charger les données
 async function loadData() {
     try {
-        // Les données sont déjà chargées depuis dashboard_data.js
         if (typeof dashboardData !== 'undefined') {
             console.log('✅ Données chargées depuis dashboard_data.js');
             initializeDashboard();
             return;
         }
         
-        // Fallback: essayer de charger depuis JSON
         console.log('Tentative de chargement depuis dashboard_data.json...');
         const response = await fetch('dashboard_data.json');
         if (!response.ok) {
@@ -43,15 +40,9 @@ async function loadData() {
                 <h1 style="color: #ef4444;">❌ Erreur de chargement des données</h1>
                 <p style="color: #666;">Impossible de charger les données du dashboard.</p>
                 <div style="background: #f8d7da; padding: 15px; border-radius: 8px; margin: 20px 0;">
-                    <strong>Détails de l'erreur:</strong><br>
-                    ${error.message}
+                    <strong>Détails:</strong><br>${error.message}
                 </div>
-                <h3>Solutions possibles :</h3>
-                <ul style="line-height: 1.8;">
-                    <li>Vérifiez que les fichiers <code>dashboard_data.js</code> et <code>dashboard_data.json</code> sont dans le même dossier que <code>index.html</code></li>
-                    <li>Si vous testez en local, utilisez un serveur HTTP local (ex: <code>python -m http.server 8000</code>)</li>
-                    <li>Sur Vercel, tous les fichiers seront automatiquement accessibles</li>
-                </ul>
+                <p>Vérifiez que dashboard_data.js est dans le même dossier.</p>
             </div>
         `;
     }
@@ -63,10 +54,8 @@ function initializeDashboard() {
     createSpamGlobalChart();
     createSpamCanalChart();
     createDecrocheChart();
-    createDecrocheJourChart();
-    createDecrocheHeureChart();
-    populatePerfAccordion();
-    populateVolumeAccordion();
+    createDecrocheHeureMultiChart();
+    populateMainAccordion();
     updateGlobalStats();
     setupEventListeners();
 }
@@ -113,18 +102,15 @@ function createSpamGlobalChart() {
         },
         options: {
             responsive: true,
-            maintainAspectRatio: true,
             plugins: {
-                legend: { display: true, position: 'top' },
+                legend: { display: true },
                 tooltip: {
                     callbacks: {
                         label: function(context) {
                             const index = context.dataIndex;
-                            const spam = data[index].spam;
-                            const total = data[index].total;
                             return [
                                 `Taux: ${context.parsed.y.toFixed(2)}%`,
-                                `Spam: ${spam}/${total}`
+                                `Spam: ${data[index].spam}/${data[index].total}`
                             ];
                         }
                     }
@@ -164,8 +150,7 @@ function createSpamCanalChart() {
             backgroundColor: colorPalette[index % colorPalette.length] + '20',
             tension: 0.4,
             fill: false,
-            pointRadius: 5,
-            pointHoverRadius: 7
+            pointRadius: 5
         };
     });
     
@@ -174,8 +159,7 @@ function createSpamCanalChart() {
         data: { labels: mois, datasets: datasets },
         options: {
             responsive: true,
-            maintainAspectRatio: true,
-            plugins: { legend: { display: true, position: 'top' } },
+            plugins: { legend: { display: true } },
             scales: {
                 y: {
                     beginAtZero: true,
@@ -186,7 +170,7 @@ function createSpamCanalChart() {
     });
 }
 
-// Graphique: Taux de Décroché
+// Graphique: Taux de Décroché (LIGNE au lieu de barres)
 function createDecrocheChart(agence = 'all', canal = 'all') {
     const ctx = document.getElementById('decrocheChart').getContext('2d');
     
@@ -200,31 +184,31 @@ function createDecrocheChart(agence = 'all', canal = 'all') {
     if (charts.decroche) charts.decroche.destroy();
     
     charts.decroche = new Chart(ctx, {
-        type: 'bar',
+        type: 'line',
         data: {
             labels: data.map(d => d.mois),
             datasets: [{
                 label: 'Taux de Décroché (%)',
                 data: data.map(d => d.taux_decroche),
-                backgroundColor: colors.success + 'CC',
                 borderColor: colors.success,
-                borderWidth: 2
+                backgroundColor: colors.success + '20',
+                tension: 0.4,
+                fill: true,
+                pointRadius: 6,
+                pointHoverRadius: 8
             }]
         },
         options: {
             responsive: true,
-            maintainAspectRatio: true,
             plugins: {
-                legend: { display: true, position: 'top' },
+                legend: { display: true },
                 tooltip: {
                     callbacks: {
                         label: function(context) {
                             const index = context.dataIndex;
-                            const decroche = data[index].decroche;
-                            const total = data[index].total;
                             return [
                                 `Taux: ${context.parsed.y.toFixed(2)}%`,
-                                `Décrochés: ${decroche}/${total}`
+                                `Décrochés: ${data[index].decroche}/${data[index].total}`
                             ];
                         }
                     }
@@ -243,7 +227,6 @@ function createDecrocheChart(agence = 'all', canal = 'all') {
     updateDecrocheStats(data);
 }
 
-// Filtrer les données de décroché
 function filterDecrocheData(agence, canal) {
     let filtered = dashboardData.decroche_par_agence_canal_mois;
     
@@ -251,7 +234,7 @@ function filterDecrocheData(agence, canal) {
     if (canal !== 'all') filtered = filtered.filter(d => d.canal === canal);
     
     const mois = [...new Set(filtered.map(d => d.mois))].sort();
-    const result = mois.map(m => {
+    return mois.map(m => {
         const monthData = filtered.filter(d => d.mois === m);
         const totalDecroche = monthData.reduce((sum, d) => sum + d.decroche, 0);
         const totalCalls = monthData.reduce((sum, d) => sum + d.total, 0);
@@ -262,88 +245,62 @@ function filterDecrocheData(agence, canal) {
             taux_decroche: totalCalls > 0 ? (totalDecroche / totalCalls * 100) : 0
         };
     });
-    
-    return result;
 }
 
-// NOUVEAU: Graphique par jour de la semaine
-function createDecrocheJourChart() {
-    const ctx = document.getElementById('decrocheJourChart').getContext('2d');
-    const data = dashboardData.decroche_par_jour;
-    
-    charts.decrocheJour = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: data.map(d => d.jour_fr),
-            datasets: [{
-                label: 'Taux de Décroché (%)',
-                data: data.map(d => d.taux_decroche),
-                backgroundColor: colors.primary + 'CC',
-                borderColor: colors.primary,
-                borderWidth: 2
-            }]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: true,
-            plugins: {
-                legend: { display: false },
-                tooltip: {
-                    callbacks: {
-                        label: function(context) {
-                            const index = context.dataIndex;
-                            return [
-                                `Taux: ${context.parsed.y.toFixed(2)}%`,
-                                `Décrochés: ${data[index].decroche}/${data[index].total}`
-                            ];
-                        }
-                    }
-                }
-            },
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    max: 100,
-                    ticks: { callback: value => value + '%' }
-                }
-            }
-        }
-    });
-}
-
-// NOUVEAU: Graphique par heure
-function createDecrocheHeureChart() {
+// NOUVEAU: Graphique multi-courbes par heure (5 courbes pour Lun-Ven, 8h-20h)
+function createDecrocheHeureMultiChart() {
     const ctx = document.getElementById('decrocheHeureChart').getContext('2d');
-    const data = dashboardData.decroche_par_heure;
+    const data = dashboardData.decroche_jour_heure;
+    
+    const jours = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi'];
+    const heures = Array.from({length: 13}, (_, i) => i + 8); // 8 à 20
+    
+    const colorMap = {
+        'Lundi': colors.primary,
+        'Mardi': colors.blue,
+        'Mercredi': colors.purple,
+        'Jeudi': colors.warning,
+        'Vendredi': colors.teal
+    };
+    
+    const datasets = jours.map(jour => {
+        const jourData = data.filter(d => d.jour_fr === jour);
+        const dataByHeure = heures.map(h => {
+            const item = jourData.find(d => d.heure === h);
+            return item ? item.taux_decroche : null;
+        });
+        
+        return {
+            label: jour,
+            data: dataByHeure,
+            borderColor: colorMap[jour],
+            backgroundColor: colorMap[jour] + '20',
+            tension: 0.4,
+            fill: false,
+            pointRadius: 4,
+            pointHoverRadius: 6,
+            borderWidth: 2
+        };
+    });
     
     charts.decrocheHeure = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: data.map(d => d.heure + 'h'),
-            datasets: [{
-                label: 'Taux de Décroché (%)',
-                data: data.map(d => d.taux_decroche),
-                borderColor: colors.primaryDark,
-                backgroundColor: colors.primary + '20',
-                tension: 0.4,
-                fill: true,
-                pointRadius: 4,
-                pointHoverRadius: 6
-            }]
+            labels: heures.map(h => h + 'h'),
+            datasets: datasets
         },
         options: {
             responsive: true,
-            maintainAspectRatio: true,
+            maintainAspectRatio: false,
             plugins: {
-                legend: { display: false },
+                legend: {
+                    display: true,
+                    position: 'top'
+                },
                 tooltip: {
                     callbacks: {
                         label: function(context) {
-                            const index = context.dataIndex;
-                            return [
-                                `Taux: ${context.parsed.y.toFixed(2)}%`,
-                                `Décrochés: ${data[index].decroche}/${data[index].total}`
-                            ];
+                            return `${context.dataset.label}: ${context.parsed.y.toFixed(2)}%`;
                         }
                     }
                 }
@@ -352,81 +309,50 @@ function createDecrocheHeureChart() {
                 y: {
                     beginAtZero: true,
                     max: 100,
-                    ticks: { callback: value => value + '%' }
+                    ticks: { callback: value => value + '%' },
+                    title: {
+                        display: true,
+                        text: 'Taux de Décroché (%)'
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Heure de la journée'
+                    }
                 }
             }
         }
     });
 }
 
-// NOUVEAU: Accordéon Performance
-function populatePerfAccordion() {
-    const container = document.getElementById('perfAccordion');
+// NOUVEAU: Accordéon unique avec Volume + Performance
+function populateMainAccordion() {
+    const container = document.getElementById('mainAccordion');
     container.innerHTML = '';
     
-    const hierarchy = dashboardData.hierarchy_perf;
+    const hierarchy = dashboardData.hierarchy_combined;
     let rank = 0;
     
     Object.entries(hierarchy).forEach(([societe, socData]) => {
         rank++;
-        const accordionItem = createAccordionItem(societe, socData, rank, 'perf');
+        const accordionItem = createCombinedAccordionItem(societe, socData, rank);
         container.appendChild(accordionItem);
     });
 }
 
-// NOUVEAU: Accordéon Volume
-function populateVolumeAccordion() {
-    const container = document.getElementById('volumeAccordion');
-    container.innerHTML = '';
-    
-    const hierarchy = dashboardData.hierarchy_volume;
-    let rank = 0;
-    
-    Object.entries(hierarchy).forEach(([societe, socData]) => {
-        rank++;
-        const accordionItem = createAccordionItem(societe, socData, rank, 'volume');
-        container.appendChild(accordionItem);
-    });
-}
-
-// Créer un item d'accordéon
-function createAccordionItem(societe, data, rank, type) {
+// Créer un item d'accordéon combiné
+function createCombinedAccordionItem(societe, data, rank) {
     const item = document.createElement('div');
     item.className = 'accordion-item';
     
-    const rankBadge = rank <= 3 ? `<span class="rank-badge rank-${rank}">${rank}</span>` : `<span class="rank-badge rank-other">${rank}</span>`;
+    const rankBadge = rank <= 3 ? 
+        `<span class="rank-badge rank-${rank}">${rank}</span>` : 
+        `<span class="rank-badge rank-other">${rank}</span>`;
     
-    let statsHtml = '';
-    if (type === 'perf') {
-        const rateClass = getRateClass(data.taux_global);
-        statsHtml = `
-            <div class="accordion-stats">
-                <div class="accordion-stat-item">
-                    <span class="accordion-stat-label">Taux</span>
-                    <span class="accordion-stat-value rate-badge ${rateClass}">${data.taux_global.toFixed(2)}%</span>
-                </div>
-                <div class="accordion-stat-item">
-                    <span class="accordion-stat-label">Décrochés</span>
-                    <span class="accordion-stat-value">${data.total_decroche.toLocaleString()}</span>
-                </div>
-                <div class="accordion-stat-item">
-                    <span class="accordion-stat-label">Total</span>
-                    <span class="accordion-stat-value">${data.total_appels.toLocaleString()}</span>
-                </div>
-            </div>
-        `;
-    } else {
-        statsHtml = `
-            <div class="accordion-stats">
-                <div class="accordion-stat-item">
-                    <span class="accordion-stat-label">Total Appels</span>
-                    <span class="accordion-stat-value">${data.total.toLocaleString()}</span>
-                </div>
-            </div>
-        `;
-    }
+    const rateClass = getRateClass(data.taux_global);
     
-    // Header
+    // Header avec Volume ET Taux
     const header = document.createElement('div');
     header.className = 'accordion-header';
     header.innerHTML = `
@@ -434,7 +360,16 @@ function createAccordionItem(societe, data, rank, type) {
             ${rankBadge}
             <span class="company-badge">${societe}</span>
         </div>
-        ${statsHtml}
+        <div class="accordion-stats">
+            <div class="accordion-stat-item">
+                <span class="accordion-stat-label">Volume</span>
+                <span class="accordion-stat-value">${data.total_volume.toLocaleString()}</span>
+            </div>
+            <div class="accordion-stat-item">
+                <span class="accordion-stat-label">Taux Décroché</span>
+                <span class="accordion-stat-value rate-badge ${rateClass}">${data.taux_global.toFixed(1)}%</span>
+            </div>
+        </div>
         <span class="accordion-icon">▼</span>
     `;
     
@@ -445,15 +380,15 @@ function createAccordionItem(societe, data, rank, type) {
     const body = document.createElement('div');
     body.className = 'accordion-body';
     
-    // Stats par canal de la société
-    body.innerHTML = createCanalStatsHtml(data.canaux, type);
+    // Stats par canal de la société (Volume + Performance)
+    body.innerHTML = createCombinedCanalStatsHtml(data.volume_canaux, data.perf_canaux);
     
     // Liste des agences
     const agencesList = document.createElement('div');
     agencesList.className = 'agences-list';
     
     data.agences.forEach(agence => {
-        const agenceRow = createAgenceRow(agence, type);
+        const agenceRow = createCombinedAgenceRow(agence);
         agencesList.appendChild(agenceRow);
     });
     
@@ -463,38 +398,30 @@ function createAccordionItem(societe, data, rank, type) {
     item.appendChild(header);
     item.appendChild(content);
     
-    // Event
     header.addEventListener('click', () => toggleAccordion(header, content));
     
     return item;
 }
 
-// Créer les stats par canal
-function createCanalStatsHtml(canaux, type) {
+// Stats par canal combinées (Volume + Perf)
+function createCombinedCanalStatsHtml(volume, perf) {
     let html = '<div class="canal-stats-grid">';
     
     const canauxOrder = ['GMB', 'Pages Jaunes', 'Store Locator', 'Autres'];
     
     canauxOrder.forEach(canal => {
-        if (canaux[canal]) {
-            const data = canaux[canal];
-            if (type === 'perf') {
-                html += `
-                    <div class="canal-stat-card">
-                        <div class="canal-stat-header">${canal}</div>
-                        <div class="canal-stat-value">${data.taux.toFixed(1)}%</div>
-                        <div class="canal-stat-detail">${data.decroche}/${data.total} décrochés</div>
-                    </div>
-                `;
-            } else {
-                html += `
-                    <div class="canal-stat-card">
-                        <div class="canal-stat-header">${canal}</div>
-                        <div class="canal-stat-value">${data.toLocaleString()}</div>
-                        <div class="canal-stat-detail">appels</div>
-                    </div>
-                `;
-            }
+        const vol = volume[canal] || 0;
+        const perfData = perf[canal];
+        
+        if (vol > 0) {
+            html += `
+                <div class="canal-stat-card">
+                    <div class="canal-stat-header">${canal}</div>
+                    <div class="canal-stat-value">${vol.toLocaleString()}</div>
+                    <div class="canal-stat-detail">appels</div>
+                    ${perfData ? `<div class="canal-stat-taux">${perfData.taux.toFixed(1)}% décroché</div>` : ''}
+                </div>
+            `;
         }
     });
     
@@ -502,72 +429,51 @@ function createCanalStatsHtml(canaux, type) {
     return html;
 }
 
-// Créer une ligne d'agence
-function createAgenceRow(agence, type) {
+// Ligne d'agence combinée
+function createCombinedAgenceRow(agence) {
     const row = document.createElement('div');
     row.className = 'agence-row';
     
     const canauxOrder = ['GMB', 'Pages Jaunes', 'Store Locator', 'Autres'];
+    const rateClass = getRateClass(agence.taux_global);
     
     let html = `<div class="agence-name">${agence.nom}</div>`;
     
     canauxOrder.forEach(canal => {
-        if (agence.canaux[canal]) {
-            const data = agence.canaux[canal];
-            if (type === 'perf') {
-                html += `
-                    <div class="agence-canal-value">
-                        <span class="agence-canal-label">${canal}</span>
-                        <span class="agence-canal-number">${data.decroche}/${data.total}</span>
-                        <span class="agence-canal-taux">${data.taux.toFixed(1)}%</span>
-                    </div>
-                `;
-            } else {
-                html += `
-                    <div class="agence-canal-value">
-                        <span class="agence-canal-label">${canal}</span>
-                        <span class="agence-canal-number">${data.toLocaleString()}</span>
-                    </div>
-                `;
-            }
+        const vol = agence.volume_canaux[canal] || 0;
+        const perf = agence.perf_canaux[canal];
+        
+        if (vol > 0) {
+            html += `
+                <div class="agence-canal-value">
+                    <span class="agence-canal-label">${canal}</span>
+                    <span class="agence-canal-number">${vol.toLocaleString()}</span>
+                    ${perf ? `<span class="agence-canal-taux">${perf.taux.toFixed(1)}%</span>` : ''}
+                </div>
+            `;
         } else {
             html += `<div class="agence-canal-value">-</div>`;
         }
     });
     
-    if (type === 'perf') {
-        const rateClass = getRateClass(agence.taux_global);
-        html += `
-            <div class="agence-canal-value">
-                <span class="agence-canal-label">Total</span>
-                <span class="rate-badge ${rateClass}">${agence.taux_global.toFixed(1)}%</span>
-            </div>
-        `;
-    } else {
-        html += `
-            <div class="agence-canal-value">
-                <span class="agence-canal-label">Total</span>
-                <span class="agence-canal-number">${agence.total.toLocaleString()}</span>
-            </div>
-        `;
-    }
+    html += `
+        <div class="agence-canal-value">
+            <span class="agence-canal-label">Total</span>
+            <span class="agence-canal-number">${agence.total_volume.toLocaleString()}</span>
+            <span class="rate-badge ${rateClass}">${agence.taux_global.toFixed(1)}%</span>
+        </div>
+    `;
     
     row.innerHTML = html;
     return row;
 }
 
-// Toggle accordéon
 function toggleAccordion(header, content) {
-    const isActive = header.classList.contains('active');
-    
     header.classList.toggle('active');
     content.classList.toggle('active');
-    
-    const icon = header.querySelector('.accordion-icon');
-    icon.classList.toggle('active');
+    header.querySelector('.accordion-icon').classList.toggle('active');
 }
 
-// Classe de taux
 function getRateClass(rate) {
     if (rate >= 90) return 'rate-excellent';
     if (rate >= 75) return 'rate-good';
@@ -575,7 +481,6 @@ function getRateClass(rate) {
     return 'rate-poor';
 }
 
-// Mettre à jour les stats globales
 function updateGlobalStats() {
     const totalSpam = dashboardData.spam_global_mois.reduce((sum, d) => sum + d.spam, 0);
     const totalCalls = dashboardData.spam_global_mois.reduce((sum, d) => sum + d.total, 0);
@@ -592,7 +497,6 @@ function updateGlobalStats() {
     document.getElementById('nonSpamCalls').textContent = totalNonSpam.toLocaleString();
 }
 
-// Mettre à jour les stats de décroché
 function updateDecrocheStats(data) {
     const totalDecroche = data.reduce((sum, d) => sum + d.decroche, 0);
     const totalCalls = data.reduce((sum, d) => sum + d.total, 0);
@@ -602,22 +506,16 @@ function updateDecrocheStats(data) {
     document.getElementById('nonSpamCalls').textContent = totalCalls.toLocaleString();
 }
 
-// Configuration des événements
 function setupEventListeners() {
     document.getElementById('agenceFilter').addEventListener('change', applyFilters);
     document.getElementById('canalFilter').addEventListener('change', applyFilters);
     document.getElementById('resetFilters').addEventListener('click', resetFilters);
     
-    document.getElementById('searchPerf').addEventListener('input', (e) => {
-        searchAccordion('perfAccordion', e.target.value);
-    });
-    
-    document.getElementById('searchVolume').addEventListener('input', (e) => {
-        searchAccordion('volumeAccordion', e.target.value);
+    document.getElementById('searchTable').addEventListener('input', (e) => {
+        searchAccordion('mainAccordion', e.target.value);
     });
 }
 
-// Recherche dans les accordéons
 function searchAccordion(containerId, searchTerm) {
     const container = document.getElementById(containerId);
     const items = container.querySelectorAll('.accordion-item');
@@ -629,19 +527,16 @@ function searchAccordion(containerId, searchTerm) {
     });
 }
 
-// Appliquer les filtres
 function applyFilters() {
     const agence = document.getElementById('agenceFilter').value;
     const canal = document.getElementById('canalFilter').value;
     createDecrocheChart(agence, canal);
 }
 
-// Réinitialiser les filtres
 function resetFilters() {
     document.getElementById('agenceFilter').value = 'all';
     document.getElementById('canalFilter').value = 'all';
     createDecrocheChart();
 }
 
-// Initialiser au chargement
 document.addEventListener('DOMContentLoaded', loadData);
