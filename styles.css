@@ -1,15 +1,17 @@
 /* Reset et variables */
 :root {
-    --primary-color: #2563eb;
-    --secondary-color: #3b82f6;
-    --success-color: #10b981;
+    --primary-color: #65b32e;
+    --primary-dark: #529626;
+    --primary-light: #7ac945;
+    --secondary-color: #9ca3af;
+    --success-color: #65b32e;
     --warning-color: #f59e0b;
     --danger-color: #ef4444;
-    --bg-color: #f8fafc;
+    --bg-color: #f5f5f5;
     --card-bg: #ffffff;
-    --text-primary: #1e293b;
-    --text-secondary: #64748b;
-    --border-color: #e2e8f0;
+    --text-primary: #1f2937;
+    --text-secondary: #6b7280;
+    --border-color: #e5e7eb;
     --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
@@ -38,7 +40,7 @@ header {
     text-align: center;
     margin-bottom: 3rem;
     padding: 2rem;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, #65b32e, #7ac945);
     color: white;
     border-radius: 12px;
     box-shadow: var(--shadow-lg);
@@ -111,7 +113,7 @@ canvas {
 }
 
 .stat-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #65b32e 0%, #529626 100%);
     color: white;
     padding: 1.5rem;
     border-radius: 8px;
@@ -120,11 +122,11 @@ canvas {
 }
 
 .stat-card:nth-child(2) {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background: linear-gradient(135deg, #7ac945 0%, #65b32e 100%);
 }
 
 .stat-card:nth-child(3) {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    background: linear-gradient(135deg, #9ca3af 0%, #6b7280 100%);
 }
 
 .stat-value {
