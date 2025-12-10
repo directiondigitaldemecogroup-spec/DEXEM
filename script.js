@@ -40,6 +40,7 @@ function initializeDashboard() {
     populateSpamPJAnalysis(); // NOUVEAU
     createDecrocheChart();
     createDecrocheHeureMultiChart();
+    createCanalRepartitionChart(); // NOUVEAU
     populateMainAccordion();
     updateGlobalStats();
     setupEventListeners();
@@ -232,6 +233,91 @@ function filterDecrocheData(agence, canal) {
     });
 }
 
+// NOUVEAU: Graphique camembert répartition par canal
+function createCanalRepartitionChart() {
+    const ctx = document.getElementById('canalRepartitionChart').getContext('2d');
+    const data = dashboardData.canal_stats;
+    
+    if (!data) {
+        console.warn('Pas de données canal_stats');
+        return;
+    }
+    
+    charts.canalRepartition = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: data.map(d => d.canal),
+            datasets: [{
+                label: 'Appels Non-Spam',
+                data: data.map(d => d.appels_non_spam),
+                backgroundColor: [colors.primary, colors.warning, colors.blue],
+                borderWidth: 2,
+                borderColor: '#fff'
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        padding: 20,
+                        font: { size: 14 }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            const item = data[context.dataIndex];
+                            const total = data.reduce((sum, d) => sum + d.appels_non_spam, 0);
+                            const pct = ((item.appels_non_spam / total) * 100).toFixed(1);
+                            return [
+                                `${context.label}: ${item.appels_non_spam.toLocaleString()}`,
+                                `${pct}% du total`,
+                                `Taux spam: ${item.taux_spam}%`,
+                                `Taux décroché: ${item.taux_decroche}%`
+                            ];
+                        }
+                    }
+                }
+            }
+        }
+    });
+    
+    // Légende avec stats
+    const legendDiv = document.getElementById('canalLegendStats');
+    const colorMap = {
+        'GMB': colors.primary,
+        'Pages Jaunes': colors.warning,
+        'Store Locator': colors.blue
+    };
+    
+    data.forEach(item => {
+        const legendItem = document.createElement('div');
+        legendItem.className = 'canal-legend-item';
+        legendItem.style.borderLeftColor = colorMap[item.canal] || colors.grey;
+        
+        legendItem.innerHTML = `
+            <div class="canal-legend-title">${item.canal}</div>
+            <div class="canal-legend-stat">
+                <span class="canal-legend-label">Appels non-spam</span>
+                <span class="canal-legend-value">${item.appels_non_spam.toLocaleString()}</span>
+            </div>
+            <div class="canal-legend-stat">
+                <span class="canal-legend-label">Taux spam</span>
+                <span class="canal-legend-value" style="color: ${colors.danger}">${item.taux_spam}%</span>
+            </div>
+            <div class="canal-legend-stat">
+                <span class="canal-legend-label">Taux décroché</span>
+                <span class="canal-legend-value" style="color: ${colors.success}">${item.taux_decroche}%</span>
+            </div>
+        `;
+        
+        legendDiv.appendChild(legendItem);
+    });
+}
+
 // NOUVEAU: Remplir l'analyse spam Pages Jaunes
 function populateSpamPJAnalysis() {
     const data = dashboardData.spam_pj_analysis;
@@ -247,18 +333,22 @@ function populateSpamPJAnalysis() {
     const tauxTotal = ((data.total_spam + data.appels_suspects_10_30s) / data.total_appels_pj * 100).toFixed(1);
     document.getElementById('spamPJRate').textContent = tauxTotal + '%';
     
-    // 1. Nature des appels (tous, avec suspects)
+    // 1. Catégories (tous les appels PJ)
     const natureTable = document.getElementById('spamNatureTable');
     natureTable.className = 'analysis-table';
-    data.nature_appels.forEach(item => {
+    data.categories.forEach(item => {
         const row = document.createElement('div');
         row.className = 'analysis-row';
-        // Highlight suspects
-        if (item.nature.includes('suspect') || item.nature.includes('⚠️')) {
+        // Highlight suspects et spam
+        if (item.categorie.includes('Suspect') || item.categorie.includes('⚠️')) {
             row.style.background = '#fff3cd';
+        } else if (item.categorie.includes('Spam') || item.categorie.includes('🔴')) {
+            row.style.background = '#fee2e2';
+        } else if (item.categorie.includes('Normal') || item.categorie.includes('✅')) {
+            row.style.background = '#dcfce7';
         }
         row.innerHTML = `
-            <span class="analysis-label">${item.nature}</span>
+            <span class="analysis-label">${item.categorie}</span>
             <span>
                 <span class="analysis-value">${item.count.toLocaleString()}</span>
                 <span class="analysis-percentage">(${item.percentage}%)</span>
