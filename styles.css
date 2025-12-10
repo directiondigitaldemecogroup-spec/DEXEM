@@ -757,7 +757,6 @@ tbody tr:last-child td {
     background: var(--bg-color);
     border-radius: 6px;
 }
-
 .canal-stat-card {
     padding: 1rem;
     background: white;
