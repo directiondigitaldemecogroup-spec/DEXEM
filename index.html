@@ -158,14 +158,17 @@
             </div>
         </section>
 
-        <!-- Section 5: Tableau Unique Volume + Performance -->
+        <!-- Section 5: Tableau Agences -->
         <section class="dashboard-section">
             <h2>📊 Agences : Volume d'Appels et Taux de Décroché</h2>
             <div class="table-controls">
-                <input type="text" id="searchTable" placeholder="Rechercher une société ou agence..." class="search-input">
+                <input type="text" id="searchAgences" placeholder="Rechercher une agence..." class="search-input">
+                <div class="table-info">
+                    <span id="agencesCount">-</span> agences
+                </div>
             </div>
-            <div class="accordion-container" id="mainAccordion">
-                <!-- Accordéons générés dynamiquement -->
+            <div class="agences-table-container" id="agencesTable">
+                <!-- Tableau généré dynamiquement -->
             </div>
         </section>
 
