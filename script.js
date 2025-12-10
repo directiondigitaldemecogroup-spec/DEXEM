@@ -41,7 +41,7 @@ function initializeDashboard() {
     createDecrocheChart();
     createDecrocheHeureMultiChart();
     createCanalRepartitionChart(); // NOUVEAU
-    populateMainAccordion();
+    populateAgencesTable(); // CHANGÉ
     updateGlobalStats();
     setupEventListeners();
 }
@@ -515,7 +515,76 @@ function createDecrocheHeureMultiChart() {
     });
 }
 
-// NOUVEAU: Accordéon unique avec Volume + Performance
+// NOUVEAU: Tableau simple des agences (sans regroupement par société)
+function populateAgencesTable() {
+    const container = document.getElementById('agencesTable');
+    const agences = dashboardData.agences_list;
+    
+    if (!agences) {
+        console.warn('Pas de données agences_list');
+        return;
+    }
+    
+    // Mettre à jour le compteur
+    document.getElementById('agencesCount').textContent = agences.length;
+    
+    // Header
+    const header = document.createElement('div');
+    header.className = 'agence-table-row header';
+    header.innerHTML = `
+        <div>#</div>
+        <div>Agence</div>
+        <div>GMB</div>
+        <div>Pages Jaunes</div>
+        <div>Store Locator</div>
+        <div>Autres</div>
+        <div>Total / Taux</div>
+    `;
+    container.appendChild(header);
+    
+    // Lignes
+    agences.forEach((agence, index) => {
+        const row = document.createElement('div');
+        row.className = 'agence-table-row';
+        row.dataset.searchText = agence.nom.toLowerCase();
+        
+        const rankClass = index < 10 ? 'top' : '';
+        const rateClass = getRateClass(agence.taux_global);
+        
+        const canauxOrder = ['GMB', 'Pages Jaunes', 'Store Locator', 'Autres'];
+        let canauxHtml = '';
+        
+        canauxOrder.forEach(canal => {
+            const vol = agence.volume_canaux[canal] || 0;
+            const perf = agence.perf_canaux[canal];
+            
+            if (vol > 0) {
+                canauxHtml += `
+                    <div class="agence-canal-stat">
+                        <span class="agence-canal-value">${vol.toLocaleString()}</span>
+                        ${perf ? `<span class="agence-canal-taux">${perf.taux.toFixed(1)}%</span>` : ''}
+                    </div>
+                `;
+            } else {
+                canauxHtml += `<div class="agence-canal-stat">-</div>`;
+            }
+        });
+        
+        row.innerHTML = `
+            <div class="agence-rank ${rankClass}">${index + 1}</div>
+            <div class="agence-name">${agence.nom}</div>
+            ${canauxHtml}
+            <div class="agence-total">
+                <span class="agence-total-value">${agence.total_volume.toLocaleString()}</span>
+                <span class="agence-total-taux rate-badge ${rateClass}">${agence.taux_global.toFixed(1)}%</span>
+            </div>
+        `;
+        
+        container.appendChild(row);
+    });
+}
+
+// ANCIEN: Accordéon unique avec Volume + Performance
 function populateMainAccordion() {
     const container = document.getElementById('mainAccordion');
     container.innerHTML = '';
@@ -700,8 +769,8 @@ function setupEventListeners() {
     document.getElementById('canalFilter').addEventListener('change', applyFilters);
     document.getElementById('resetFilters').addEventListener('click', resetFilters);
     
-    document.getElementById('searchTable').addEventListener('input', (e) => {
-        searchAccordion('mainAccordion', e.target.value);
+    document.getElementById('searchAgences').addEventListener('input', (e) => {
+        searchAgences(e.target.value);
     });
 }
 
@@ -713,6 +782,17 @@ function searchAccordion(containerId, searchTerm) {
     items.forEach(item => {
         const text = item.textContent.toLowerCase();
         item.style.display = text.includes(term) ? '' : 'none';
+    });
+}
+
+function searchAgences(searchTerm) {
+    const container = document.getElementById('agencesTable');
+    const rows = container.querySelectorAll('.agence-table-row:not(.header)');
+    const term = searchTerm.toLowerCase();
+    
+    rows.forEach(row => {
+        const text = row.dataset.searchText || row.textContent.toLowerCase();
+        row.style.display = text.includes(term) ? '' : 'none';
     });
 }
 
