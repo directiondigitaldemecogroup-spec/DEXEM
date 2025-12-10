@@ -63834,19 +63834,28 @@
       "canal": "GMB",
       "appels_non_spam": 86750,
       "taux_spam": 12.65,
-      "taux_decroche": 97.11
+      "taux_decroche": 97.11,
+      "numeros_uniques": 40116,
+      "appels_doublons": 46634,
+      "taux_doublons": 53.76
     },
     {
       "canal": "Pages Jaunes",
       "appels_non_spam": 16757,
       "taux_spam": 45.16,
-      "taux_decroche": 89.19
+      "taux_decroche": 89.19,
+      "numeros_uniques": 8983,
+      "appels_doublons": 7774,
+      "taux_doublons": 46.39
     },
     {
       "canal": "Store Locator",
       "appels_non_spam": 48795,
       "taux_spam": 10.22,
-      "taux_decroche": 94.97
+      "taux_decroche": 94.97,
+      "numeros_uniques": 28838,
+      "appels_doublons": 19957,
+      "taux_doublons": 40.9
     }
   ]
 }
