@@ -516,6 +516,35 @@ function createDecrocheHeureMultiChart() {
 }
 
 // NOUVEAU: Tableau simple des agences (sans regroupement par société)
+// Calculer le taux de décroché des 2 derniers mois pour chaque agence
+function calculerTaux2DerniersMois() {
+    const data = dashboardData.decroche_par_agence_canal_mois;
+    const taux = {};
+    
+    // Filtrer les 2 derniers mois (2025-11 et 2025-12)
+    const derniersMois = ['2025-11', '2025-12'];
+    
+    // Agréger par agence
+    data.forEach(row => {
+        if (derniersMois.includes(row.mois)) {
+            if (!taux[row.agence]) {
+                taux[row.agence] = { decroche: 0, total: 0 };
+            }
+            taux[row.agence].decroche += row.decroche;
+            taux[row.agence].total += row.total;
+        }
+    });
+    
+    // Calculer les taux
+    const result = {};
+    Object.keys(taux).forEach(agence => {
+        const { decroche, total } = taux[agence];
+        result[agence] = total > 0 ? (decroche / total) * 100 : null;
+    });
+    
+    return result;
+}
+
 function populateAgencesTable() {
     const container = document.getElementById('agencesTable');
     const agences = dashboardData.agences_list;
@@ -524,6 +553,9 @@ function populateAgencesTable() {
         console.warn('Pas de données agences_list');
         return;
     }
+    
+    // Calculer le taux pour les 2 derniers mois pour chaque agence
+    const taux2DerniersMois = calculerTaux2DerniersMois();
     
     // Mettre à jour le compteur
     document.getElementById('agencesCount').textContent = agences.length;
@@ -538,7 +570,8 @@ function populateAgencesTable() {
         <div>Pages Jaunes</div>
         <div>Store Locator</div>
         <div>Autres</div>
-        <div>Total / Taux</div>
+        <div>Total / Taux Global</div>
+        <div>Taux 2 Derniers Mois</div>
     `;
     container.appendChild(header);
     
@@ -550,6 +583,10 @@ function populateAgencesTable() {
         
         const rankClass = index < 10 ? 'top' : '';
         const rateClass = getRateClass(agence.taux_global);
+        
+        // Récupérer le taux des 2 derniers mois
+        const taux2M = taux2DerniersMois[agence.nom];
+        const rateClass2M = taux2M !== null ? getRateClass(taux2M) : '';
         
         const canauxOrder = ['GMB', 'Pages Jaunes', 'Store Locator', 'Autres'];
         let canauxHtml = '';
@@ -577,6 +614,12 @@ function populateAgencesTable() {
             <div class="agence-total">
                 <span class="agence-total-value">${agence.total_volume.toLocaleString()}</span>
                 <span class="agence-total-taux rate-badge ${rateClass}">${agence.taux_global.toFixed(1)}%</span>
+            </div>
+            <div class="agence-total">
+                ${taux2M !== null ? 
+                    `<span class="agence-total-taux rate-badge ${rateClass2M}">${taux2M.toFixed(1)}%</span>` : 
+                    '<span class="agence-total-taux">-</span>'
+                }
             </div>
         `;
         
