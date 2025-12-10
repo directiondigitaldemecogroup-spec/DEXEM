@@ -63652,9 +63652,51 @@
     "Store Locator"
   ],
   "spam_pj_analysis": {
-    "total_spam": 13797,
     "total_appels_pj": 30554,
+    "total_spam": 13797,
     "appels_suspects_10_30s": 2974,
+    "categories": [
+      {
+        "categorie": "✅ Normal: Appel >30s",
+        "count": 11971,
+        "percentage": 39.18
+      },
+      {
+        "categorie": "🔴 Spam: Raccroché avant sonnerie",
+        "count": 4987,
+        "percentage": 16.32
+      },
+      {
+        "categorie": "🔴 Spam: Court (4-9s)",
+        "count": 3799,
+        "percentage": 12.43
+      },
+      {
+        "categorie": "⚠️ Suspect: Appel court (10-30s)",
+        "count": 2974,
+        "percentage": 9.73
+      },
+      {
+        "categorie": "🔴 Spam: Sonnerie courte puis raccroché",
+        "count": 2716,
+        "percentage": 8.89
+      },
+      {
+        "categorie": "🔴 Spam: Très court (1-3s)",
+        "count": 2253,
+        "percentage": 7.37
+      },
+      {
+        "categorie": "🔵 Non décroché: Sonnerie longue (>=5s)",
+        "count": 1812,
+        "percentage": 5.93
+      },
+      {
+        "categorie": "🔴 Spam: Raccroché immédiat (0s)",
+        "count": 42,
+        "percentage": 0.14
+      }
+    ],
     "type_numero": [
       {
         "type": "Fixe Sud-Est (04)",
@@ -63699,48 +63741,6 @@
       {
         "type": "N° spécial/surtaxé (08)",
         "count": 20,
-        "percentage": 0.14
-      }
-    ],
-    "nature_appels": [
-      {
-        "nature": "Appel normal (>30s)",
-        "count": 11971,
-        "percentage": 39.18
-      },
-      {
-        "nature": "Raccroché avant sonnerie (ping test)",
-        "count": 4987,
-        "percentage": 16.32
-      },
-      {
-        "nature": "Conversation courte (4-9s)",
-        "count": 3799,
-        "percentage": 12.43
-      },
-      {
-        "nature": "⚠️ Appel court suspect (10-30s)",
-        "count": 2974,
-        "percentage": 9.73
-      },
-      {
-        "nature": "Sonnerie 3-4s puis raccroché",
-        "count": 2487,
-        "percentage": 8.14
-      },
-      {
-        "nature": "Conversation très courte (1-3s)",
-        "count": 2253,
-        "percentage": 7.37
-      },
-      {
-        "nature": "Sonnerie 1-2s puis raccroché",
-        "count": 2041,
-        "percentage": 6.68
-      },
-      {
-        "nature": "Décroché puis raccroché immédiat (0s)",
-        "count": 42,
         "percentage": 0.14
       }
     ],
@@ -63828,5 +63828,25 @@
         "count": 1453
       }
     ]
-  }
+  },
+  "canal_stats": [
+    {
+      "canal": "GMB",
+      "appels_non_spam": 86750,
+      "taux_spam": 12.65,
+      "taux_decroche": 97.11
+    },
+    {
+      "canal": "Pages Jaunes",
+      "appels_non_spam": 16757,
+      "taux_spam": 45.16,
+      "taux_decroche": 89.19
+    },
+    {
+      "canal": "Store Locator",
+      "appels_non_spam": 48795,
+      "taux_spam": 10.22,
+      "taux_decroche": 94.97
+    }
+  ]
 }
