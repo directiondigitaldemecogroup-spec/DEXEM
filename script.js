@@ -243,6 +243,10 @@ function createCanalRepartitionChart() {
         return;
     }
     
+    // Calculer le total dédoublonné
+    const totalNonSpam = data.reduce((sum, d) => sum + d.appels_non_spam, 0);
+    document.getElementById('totalNonSpamCanaux').textContent = totalNonSpam.toLocaleString();
+    
     charts.canalRepartition = new Chart(ctx, {
         type: 'doughnut',
         data: {
