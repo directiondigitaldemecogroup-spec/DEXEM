@@ -241,12 +241,22 @@ function populateSpamPJAnalysis() {
         return;
     }
     
-    // 1. Nature du spam
+    // Stats rapides
+    document.getElementById('spamPJTotal').textContent = data.total_spam.toLocaleString();
+    document.getElementById('spamPJSuspects').textContent = data.appels_suspects_10_30s.toLocaleString();
+    const tauxTotal = ((data.total_spam + data.appels_suspects_10_30s) / data.total_appels_pj * 100).toFixed(1);
+    document.getElementById('spamPJRate').textContent = tauxTotal + '%';
+    
+    // 1. Nature des appels (tous, avec suspects)
     const natureTable = document.getElementById('spamNatureTable');
     natureTable.className = 'analysis-table';
-    data.nature_spam.forEach(item => {
+    data.nature_appels.forEach(item => {
         const row = document.createElement('div');
         row.className = 'analysis-row';
+        // Highlight suspects
+        if (item.nature.includes('suspect') || item.nature.includes('⚠️')) {
+            row.style.background = '#fff3cd';
+        }
         row.innerHTML = `
             <span class="analysis-label">${item.nature}</span>
             <span>
