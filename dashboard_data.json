@@ -64062,6 +64062,35 @@
       "taux_global": 97.69
     },
     {
+      "nom": "Demeco - ATLANTIC MOVERS - Saint Herblain",
+      "volume_canaux": {
+        "GMB": 1783,
+        "Pages Jaunes": 245,
+        "Store Locator": 409
+      },
+      "perf_canaux": {
+        "GMB": {
+          "decroche": 1711,
+          "total": 1783,
+          "taux": 95.96
+        },
+        "Pages Jaunes": {
+          "decroche": 235,
+          "total": 245,
+          "taux": 95.92
+        },
+        "Store Locator": {
+          "decroche": 393,
+          "total": 409,
+          "taux": 96.09
+        }
+      },
+      "total_volume": 2437,
+      "total_decroche": 2339,
+      "total_appels_perf": 2437,
+      "taux_global": 95.98
+    },
+    {
       "nom": "DS 54 SOLODEM",
       "volume_canaux": {
         "GMB": 1688,
@@ -64294,27 +64323,33 @@
       "taux_global": 95.4
     },
     {
-      "nom": "Demeco - ATLANTIC MOVERS - Saint Herblain",
+      "nom": "HORS DEM - DROUIN DEMENAGEMENT - Nantes",
       "volume_canaux": {
-        "GMB": 1783,
-        "Pages Jaunes": 245
+        "GMB": 1487,
+        "Pages Jaunes": 179,
+        "Store Locator": 287
       },
       "perf_canaux": {
         "GMB": {
-          "decroche": 1711,
-          "total": 1783,
-          "taux": 95.96
+          "decroche": 1434,
+          "total": 1487,
+          "taux": 96.44
         },
         "Pages Jaunes": {
-          "decroche": 235,
-          "total": 245,
-          "taux": 95.92
+          "decroche": 168,
+          "total": 179,
+          "taux": 93.85
+        },
+        "Store Locator": {
+          "decroche": 284,
+          "total": 287,
+          "taux": 98.95
         }
       },
-      "total_volume": 2028,
-      "total_decroche": 1946,
-      "total_appels_perf": 2028,
-      "taux_global": 95.96
+      "total_volume": 1953,
+      "total_decroche": 1886,
+      "total_appels_perf": 1953,
+      "taux_global": 96.57
     },
     {
       "nom": "NASSE MARCHAND - Orleans",
@@ -64485,29 +64520,6 @@
       "taux_global": 97.64
     },
     {
-      "nom": "HORS DEM - DROUIN DEMENAGEMENT - Nantes",
-      "volume_canaux": {
-        "GMB": 1487,
-        "Pages Jaunes": 179
-      },
-      "perf_canaux": {
-        "GMB": {
-          "decroche": 1434,
-          "total": 1487,
-          "taux": 96.44
-        },
-        "Pages Jaunes": {
-          "decroche": 168,
-          "total": 179,
-          "taux": 93.85
-        }
-      },
-      "total_volume": 1666,
-      "total_decroche": 1602,
-      "total_appels_perf": 1666,
-      "taux_global": 96.16
-    },
-    {
       "nom": "HORS DEM - GD - JAUFFRET DEMENAGEMENTS - Avignon",
       "volume_canaux": {
         "GMB": 1369,
@@ -64546,6 +64558,35 @@
       "total_decroche": 1544,
       "total_appels_perf": 1598,
       "taux_global": 96.62
+    },
+    {
+      "nom": "HORS DEM - APR - Tours",
+      "volume_canaux": {
+        "GMB": 1214,
+        "Pages Jaunes": 203,
+        "Store Locator": 111
+      },
+      "perf_canaux": {
+        "GMB": {
+          "decroche": 1175,
+          "total": 1214,
+          "taux": 96.79
+        },
+        "Pages Jaunes": {
+          "decroche": 170,
+          "total": 203,
+          "taux": 83.74
+        },
+        "Store Locator": {
+          "decroche": 109,
+          "total": 111,
+          "taux": 98.2
+        }
+      },
+      "total_volume": 1528,
+      "total_decroche": 1454,
+      "total_appels_perf": 1528,
+      "taux_global": 95.16
     },
     {
       "nom": "GRIMONPONT - Hallennes-lez-Haubourdin",
@@ -64629,27 +64670,33 @@
       "taux_global": 98.21
     },
     {
-      "nom": "HORS DEM - APR - Tours",
+      "nom": "HORS DEM - AE MALLET - Orleans",
       "volume_canaux": {
-        "GMB": 1214,
-        "Pages Jaunes": 203
+        "GMB": 776,
+        "Pages Jaunes": 122,
+        "Store Locator": 540
       },
       "perf_canaux": {
         "GMB": {
-          "decroche": 1175,
-          "total": 1214,
-          "taux": 96.79
+          "decroche": 748,
+          "total": 776,
+          "taux": 96.39
         },
         "Pages Jaunes": {
-          "decroche": 170,
-          "total": 203,
-          "taux": 83.74
+          "decroche": 97,
+          "total": 122,
+          "taux": 79.51
+        },
+        "Store Locator": {
+          "decroche": 521,
+          "total": 540,
+          "taux": 96.48
         }
       },
-      "total_volume": 1417,
-      "total_decroche": 1345,
-      "total_appels_perf": 1417,
-      "taux_global": 94.92
+      "total_volume": 1438,
+      "total_decroche": 1366,
+      "total_appels_perf": 1438,
+      "taux_global": 94.99
     },
     {
       "nom": "HORS DEM - Demenageurs Bretons - Aménageurs Orléanais",
@@ -64692,6 +64739,35 @@
       "taux_global": 98.11
     },
     {
+      "nom": "HORS DEM - Blanquart Lille",
+      "volume_canaux": {
+        "GMB": 922,
+        "Pages Jaunes": 201,
+        "Store Locator": 169
+      },
+      "perf_canaux": {
+        "GMB": {
+          "decroche": 911,
+          "total": 922,
+          "taux": 98.81
+        },
+        "Pages Jaunes": {
+          "decroche": 185,
+          "total": 201,
+          "taux": 92.04
+        },
+        "Store Locator": {
+          "decroche": 168,
+          "total": 169,
+          "taux": 99.41
+        }
+      },
+      "total_volume": 1292,
+      "total_decroche": 1264,
+      "total_appels_perf": 1292,
+      "taux_global": 97.83
+    },
+    {
       "nom": "MESNAGER - Chateauroux",
       "volume_canaux": {
         "GMB": 958,
@@ -64713,6 +64789,35 @@
       "total_decroche": 1177,
       "total_appels_perf": 1252,
       "taux_global": 94.01
+    },
+    {
+      "nom": "NASSE MARCHAND - Saint jean de la ruelle",
+      "volume_canaux": {
+        "GMB": 1036,
+        "Pages Jaunes": 130,
+        "Store Locator": 15
+      },
+      "perf_canaux": {
+        "GMB": {
+          "decroche": 1019,
+          "total": 1036,
+          "taux": 98.36
+        },
+        "Pages Jaunes": {
+          "decroche": 113,
+          "total": 130,
+          "taux": 86.92
+        },
+        "Store Locator": {
+          "decroche": 15,
+          "total": 15,
+          "taux": 100.0
+        }
+      },
+      "total_volume": 1181,
+      "total_decroche": 1147,
+      "total_appels_perf": 1181,
+      "taux_global": 97.12
     },
     {
       "nom": "FERLAY JANIN - Lyon 2",
@@ -64738,27 +64843,33 @@
       "taux_global": 98.81
     },
     {
-      "nom": "NASSE MARCHAND - Saint jean de la ruelle",
+      "nom": "HORS DEM - LE FLOCH DEMENAGEMENT - Brest",
       "volume_canaux": {
-        "GMB": 1036,
-        "Pages Jaunes": 130
+        "GMB": 894,
+        "Pages Jaunes": 119,
+        "Store Locator": 137
       },
       "perf_canaux": {
         "GMB": {
-          "decroche": 1019,
-          "total": 1036,
-          "taux": 98.36
+          "decroche": 872,
+          "total": 894,
+          "taux": 97.54
         },
         "Pages Jaunes": {
-          "decroche": 113,
-          "total": 130,
-          "taux": 86.92
+          "decroche": 108,
+          "total": 119,
+          "taux": 90.76
+        },
+        "Store Locator": {
+          "decroche": 136,
+          "total": 137,
+          "taux": 99.27
         }
       },
-      "total_volume": 1166,
-      "total_decroche": 1132,
-      "total_appels_perf": 1166,
-      "taux_global": 97.08
+      "total_volume": 1150,
+      "total_decroche": 1116,
+      "total_appels_perf": 1150,
+      "taux_global": 97.04
     },
     {
       "nom": "SANS DEMETERRE - Bruguières",
@@ -64817,29 +64928,6 @@
       "total_decroche": 1023,
       "total_appels_perf": 1103,
       "taux_global": 92.75
-    },
-    {
-      "nom": "HORS DEM - Blanquart Lille",
-      "volume_canaux": {
-        "GMB": 922,
-        "Store Locator": 169
-      },
-      "perf_canaux": {
-        "GMB": {
-          "decroche": 911,
-          "total": 922,
-          "taux": 98.81
-        },
-        "Store Locator": {
-          "decroche": 168,
-          "total": 169,
-          "taux": 99.41
-        }
-      },
-      "total_volume": 1091,
-      "total_decroche": 1079,
-      "total_appels_perf": 1091,
-      "taux_global": 98.9
     },
     {
       "nom": "ABER ROUSSEL - Vannes",
@@ -64929,29 +65017,6 @@
       "taux_global": 97.47
     },
     {
-      "nom": "HORS DEM - LE FLOCH DEMENAGEMENT - Brest",
-      "volume_canaux": {
-        "GMB": 894,
-        "Pages Jaunes": 119
-      },
-      "perf_canaux": {
-        "GMB": {
-          "decroche": 872,
-          "total": 894,
-          "taux": 97.54
-        },
-        "Pages Jaunes": {
-          "decroche": 108,
-          "total": 119,
-          "taux": 90.76
-        }
-      },
-      "total_volume": 1013,
-      "total_decroche": 980,
-      "total_appels_perf": 1013,
-      "taux_global": 96.74
-    },
-    {
       "nom": "ADN - Le Havre",
       "volume_canaux": {
         "GMB": 648,
@@ -64981,6 +65046,64 @@
       "taux_global": 97.53
     },
     {
+      "nom": "Demeco GRIMAUD - Luçon",
+      "volume_canaux": {
+        "GMB": 480,
+        "Pages Jaunes": 76,
+        "Store Locator": 450
+      },
+      "perf_canaux": {
+        "GMB": {
+          "decroche": 470,
+          "total": 480,
+          "taux": 97.92
+        },
+        "Pages Jaunes": {
+          "decroche": 73,
+          "total": 76,
+          "taux": 96.05
+        },
+        "Store Locator": {
+          "decroche": 421,
+          "total": 450,
+          "taux": 93.56
+        }
+      },
+      "total_volume": 1006,
+      "total_decroche": 964,
+      "total_appels_perf": 1006,
+      "taux_global": 95.83
+    },
+    {
+      "nom": "HORS DEM - LE FLOCH DEMENAGEMENT - Saint Divy",
+      "volume_canaux": {
+        "GMB": 831,
+        "Pages Jaunes": 129,
+        "Store Locator": 45
+      },
+      "perf_canaux": {
+        "GMB": {
+          "decroche": 738,
+          "total": 831,
+          "taux": 88.81
+        },
+        "Pages Jaunes": {
+          "decroche": 101,
+          "total": 129,
+          "taux": 78.29
+        },
+        "Store Locator": {
+          "decroche": 35,
+          "total": 45,
+          "taux": 77.78
+        }
+      },
+      "total_volume": 1005,
+      "total_decroche": 874,
+      "total_appels_perf": 1005,
+      "taux_global": 86.97
+    },
+    {
       "nom": "MESNAGER - Bourges",
       "volume_canaux": {
         "GMB": 606,
@@ -65008,35 +65131,6 @@
       "total_decroche": 964,
       "total_appels_perf": 1003,
       "taux_global": 96.11
-    },
-    {
-      "nom": "Demeco GRIMAUD - Luçon",
-      "volume_canaux": {
-        "GMB": 480,
-        "Pages Jaunes": 76,
-        "Store Locator": 444
-      },
-      "perf_canaux": {
-        "GMB": {
-          "decroche": 470,
-          "total": 480,
-          "taux": 97.92
-        },
-        "Pages Jaunes": {
-          "decroche": 73,
-          "total": 76,
-          "taux": 96.05
-        },
-        "Store Locator": {
-          "decroche": 415,
-          "total": 444,
-          "taux": 93.47
-        }
-      },
-      "total_volume": 1000,
-      "total_decroche": 958,
-      "total_appels_perf": 1000,
-      "taux_global": 95.8
     },
     {
       "nom": "HORS DEM - ACE GIBOUIN Niort",
@@ -65143,6 +65237,29 @@
       "taux_global": 97.35
     },
     {
+      "nom": "HORS DEM - Potiez Deman",
+      "volume_canaux": {
+        "GMB": 499,
+        "Store Locator": 430
+      },
+      "perf_canaux": {
+        "GMB": {
+          "decroche": 499,
+          "total": 499,
+          "taux": 100.0
+        },
+        "Store Locator": {
+          "decroche": 430,
+          "total": 430,
+          "taux": 100.0
+        }
+      },
+      "total_volume": 929,
+      "total_decroche": 929,
+      "total_appels_perf": 929,
+      "taux_global": 100.0
+    },
+    {
       "nom": "DAZIN - Aix en Provence",
       "volume_canaux": {
         "GMB": 430,
@@ -65170,29 +65287,6 @@
       "total_decroche": 871,
       "total_appels_perf": 907,
       "taux_global": 96.03
-    },
-    {
-      "nom": "HORS DEM - AE MALLET - Orleans",
-      "volume_canaux": {
-        "GMB": 776,
-        "Pages Jaunes": 122
-      },
-      "perf_canaux": {
-        "GMB": {
-          "decroche": 748,
-          "total": 776,
-          "taux": 96.39
-        },
-        "Pages Jaunes": {
-          "decroche": 97,
-          "total": 122,
-          "taux": 79.51
-        }
-      },
-      "total_volume": 898,
-      "total_decroche": 845,
-      "total_appels_perf": 898,
-      "taux_global": 94.1
     },
     {
       "nom": "VANDENABEELE - Valenciennes",
@@ -65224,6 +65318,35 @@
       "taux_global": 96.91
     },
     {
+      "nom": "HORS DEM - LE FLOCH DEMENAGEMENT - Cherbourg",
+      "volume_canaux": {
+        "GMB": 690,
+        "Pages Jaunes": 116,
+        "Store Locator": 58
+      },
+      "perf_canaux": {
+        "GMB": {
+          "decroche": 671,
+          "total": 690,
+          "taux": 97.25
+        },
+        "Pages Jaunes": {
+          "decroche": 106,
+          "total": 116,
+          "taux": 91.38
+        },
+        "Store Locator": {
+          "decroche": 56,
+          "total": 58,
+          "taux": 96.55
+        }
+      },
+      "total_volume": 864,
+      "total_decroche": 833,
+      "total_appels_perf": 864,
+      "taux_global": 96.41
+    },
+    {
       "nom": "CHALLENGE - Levallois",
       "volume_canaux": {
         "GMB": 423,
@@ -65253,23 +65376,6 @@
       "taux_global": 96.56
     },
     {
-      "nom": "HORS DEM - LE FLOCH DEMENAGEMENT - Saint Divy",
-      "volume_canaux": {
-        "GMB": 831
-      },
-      "perf_canaux": {
-        "GMB": {
-          "decroche": 738,
-          "total": 831,
-          "taux": 88.81
-        }
-      },
-      "total_volume": 831,
-      "total_decroche": 738,
-      "total_appels_perf": 831,
-      "taux_global": 88.81
-    },
-    {
       "nom": "Emails demeco.fr - particuliers",
       "volume_canaux": {
         "Autres": 821
@@ -65285,29 +65391,6 @@
       "total_decroche": 810,
       "total_appels_perf": 821,
       "taux_global": 98.66
-    },
-    {
-      "nom": "HORS DEM - LE FLOCH DEMENAGEMENT - Cherbourg",
-      "volume_canaux": {
-        "GMB": 690,
-        "Pages Jaunes": 116
-      },
-      "perf_canaux": {
-        "GMB": {
-          "decroche": 671,
-          "total": 690,
-          "taux": 97.25
-        },
-        "Pages Jaunes": {
-          "decroche": 106,
-          "total": 116,
-          "taux": 91.38
-        }
-      },
-      "total_volume": 806,
-      "total_decroche": 777,
-      "total_appels_perf": 806,
-      "taux_global": 96.4
     },
     {
       "nom": "MARTIN - Bordeaux",
@@ -65383,6 +65466,35 @@
       "total_decroche": 735,
       "total_appels_perf": 763,
       "taux_global": 96.33
+    },
+    {
+      "nom": "HORS DEM - ANDRE RAYNAL - Agen",
+      "volume_canaux": {
+        "GMB": 537,
+        "Pages Jaunes": 155,
+        "Store Locator": 55
+      },
+      "perf_canaux": {
+        "GMB": {
+          "decroche": 524,
+          "total": 537,
+          "taux": 97.58
+        },
+        "Pages Jaunes": {
+          "decroche": 139,
+          "total": 155,
+          "taux": 89.68
+        },
+        "Store Locator": {
+          "decroche": 49,
+          "total": 55,
+          "taux": 89.09
+        }
+      },
+      "total_volume": 747,
+      "total_decroche": 712,
+      "total_appels_perf": 747,
+      "taux_global": 95.31
     },
     {
       "nom": "ABER ROUSSEL - Quimper",
@@ -65530,27 +65642,33 @@
       "taux_global": 97.42
     },
     {
-      "nom": "HORS DEM - ANDRE RAYNAL - Agen",
+      "nom": "ABER ROUSSEL - Saint Malo",
       "volume_canaux": {
-        "GMB": 537,
-        "Pages Jaunes": 155
+        "GMB": 446,
+        "Pages Jaunes": 65,
+        "Store Locator": 186
       },
       "perf_canaux": {
         "GMB": {
-          "decroche": 524,
-          "total": 537,
-          "taux": 97.58
+          "decroche": 446,
+          "total": 446,
+          "taux": 100.0
         },
         "Pages Jaunes": {
-          "decroche": 139,
-          "total": 155,
-          "taux": 89.68
+          "decroche": 62,
+          "total": 65,
+          "taux": 95.38
+        },
+        "Store Locator": {
+          "decroche": 184,
+          "total": 186,
+          "taux": 98.92
         }
       },
-      "total_volume": 692,
-      "total_decroche": 663,
-      "total_appels_perf": 692,
-      "taux_global": 95.81
+      "total_volume": 697,
+      "total_decroche": 692,
+      "total_appels_perf": 697,
+      "taux_global": 99.28
     },
     {
       "nom": "Demeco TORRENS OUDINOT - Paris 7",
@@ -65580,6 +65698,29 @@
       "total_decroche": 630,
       "total_appels_perf": 681,
       "taux_global": 92.51
+    },
+    {
+      "nom": "HORS DEM - GUIGARD DEMENAGEMENT - Lyon 3",
+      "volume_canaux": {
+        "GMB": 643,
+        "Pages Jaunes": 38
+      },
+      "perf_canaux": {
+        "GMB": {
+          "decroche": 633,
+          "total": 643,
+          "taux": 98.44
+        },
+        "Pages Jaunes": {
+          "decroche": 31,
+          "total": 38,
+          "taux": 81.58
+        }
+      },
+      "total_volume": 681,
+      "total_decroche": 664,
+      "total_appels_perf": 681,
+      "taux_global": 97.5
     },
     {
       "nom": "BLACHE - Annemasse",
@@ -65673,7 +65814,7 @@
       "volume_canaux": {
         "GMB": 422,
         "Pages Jaunes": 110,
-        "Store Locator": 120
+        "Store Locator": 122
       },
       "perf_canaux": {
         "GMB": {
@@ -65687,32 +65828,15 @@
           "taux": 92.73
         },
         "Store Locator": {
-          "decroche": 118,
-          "total": 120,
-          "taux": 98.33
+          "decroche": 120,
+          "total": 122,
+          "taux": 98.36
         }
       },
-      "total_volume": 652,
-      "total_decroche": 616,
-      "total_appels_perf": 652,
-      "taux_global": 94.48
-    },
-    {
-      "nom": "HORS DEM - GUIGARD DEMENAGEMENT - Lyon 3-",
-      "volume_canaux": {
-        "GMB": 643
-      },
-      "perf_canaux": {
-        "GMB": {
-          "decroche": 633,
-          "total": 643,
-          "taux": 98.44
-        }
-      },
-      "total_volume": 643,
-      "total_decroche": 633,
-      "total_appels_perf": 643,
-      "taux_global": 98.44
+      "total_volume": 654,
+      "total_decroche": 618,
+      "total_appels_perf": 654,
+      "taux_global": 94.5
     },
     {
       "nom": "HORS DEM - GUIGARD DEMENAGEMENT - Chassieu",
@@ -65831,6 +65955,35 @@
       "taux_global": 96.2
     },
     {
+      "nom": "HORS DEM - DEMENAGEMENT VALETTE - Bordeaux",
+      "volume_canaux": {
+        "GMB": 448,
+        "Pages Jaunes": 67,
+        "Store Locator": 82
+      },
+      "perf_canaux": {
+        "GMB": {
+          "decroche": 439,
+          "total": 448,
+          "taux": 97.99
+        },
+        "Pages Jaunes": {
+          "decroche": 54,
+          "total": 67,
+          "taux": 80.6
+        },
+        "Store Locator": {
+          "decroche": 80,
+          "total": 82,
+          "taux": 97.56
+        }
+      },
+      "total_volume": 597,
+      "total_decroche": 573,
+      "total_appels_perf": 597,
+      "taux_global": 95.98
+    },
+    {
       "nom": "DAVIN - Ales",
       "volume_canaux": {
         "GMB": 354,
@@ -65887,6 +66040,35 @@
       "total_decroche": 582,
       "total_appels_perf": 591,
       "taux_global": 98.48
+    },
+    {
+      "nom": "HORS DEM - DEMENAGEMENTS BOULOUARD - Lorient",
+      "volume_canaux": {
+        "GMB": 366,
+        "Pages Jaunes": 144,
+        "Store Locator": 81
+      },
+      "perf_canaux": {
+        "GMB": {
+          "decroche": 359,
+          "total": 366,
+          "taux": 98.09
+        },
+        "Pages Jaunes": {
+          "decroche": 117,
+          "total": 144,
+          "taux": 81.25
+        },
+        "Store Locator": {
+          "decroche": 81,
+          "total": 81,
+          "taux": 100.0
+        }
+      },
+      "total_volume": 591,
+      "total_decroche": 557,
+      "total_appels_perf": 591,
+      "taux_global": 94.25
     },
     {
       "nom": "GOURDELIER - Cherbourg en Cotentin",
@@ -65968,6 +66150,35 @@
       "total_decroche": 560,
       "total_appels_perf": 568,
       "taux_global": 98.59
+    },
+    {
+      "nom": "JCS - Saumur",
+      "volume_canaux": {
+        "GMB": 355,
+        "Pages Jaunes": 81,
+        "Store Locator": 128
+      },
+      "perf_canaux": {
+        "GMB": {
+          "decroche": 353,
+          "total": 355,
+          "taux": 99.44
+        },
+        "Pages Jaunes": {
+          "decroche": 74,
+          "total": 81,
+          "taux": 91.36
+        },
+        "Store Locator": {
+          "decroche": 125,
+          "total": 128,
+          "taux": 97.66
+        }
+      },
+      "total_volume": 564,
+      "total_decroche": 552,
+      "total_appels_perf": 564,
+      "taux_global": 97.87
     },
     {
       "nom": "HORS DEM - DEMENAGEURS BRETONS DAVID & GENDRE - Blois",
@@ -66161,23 +66372,6 @@
       "taux_global": 94.48
     },
     {
-      "nom": "HORS DEM - AE MALLET - Orleans - SiteWeb",
-      "volume_canaux": {
-        "Store Locator": 540
-      },
-      "perf_canaux": {
-        "Store Locator": {
-          "decroche": 521,
-          "total": 540,
-          "taux": 96.48
-        }
-      },
-      "total_volume": 540,
-      "total_decroche": 521,
-      "total_appels_perf": 540,
-      "taux_global": 96.48
-    },
-    {
       "nom": "DAVIN - Nimes",
       "volume_canaux": {
         "Pages Jaunes": 162,
@@ -66199,75 +66393,6 @@
       "total_decroche": 505,
       "total_appels_perf": 521,
       "taux_global": 96.93
-    },
-    {
-      "nom": "HORS DEM - DEMENAGEMENT VALETTE - Bordeaux",
-      "volume_canaux": {
-        "GMB": 448,
-        "Pages Jaunes": 67
-      },
-      "perf_canaux": {
-        "GMB": {
-          "decroche": 439,
-          "total": 448,
-          "taux": 97.99
-        },
-        "Pages Jaunes": {
-          "decroche": 54,
-          "total": 67,
-          "taux": 80.6
-        }
-      },
-      "total_volume": 515,
-      "total_decroche": 493,
-      "total_appels_perf": 515,
-      "taux_global": 95.73
-    },
-    {
-      "nom": "ABER ROUSSEL - Saint Malo",
-      "volume_canaux": {
-        "GMB": 446,
-        "Pages Jaunes": 65
-      },
-      "perf_canaux": {
-        "GMB": {
-          "decroche": 446,
-          "total": 446,
-          "taux": 100.0
-        },
-        "Pages Jaunes": {
-          "decroche": 62,
-          "total": 65,
-          "taux": 95.38
-        }
-      },
-      "total_volume": 511,
-      "total_decroche": 508,
-      "total_appels_perf": 511,
-      "taux_global": 99.41
-    },
-    {
-      "nom": "HORS DEM - DEMENAGEMENTS BOULOUARD - Lorient",
-      "volume_canaux": {
-        "GMB": 366,
-        "Pages Jaunes": 144
-      },
-      "perf_canaux": {
-        "GMB": {
-          "decroche": 359,
-          "total": 366,
-          "taux": 98.09
-        },
-        "Pages Jaunes": {
-          "decroche": 117,
-          "total": 144,
-          "taux": 81.25
-        }
-      },
-      "total_volume": 510,
-      "total_decroche": 476,
-      "total_appels_perf": 510,
-      "taux_global": 93.33
     },
     {
       "nom": "LDPC - La Creche",
@@ -66297,23 +66422,6 @@
       "total_decroche": 457,
       "total_appels_perf": 505,
       "taux_global": 90.5
-    },
-    {
-      "nom": "HORS DEM - Potiez Deman",
-      "volume_canaux": {
-        "GMB": 499
-      },
-      "perf_canaux": {
-        "GMB": {
-          "decroche": 499,
-          "total": 499,
-          "taux": 100.0
-        }
-      },
-      "total_volume": 499,
-      "total_decroche": 499,
-      "total_appels_perf": 499,
-      "taux_global": 100.0
     },
     {
       "nom": "ADN - Evreux",
@@ -66425,7 +66533,7 @@
       "taux_global": 98.92
     },
     {
-      "nom": "Hors Dem - Huet - Site web",
+      "nom": "Hors Dem - Huet",
       "volume_canaux": {
         "Store Locator": 457
       },
@@ -66471,29 +66579,6 @@
       "taux_global": 95.48
     },
     {
-      "nom": "JCS - Saumur",
-      "volume_canaux": {
-        "GMB": 355,
-        "Pages Jaunes": 81
-      },
-      "perf_canaux": {
-        "GMB": {
-          "decroche": 353,
-          "total": 355,
-          "taux": 99.44
-        },
-        "Pages Jaunes": {
-          "decroche": 74,
-          "total": 81,
-          "taux": 91.36
-        }
-      },
-      "total_volume": 436,
-      "total_decroche": 427,
-      "total_appels_perf": 436,
-      "taux_global": 97.94
-    },
-    {
       "nom": "LDPC - Chatellerault",
       "volume_canaux": {
         "GMB": 253,
@@ -66523,24 +66608,7 @@
       "taux_global": 97.46
     },
     {
-      "nom": "HORS DEM - Potiez Deman - Site Web",
-      "volume_canaux": {
-        "Store Locator": 430
-      },
-      "perf_canaux": {
-        "Store Locator": {
-          "decroche": 430,
-          "total": 430,
-          "taux": 100.0
-        }
-      },
-      "total_volume": 430,
-      "total_decroche": 430,
-      "total_appels_perf": 430,
-      "taux_global": 100.0
-    },
-    {
-      "nom": "MATRALOC SN - Brignoles-",
+      "nom": "MATRALOC SN - Brignoles",
       "volume_canaux": {
         "GMB": 329,
         "Pages Jaunes": 101
@@ -66677,23 +66745,6 @@
       "total_decroche": 393,
       "total_appels_perf": 412,
       "taux_global": 95.39
-    },
-    {
-      "nom": "Demeco - ATLANTIC MOVERS - Saint Herblain  -",
-      "volume_canaux": {
-        "Store Locator": 409
-      },
-      "perf_canaux": {
-        "Store Locator": {
-          "decroche": 393,
-          "total": 409,
-          "taux": 96.09
-        }
-      },
-      "total_volume": 409,
-      "total_decroche": 393,
-      "total_appels_perf": 409,
-      "taux_global": 96.09
     },
     {
       "nom": "FERLAY JANIN - Bourgoin Jallieu",
@@ -67205,7 +67256,7 @@
       "volume_canaux": {
         "GMB": 200,
         "Pages Jaunes": 56,
-        "Store Locator": 75
+        "Store Locator": 76
       },
       "perf_canaux": {
         "GMB": {
@@ -67219,15 +67270,15 @@
           "taux": 85.71
         },
         "Store Locator": {
-          "decroche": 75,
-          "total": 75,
+          "decroche": 76,
+          "total": 76,
           "taux": 100.0
         }
       },
-      "total_volume": 331,
-      "total_decroche": 321,
-      "total_appels_perf": 331,
-      "taux_global": 96.98
+      "total_volume": 332,
+      "total_decroche": 322,
+      "total_appels_perf": 332,
+      "taux_global": 96.99
     },
     {
       "nom": "DAZIN - Marseille 8 - GMB (ex Marseille 16)",
@@ -67361,6 +67412,29 @@
       "taux_global": 98.65
     },
     {
+      "nom": "Heiss Claude Déménagement - Luxembourg",
+      "volume_canaux": {
+        "GMB": 117,
+        "Store Locator": 176
+      },
+      "perf_canaux": {
+        "GMB": {
+          "decroche": 99,
+          "total": 117,
+          "taux": 84.62
+        },
+        "Store Locator": {
+          "decroche": 151,
+          "total": 176,
+          "taux": 85.8
+        }
+      },
+      "total_volume": 293,
+      "total_decroche": 250,
+      "total_appels_perf": 293,
+      "taux_global": 85.32
+    },
+    {
       "nom": "TAURISSON - Pont du Casse Parichon",
       "volume_canaux": {
         "Store Locator": 293
@@ -67395,21 +67469,33 @@
       "taux_global": 78.82
     },
     {
-      "nom": "HORS DEM - DROUIN DEMENAGEMENT - Nantes - SiteWeb",
+      "nom": "HORS DEM - LE FLOCH DEMENAGEMENT - Brest Centre",
       "volume_canaux": {
-        "Store Locator": 287
+        "GMB": 179,
+        "Pages Jaunes": 36,
+        "Store Locator": 70
       },
       "perf_canaux": {
+        "GMB": {
+          "decroche": 169,
+          "total": 179,
+          "taux": 94.41
+        },
+        "Pages Jaunes": {
+          "decroche": 36,
+          "total": 36,
+          "taux": 100.0
+        },
         "Store Locator": {
-          "decroche": 284,
-          "total": 287,
-          "taux": 98.95
+          "decroche": 67,
+          "total": 70,
+          "taux": 95.71
         }
       },
-      "total_volume": 287,
-      "total_decroche": 284,
-      "total_appels_perf": 287,
-      "taux_global": 98.95
+      "total_volume": 285,
+      "total_decroche": 272,
+      "total_appels_perf": 285,
+      "taux_global": 95.44
     },
     {
       "nom": "Demeco GRIMAUD - La Roche Sur Yon",
@@ -67680,6 +67766,35 @@
       "taux_global": 88.65
     },
     {
+      "nom": "Hors Dem - La Mauldre",
+      "volume_canaux": {
+        "GMB": 86,
+        "Pages Jaunes": 108,
+        "Store Locator": 34
+      },
+      "perf_canaux": {
+        "GMB": {
+          "decroche": 78,
+          "total": 86,
+          "taux": 90.7
+        },
+        "Pages Jaunes": {
+          "decroche": 90,
+          "total": 108,
+          "taux": 83.33
+        },
+        "Store Locator": {
+          "decroche": 32,
+          "total": 34,
+          "taux": 94.12
+        }
+      },
+      "total_volume": 228,
+      "total_decroche": 200,
+      "total_appels_perf": 228,
+      "taux_global": 87.72
+    },
+    {
       "nom": "Demeco ARGOAT Pordic",
       "volume_canaux": {
         "Store Locator": 228
@@ -67697,7 +67812,7 @@
       "taux_global": 99.56
     },
     {
-      "nom": "HORS DEM - Euroflash Roissy en France-",
+      "nom": "HORS DEM - Euroflash Roissy en France",
       "volume_canaux": {
         "GMB": 225,
         "Pages Jaunes": 1
@@ -67766,6 +67881,35 @@
       "taux_global": 96.83
     },
     {
+      "nom": "HORS DEM - ANDRE RAYNAL - Montauban",
+      "volume_canaux": {
+        "GMB": 90,
+        "Pages Jaunes": 110,
+        "Store Locator": 21
+      },
+      "perf_canaux": {
+        "GMB": {
+          "decroche": 90,
+          "total": 90,
+          "taux": 100.0
+        },
+        "Pages Jaunes": {
+          "decroche": 90,
+          "total": 110,
+          "taux": 81.82
+        },
+        "Store Locator": {
+          "decroche": 20,
+          "total": 21,
+          "taux": 95.24
+        }
+      },
+      "total_volume": 221,
+      "total_decroche": 200,
+      "total_appels_perf": 221,
+      "taux_global": 90.5
+    },
+    {
       "nom": "PORRE",
       "volume_canaux": {
         "Store Locator": 220
@@ -67817,29 +67961,6 @@
       "taux_global": 81.19
     },
     {
-      "nom": "HORS DEM - LE FLOCH DEMENAGEMENT - Brest Centre",
-      "volume_canaux": {
-        "GMB": 179,
-        "Pages Jaunes": 36
-      },
-      "perf_canaux": {
-        "GMB": {
-          "decroche": 169,
-          "total": 179,
-          "taux": 94.41
-        },
-        "Pages Jaunes": {
-          "decroche": 36,
-          "total": 36,
-          "taux": 100.0
-        }
-      },
-      "total_volume": 215,
-      "total_decroche": 205,
-      "total_appels_perf": 215,
-      "taux_global": 95.35
-    },
-    {
       "nom": "MESNAGER - Chateauroux 02",
       "volume_canaux": {
         "Store Locator": 213
@@ -67855,6 +67976,35 @@
       "total_decroche": 208,
       "total_appels_perf": 213,
       "taux_global": 97.65
+    },
+    {
+      "nom": "CARRE - Pruniers",
+      "volume_canaux": {
+        "GMB": 102,
+        "Pages Jaunes": 55,
+        "Store Locator": 55
+      },
+      "perf_canaux": {
+        "GMB": {
+          "decroche": 98,
+          "total": 102,
+          "taux": 96.08
+        },
+        "Pages Jaunes": {
+          "decroche": 46,
+          "total": 55,
+          "taux": 83.64
+        },
+        "Store Locator": {
+          "decroche": 55,
+          "total": 55,
+          "taux": 100.0
+        }
+      },
+      "total_volume": 212,
+      "total_decroche": 199,
+      "total_appels_perf": 212,
+      "taux_global": 93.87
     },
     {
       "nom": "DAZIN - Marseille 8 - PJ (ex marseille 16)",
@@ -67954,23 +68104,6 @@
       "taux_global": 100.0
     },
     {
-      "nom": "HORS DEM - Blanquart Lille -",
-      "volume_canaux": {
-        "Pages Jaunes": 201
-      },
-      "perf_canaux": {
-        "Pages Jaunes": {
-          "decroche": 185,
-          "total": 201,
-          "taux": 92.04
-        }
-      },
-      "total_volume": 201,
-      "total_decroche": 185,
-      "total_appels_perf": 201,
-      "taux_global": 92.04
-    },
-    {
       "nom": "SEEGMULLER - Mulhouse",
       "volume_canaux": {
         "Store Locator": 201
@@ -68003,29 +68136,6 @@
       "total_decroche": 197,
       "total_appels_perf": 201,
       "taux_global": 98.01
-    },
-    {
-      "nom": "HORS DEM - ANDRE RAYNAL - Montauban",
-      "volume_canaux": {
-        "GMB": 90,
-        "Pages Jaunes": 110
-      },
-      "perf_canaux": {
-        "GMB": {
-          "decroche": 90,
-          "total": 90,
-          "taux": 100.0
-        },
-        "Pages Jaunes": {
-          "decroche": 90,
-          "total": 110,
-          "taux": 81.82
-        }
-      },
-      "total_volume": 200,
-      "total_decroche": 180,
-      "total_appels_perf": 200,
-      "taux_global": 90.0
     },
     {
       "nom": "BEAUDART Déménagements Pontoise",
@@ -68102,29 +68212,6 @@
       "taux_global": 100.0
     },
     {
-      "nom": "Hors Dem - La Mauldre",
-      "volume_canaux": {
-        "GMB": 86,
-        "Pages Jaunes": 108
-      },
-      "perf_canaux": {
-        "GMB": {
-          "decroche": 78,
-          "total": 86,
-          "taux": 90.7
-        },
-        "Pages Jaunes": {
-          "decroche": 90,
-          "total": 108,
-          "taux": 83.33
-        }
-      },
-      "total_volume": 194,
-      "total_decroche": 168,
-      "total_appels_perf": 194,
-      "taux_global": 86.6
-    },
-    {
       "nom": "DMD Déménagements",
       "volume_canaux": {
         "Store Locator": 194
@@ -68142,6 +68229,35 @@
       "taux_global": 100.0
     },
     {
+      "nom": "HORS DEM - Euroflash Garonor",
+      "volume_canaux": {
+        "GMB": 40,
+        "Pages Jaunes": 46,
+        "Store Locator": 106
+      },
+      "perf_canaux": {
+        "GMB": {
+          "decroche": 40,
+          "total": 40,
+          "taux": 100.0
+        },
+        "Pages Jaunes": {
+          "decroche": 43,
+          "total": 46,
+          "taux": 93.48
+        },
+        "Store Locator": {
+          "decroche": 100,
+          "total": 106,
+          "taux": 94.34
+        }
+      },
+      "total_volume": 192,
+      "total_decroche": 183,
+      "total_appels_perf": 192,
+      "taux_global": 95.31
+    },
+    {
       "nom": "DEMENA F.T - Chartres",
       "volume_canaux": {
         "Store Locator": 192
@@ -68157,23 +68273,6 @@
       "total_decroche": 192,
       "total_appels_perf": 192,
       "taux_global": 100.0
-    },
-    {
-      "nom": "ABER ROUSSEL - Saint Malo - StoreLocator",
-      "volume_canaux": {
-        "Store Locator": 186
-      },
-      "perf_canaux": {
-        "Store Locator": {
-          "decroche": 184,
-          "total": 186,
-          "taux": 98.92
-        }
-      },
-      "total_volume": 186,
-      "total_decroche": 184,
-      "total_appels_perf": 186,
-      "taux_global": 98.92
     },
     {
       "nom": "JEAMMET EGT 87_Limoges_StoreLocator",
@@ -68282,23 +68381,6 @@
       "total_decroche": 148,
       "total_appels_perf": 176,
       "taux_global": 84.09
-    },
-    {
-      "nom": "Heiss Claude Déménagement - Luxembourg - Site web",
-      "volume_canaux": {
-        "Store Locator": 176
-      },
-      "perf_canaux": {
-        "Store Locator": {
-          "decroche": 151,
-          "total": 176,
-          "taux": 85.8
-        }
-      },
-      "total_volume": 176,
-      "total_decroche": 151,
-      "total_appels_perf": 176,
-      "taux_global": 85.8
     },
     {
       "nom": "HORS DEM - ACE GIBOUIN Saint Gilles Croix de Vie",
@@ -68472,29 +68554,6 @@
       "taux_global": 100.0
     },
     {
-      "nom": "CARRE - Pruniers",
-      "volume_canaux": {
-        "GMB": 102,
-        "Pages Jaunes": 55
-      },
-      "perf_canaux": {
-        "GMB": {
-          "decroche": 98,
-          "total": 102,
-          "taux": 96.08
-        },
-        "Pages Jaunes": {
-          "decroche": 46,
-          "total": 55,
-          "taux": 83.64
-        }
-      },
-      "total_volume": 157,
-      "total_decroche": 144,
-      "total_appels_perf": 157,
-      "taux_global": 91.72
-    },
-    {
       "nom": "A LA VERSAILLAISE Maisons-Laffitte – store locator",
       "volume_canaux": {
         "Store Locator": 156
@@ -68510,6 +68569,30 @@
       "total_decroche": 149,
       "total_appels_perf": 156,
       "taux_global": 95.51
+    },
+    {
+      "nom": "Demeco GRIMAUD - Fontenay",
+      "volume_canaux": {
+        "GMB": 114,
+        "Pages Jaunes": 32,
+        "Store Locator": 6
+      },
+      "perf_canaux": {
+        "GMB": {
+          "decroche": 89,
+          "total": 114,
+          "taux": 78.07
+        },
+        "Pages Jaunes": {
+          "decroche": 26,
+          "total": 32,
+          "taux": 81.25
+        }
+      },
+      "total_volume": 152,
+      "total_decroche": 115,
+      "total_appels_perf": 146,
+      "taux_global": 78.77
     },
     {
       "nom": "Beaudart Beauvais _ site web",
@@ -68568,30 +68651,6 @@
       "total_decroche": 140,
       "total_appels_perf": 147,
       "taux_global": 95.24
-    },
-    {
-      "nom": "Demeco GRIMAUD - Fontenay",
-      "volume_canaux": {
-        "GMB": 114,
-        "Pages Jaunes": 32,
-        "Store Locator": 1
-      },
-      "perf_canaux": {
-        "GMB": {
-          "decroche": 89,
-          "total": 114,
-          "taux": 78.07
-        },
-        "Pages Jaunes": {
-          "decroche": 26,
-          "total": 32,
-          "taux": 81.25
-        }
-      },
-      "total_volume": 147,
-      "total_decroche": 115,
-      "total_appels_perf": 146,
-      "taux_global": 78.77
     },
     {
       "nom": "CHALLENGE - Nanterre",
@@ -68683,23 +68742,6 @@
       "total_decroche": 110,
       "total_appels_perf": 140,
       "taux_global": 78.57
-    },
-    {
-      "nom": "HORS DEM - LE FLOCH DEMENAGEMENT - Brest - SiteWeb",
-      "volume_canaux": {
-        "Store Locator": 137
-      },
-      "perf_canaux": {
-        "Store Locator": {
-          "decroche": 136,
-          "total": 137,
-          "taux": 99.27
-        }
-      },
-      "total_volume": 137,
-      "total_decroche": 136,
-      "total_appels_perf": 137,
-      "taux_global": 99.27
     },
     {
       "nom": "DMD Déménagements Paris",
@@ -68799,23 +68841,6 @@
       "taux_global": 79.07
     },
     {
-      "nom": "HORS DEM - LE FLOCH DEMENAGEMENT - Saint Divy-",
-      "volume_canaux": {
-        "Pages Jaunes": 129
-      },
-      "perf_canaux": {
-        "Pages Jaunes": {
-          "decroche": 101,
-          "total": 129,
-          "taux": 78.29
-        }
-      },
-      "total_volume": 129,
-      "total_decroche": 101,
-      "total_appels_perf": 129,
-      "taux_global": 78.29
-    },
-    {
       "nom": "Emails demeco.fr - international",
       "volume_canaux": {
         "Autres": 129
@@ -68831,23 +68856,6 @@
       "total_decroche": 129,
       "total_appels_perf": 129,
       "taux_global": 100.0
-    },
-    {
-      "nom": "JCS - Saumur - StoreLocator",
-      "volume_canaux": {
-        "Store Locator": 128
-      },
-      "perf_canaux": {
-        "Store Locator": {
-          "decroche": 125,
-          "total": 128,
-          "taux": 97.66
-        }
-      },
-      "total_volume": 128,
-      "total_decroche": 125,
-      "total_appels_perf": 128,
-      "taux_global": 97.66
     },
     {
       "nom": "MAZUCCO - Aubagne",
@@ -68884,7 +68892,7 @@
       "taux_global": 67.2
     },
     {
-      "nom": "HORS DEM - Bretons Aménageurs Orléanais-",
+      "nom": "HORS DEM - Bretons Aménageurs Orléanais",
       "volume_canaux": {
         "Pages Jaunes": 98,
         "Store Locator": 24
@@ -68922,23 +68930,6 @@
       "total_decroche": 96,
       "total_appels_perf": 118,
       "taux_global": 81.36
-    },
-    {
-      "nom": "Heiss Claude Déménagement - Luxembourg",
-      "volume_canaux": {
-        "GMB": 117
-      },
-      "perf_canaux": {
-        "GMB": {
-          "decroche": 99,
-          "total": 117,
-          "taux": 84.62
-        }
-      },
-      "total_volume": 117,
-      "total_decroche": 99,
-      "total_appels_perf": 117,
-      "taux_global": 84.62
     },
     {
       "nom": "SEEGMULLER Colmar",
@@ -69007,23 +68998,6 @@
       "total_decroche": 114,
       "total_appels_perf": 114,
       "taux_global": 100.0
-    },
-    {
-      "nom": "HORS DEM - APR - Tours - SiteWeb",
-      "volume_canaux": {
-        "Store Locator": 111
-      },
-      "perf_canaux": {
-        "Store Locator": {
-          "decroche": 109,
-          "total": 111,
-          "taux": 98.2
-        }
-      },
-      "total_volume": 111,
-      "total_decroche": 109,
-      "total_appels_perf": 111,
-      "taux_global": 98.2
     },
     {
       "nom": "DESJOUIS DEMENAGEMENTS",
@@ -69140,23 +69114,6 @@
       "taux_global": 98.15
     },
     {
-      "nom": "HORS DEM - Euroflash Garonor - SiteWeb",
-      "volume_canaux": {
-        "Store Locator": 106
-      },
-      "perf_canaux": {
-        "Store Locator": {
-          "decroche": 100,
-          "total": 106,
-          "taux": 94.34
-        }
-      },
-      "total_volume": 106,
-      "total_decroche": 100,
-      "total_appels_perf": 106,
-      "taux_global": 94.34
-    },
-    {
       "nom": "CTD THOIRY",
       "volume_canaux": {
         "Store Locator": 105
@@ -69263,6 +69220,29 @@
       "total_decroche": 100,
       "total_appels_perf": 100,
       "taux_global": 100.0
+    },
+    {
+      "nom": "HORS DEM Demonceau",
+      "volume_canaux": {
+        "GMB": 49,
+        "Store Locator": 50
+      },
+      "perf_canaux": {
+        "GMB": {
+          "decroche": 41,
+          "total": 49,
+          "taux": 83.67
+        },
+        "Store Locator": {
+          "decroche": 45,
+          "total": 50,
+          "taux": 90.0
+        }
+      },
+      "total_volume": 99,
+      "total_decroche": 86,
+      "total_appels_perf": 99,
+      "taux_global": 86.87
     },
     {
       "nom": "DTL",
@@ -69384,7 +69364,7 @@
       "taux_global": 100.0
     },
     {
-      "nom": "Hidem - site web",
+      "nom": "Hidem",
       "volume_canaux": {
         "Store Locator": 89
       },
@@ -69418,7 +69398,7 @@
       "taux_global": 76.14
     },
     {
-      "nom": "HORS DEM - ANDRE RAYNAL - Bruguière-",
+      "nom": "HORS DEM - ANDRE RAYNAL - Bruguière",
       "volume_canaux": {
         "GMB": 88
       },
@@ -69501,40 +69481,6 @@
       "total_decroche": 64,
       "total_appels_perf": 84,
       "taux_global": 76.19
-    },
-    {
-      "nom": "HORS DEM - DEMENAGEMENT VALETTE - Bordeaux - SiteWeb",
-      "volume_canaux": {
-        "Store Locator": 82
-      },
-      "perf_canaux": {
-        "Store Locator": {
-          "decroche": 80,
-          "total": 82,
-          "taux": 97.56
-        }
-      },
-      "total_volume": 82,
-      "total_decroche": 80,
-      "total_appels_perf": 82,
-      "taux_global": 97.56
-    },
-    {
-      "nom": "HORS DEM - DEMENAGEMENTS BOULOUARD - Lorient - SiteWeb",
-      "volume_canaux": {
-        "Store Locator": 81
-      },
-      "perf_canaux": {
-        "Store Locator": {
-          "decroche": 81,
-          "total": 81,
-          "taux": 100.0
-        }
-      },
-      "total_volume": 81,
-      "total_decroche": 81,
-      "total_appels_perf": 81,
-      "taux_global": 100.0
     },
     {
       "nom": "Demeco ABD - Lons Le Saunier",
@@ -69707,23 +69653,6 @@
       "taux_global": 98.59
     },
     {
-      "nom": "HORS DEM - LE FLOCH DEMENAGEMENT - Brest Centre - SiteWeb",
-      "volume_canaux": {
-        "Store Locator": 70
-      },
-      "perf_canaux": {
-        "Store Locator": {
-          "decroche": 67,
-          "total": 70,
-          "taux": 95.71
-        }
-      },
-      "total_volume": 70,
-      "total_decroche": 67,
-      "total_appels_perf": 70,
-      "taux_global": 95.71
-    },
-    {
       "nom": "DULAC - Vienne",
       "volume_canaux": {
         "Store Locator": 70
@@ -69781,7 +69710,7 @@
       "taux_global": 100.0
     },
     {
-      "nom": "HORS DEM  - ACE Gibouin  - Niort - Site web",
+      "nom": "HORS DEM  - ACE Gibouin  - Niort",
       "volume_canaux": {
         "Store Locator": 67
       },
@@ -69900,23 +69829,6 @@
       "taux_global": 98.33
     },
     {
-      "nom": "HORS DEM - LE FLOCH DEMENAGEMENT - Cherbourg - SiteWeb",
-      "volume_canaux": {
-        "Store Locator": 58
-      },
-      "perf_canaux": {
-        "Store Locator": {
-          "decroche": 56,
-          "total": 58,
-          "taux": 96.55
-        }
-      },
-      "total_volume": 58,
-      "total_decroche": 56,
-      "total_appels_perf": 58,
-      "taux_global": 96.55
-    },
-    {
       "nom": "Demeo siège",
       "volume_canaux": {
         "Pages Jaunes": 57
@@ -69949,40 +69861,6 @@
       "total_decroche": 55,
       "total_appels_perf": 57,
       "taux_global": 96.49
-    },
-    {
-      "nom": "HORS DEM - ANDRE RAYNAL - Agen - SiteWeb",
-      "volume_canaux": {
-        "Store Locator": 55
-      },
-      "perf_canaux": {
-        "Store Locator": {
-          "decroche": 49,
-          "total": 55,
-          "taux": 89.09
-        }
-      },
-      "total_volume": 55,
-      "total_decroche": 49,
-      "total_appels_perf": 55,
-      "taux_global": 89.09
-    },
-    {
-      "nom": "CARRE - Pruniers - StoreLocator",
-      "volume_canaux": {
-        "Store Locator": 55
-      },
-      "perf_canaux": {
-        "Store Locator": {
-          "decroche": 55,
-          "total": 55,
-          "taux": 100.0
-        }
-      },
-      "total_volume": 55,
-      "total_decroche": 55,
-      "total_appels_perf": 55,
-      "taux_global": 100.0
     },
     {
       "nom": "Demeco - DULAC Saint Etienne",
@@ -70025,7 +69903,7 @@
       "taux_global": 100.0
     },
     {
-      "nom": "HORS DEM - GD - Duhaut Rollin - Site web",
+      "nom": "HORS DEM - GD - Duhaut Rollin",
       "volume_canaux": {
         "Store Locator": 51
       },
@@ -70059,23 +69937,6 @@
       "taux_global": 86.27
     },
     {
-      "nom": "HORS DEM Demonceau - SiteWeb",
-      "volume_canaux": {
-        "Store Locator": 50
-      },
-      "perf_canaux": {
-        "Store Locator": {
-          "decroche": 45,
-          "total": 50,
-          "taux": 90.0
-        }
-      },
-      "total_volume": 50,
-      "total_decroche": 45,
-      "total_appels_perf": 50,
-      "taux_global": 90.0
-    },
-    {
       "nom": "MAZUCCO - La Ciotat",
       "volume_canaux": {
         "Store Locator": 50
@@ -70091,23 +69952,6 @@
       "total_decroche": 35,
       "total_appels_perf": 50,
       "taux_global": 70.0
-    },
-    {
-      "nom": "HORS DEM Demonceau-",
-      "volume_canaux": {
-        "GMB": 49
-      },
-      "perf_canaux": {
-        "GMB": {
-          "decroche": 41,
-          "total": 49,
-          "taux": 83.67
-        }
-      },
-      "total_volume": 49,
-      "total_decroche": 41,
-      "total_appels_perf": 49,
-      "taux_global": 83.67
     },
     {
       "nom": "Demeco - DULAC Cussac",
@@ -70133,24 +69977,7 @@
       "taux_global": 100.0
     },
     {
-      "nom": "HORS DEM - Euroflash Garonor-",
-      "volume_canaux": {
-        "Pages Jaunes": 46
-      },
-      "perf_canaux": {
-        "Pages Jaunes": {
-          "decroche": 43,
-          "total": 46,
-          "taux": 93.48
-        }
-      },
-      "total_volume": 46,
-      "total_decroche": 43,
-      "total_appels_perf": 46,
-      "taux_global": 93.48
-    },
-    {
-      "nom": "CAILLE DEM 51 Épernay-",
+      "nom": "CAILLE DEM 51 Épernay",
       "volume_canaux": {
         "Store Locator": 45
       },
@@ -70165,23 +69992,6 @@
       "total_decroche": 29,
       "total_appels_perf": 45,
       "taux_global": 64.44
-    },
-    {
-      "nom": "HORS DEM - LE FLOCH DEMENAGEMENT - Saint Divy- SiteWeb",
-      "volume_canaux": {
-        "Store Locator": 45
-      },
-      "perf_canaux": {
-        "Store Locator": {
-          "decroche": 35,
-          "total": 45,
-          "taux": 77.78
-        }
-      },
-      "total_volume": 45,
-      "total_decroche": 35,
-      "total_appels_perf": 45,
-      "taux_global": 77.78
     },
     {
       "nom": "Hors Dem - Martin Renard",
@@ -70269,23 +70079,6 @@
       "taux_global": 97.56
     },
     {
-      "nom": "HORS DEM - Euroflash Garonor",
-      "volume_canaux": {
-        "GMB": 40
-      },
-      "perf_canaux": {
-        "GMB": {
-          "decroche": 40,
-          "total": 40,
-          "taux": 100.0
-        }
-      },
-      "total_volume": 40,
-      "total_decroche": 40,
-      "total_appels_perf": 40,
-      "taux_global": 100.0
-    },
-    {
       "nom": "SEEGMULLER - Saint Louis",
       "volume_canaux": {
         "Store Locator": 40
@@ -70335,23 +70128,6 @@
       "total_decroche": 38,
       "total_appels_perf": 38,
       "taux_global": 100.0
-    },
-    {
-      "nom": "HORS DEM - GUIGARD DEMENAGEMENT - Lyon 3",
-      "volume_canaux": {
-        "Pages Jaunes": 38
-      },
-      "perf_canaux": {
-        "Pages Jaunes": {
-          "decroche": 31,
-          "total": 38,
-          "taux": 81.58
-        }
-      },
-      "total_volume": 38,
-      "total_decroche": 31,
-      "total_appels_perf": 38,
-      "taux_global": 81.58
     },
     {
       "nom": "DEMENA F.T - Dreux",
@@ -70406,7 +70182,7 @@
       "taux_global": 100.0
     },
     {
-      "nom": "HORS DEM  - ACE Gibouin  - Cholet  - Site web",
+      "nom": "HORS DEM  - ACE Gibouin  - Cholet",
       "volume_canaux": {
         "Store Locator": 35
       },
@@ -70440,7 +70216,7 @@
       "taux_global": 97.14
     },
     {
-      "nom": "Demeco Entreprises - Ferlay - Saint Priest -",
+      "nom": "Demeco Entreprises - Ferlay - Saint Priest",
       "volume_canaux": {
         "GMB": 35
       },
@@ -70474,23 +70250,6 @@
       "taux_global": 91.43
     },
     {
-      "nom": "Hors Dem - La Mauldre - Site Web",
-      "volume_canaux": {
-        "Store Locator": 34
-      },
-      "perf_canaux": {
-        "Store Locator": {
-          "decroche": 32,
-          "total": 34,
-          "taux": 94.12
-        }
-      },
-      "total_volume": 34,
-      "total_decroche": 32,
-      "total_appels_perf": 34,
-      "taux_global": 94.12
-    },
-    {
       "nom": "MAAF - demeco.fr",
       "volume_canaux": {
         "Store Locator": 31
@@ -70508,7 +70267,7 @@
       "taux_global": 100.0
     },
     {
-      "nom": "Heiss Claude Déménagement - Metz- Site Web",
+      "nom": "Heiss Claude Déménagement - Metz",
       "volume_canaux": {
         "Store Locator": 31
       },
@@ -70661,23 +70420,6 @@
       "taux_global": 96.0
     },
     {
-      "nom": "HORS DEM - ANDRE RAYNAL - Montauban - SiteWeb",
-      "volume_canaux": {
-        "Store Locator": 21
-      },
-      "perf_canaux": {
-        "Store Locator": {
-          "decroche": 20,
-          "total": 21,
-          "taux": 95.24
-        }
-      },
-      "total_volume": 21,
-      "total_decroche": 20,
-      "total_appels_perf": 21,
-      "taux_global": 95.24
-    },
-    {
       "nom": "Demeco - DEMENA Rambouillet",
       "volume_canaux": {
         "Store Locator": 21
@@ -70695,7 +70437,7 @@
       "taux_global": 100.0
     },
     {
-      "nom": "HORS DEM - Huet Montigny  -",
+      "nom": "HORS DEM - Huet Montigny",
       "volume_canaux": {
         "Pages Jaunes": 20
       },
@@ -70796,23 +70538,6 @@
       "total_decroche": 15,
       "total_appels_perf": 16,
       "taux_global": 93.75
-    },
-    {
-      "nom": "NASSE MARCHAND - Saint jean de la ruelle-",
-      "volume_canaux": {
-        "Store Locator": 15
-      },
-      "perf_canaux": {
-        "Store Locator": {
-          "decroche": 15,
-          "total": 15,
-          "taux": 100.0
-        }
-      },
-      "total_volume": 15,
-      "total_decroche": 15,
-      "total_appels_perf": 15,
-      "taux_global": 100.0
     },
     {
       "nom": "DIRECT ASSURANCE - demeco.fr",
@@ -70968,17 +70693,6 @@
       "taux_global": 0
     },
     {
-      "nom": "Demeco GRIMAUD - Luçon - Site Web",
-      "volume_canaux": {
-        "Store Locator": 6
-      },
-      "perf_canaux": {},
-      "total_volume": 6,
-      "total_decroche": 0,
-      "total_appels_perf": 0,
-      "taux_global": 0
-    },
-    {
       "nom": "Demeco ABD - Peronnas",
       "volume_canaux": {
         "Store Locator": 6
@@ -71012,17 +70726,6 @@
       "taux_global": 0
     },
     {
-      "nom": "Demeco GRIMAUD - Fontenay - Site web",
-      "volume_canaux": {
-        "Store Locator": 5
-      },
-      "perf_canaux": {},
-      "total_volume": 5,
-      "total_decroche": 0,
-      "total_appels_perf": 0,
-      "taux_global": 0
-    },
-    {
       "nom": "cgos - demeco.fr",
       "volume_canaux": {
         "Store Locator": 5
@@ -71034,7 +70737,7 @@
       "taux_global": 0
     },
     {
-      "nom": "DEMECO WEB HP-Siteweb",
+      "nom": "DEMECO WEB HP",
       "volume_canaux": {
         "Autres": 5
       },
@@ -71180,17 +70883,6 @@
     },
     {
       "nom": "CAILLE - Soisy sur Montmorency",
-      "volume_canaux": {
-        "Store Locator": 2
-      },
-      "perf_canaux": {},
-      "total_volume": 2,
-      "total_decroche": 0,
-      "total_appels_perf": 0,
-      "taux_global": 0
-    },
-    {
-      "nom": "Demeco GRIMAUD - Les Sables d\\'Olonne - Site Web",
       "volume_canaux": {
         "Store Locator": 2
       },
@@ -71348,17 +71040,6 @@
       "nom": "RIVALIER - Sponsoring ASM Romagnat Rugby Feminin",
       "volume_canaux": {
         "Autres": 1
-      },
-      "perf_canaux": {},
-      "total_volume": 1,
-      "total_decroche": 0,
-      "total_appels_perf": 0,
-      "taux_global": 0
-    },
-    {
-      "nom": "Demeco GRIMAUD - Challans - site web",
-      "volume_canaux": {
-        "Store Locator": 1
       },
       "perf_canaux": {},
       "total_volume": 1,
