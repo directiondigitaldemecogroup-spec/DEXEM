@@ -355,6 +355,104 @@ tbody tr:last-child td {
     color: var(--text-primary);
 }
 
+/* Spam Analysis Section */
+.spam-analysis-section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--border-color);
+}
+
+.spam-analysis-section h3 {
+    color: var(--danger-color);
+    margin-bottom: 1.5rem;
+}
+
+.analysis-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.analysis-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.analysis-card.full-width {
+    grid-column: 1 / -1;
+}
+
+.analysis-card h4 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.analysis-table {
+    width: 100%;
+}
+
+.analysis-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.analysis-row:last-child {
+    border-bottom: none;
+}
+
+.analysis-label {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.analysis-value {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.analysis-percentage {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-left: 0.5rem;
+}
+
+.duree-stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    background: var(--bg-color);
+    border-radius: 6px;
+}
+
+.duree-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.duree-value {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.numero-spam {
+    font-family: 'Courier New', monospace;
+    background: var(--bg-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+
 /* Accordion */
 .accordion-container {
     display: flex;
