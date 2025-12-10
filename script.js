@@ -37,6 +37,7 @@ function initializeDashboard() {
     populateFilters();
     createSpamGlobalChart();
     createSpamCanalChart();
+    populateSpamPJAnalysis(); // NOUVEAU
     createDecrocheChart();
     createDecrocheHeureMultiChart();
     populateMainAccordion();
@@ -228,6 +229,97 @@ function filterDecrocheData(agence, canal) {
             total: totalCalls,
             taux_decroche: totalCalls > 0 ? (totalDecroche / totalCalls * 100) : 0
         };
+    });
+}
+
+// NOUVEAU: Remplir l'analyse spam Pages Jaunes
+function populateSpamPJAnalysis() {
+    const data = dashboardData.spam_pj_analysis;
+    
+    if (!data) {
+        console.warn('Pas de données spam PJ');
+        return;
+    }
+    
+    // 1. Nature du spam
+    const natureTable = document.getElementById('spamNatureTable');
+    natureTable.className = 'analysis-table';
+    data.nature_spam.forEach(item => {
+        const row = document.createElement('div');
+        row.className = 'analysis-row';
+        row.innerHTML = `
+            <span class="analysis-label">${item.nature}</span>
+            <span>
+                <span class="analysis-value">${item.count.toLocaleString()}</span>
+                <span class="analysis-percentage">(${item.percentage}%)</span>
+            </span>
+        `;
+        natureTable.appendChild(row);
+    });
+    
+    // 2. Type de numéro
+    const typeTable = document.getElementById('spamTypeTable');
+    typeTable.className = 'analysis-table';
+    data.type_numero.forEach(item => {
+        const row = document.createElement('div');
+        row.className = 'analysis-row';
+        row.innerHTML = `
+            <span class="analysis-label">${item.type}</span>
+            <span>
+                <span class="analysis-value">${item.count.toLocaleString()}</span>
+                <span class="analysis-percentage">(${item.percentage}%)</span>
+            </span>
+        `;
+        typeTable.appendChild(row);
+    });
+    
+    // 3. Durées moyennes
+    const dureesDiv = document.getElementById('spamDurees');
+    dureesDiv.innerHTML = `
+        <div class="duree-stat">
+            <span class="duree-label">Conversation</span>
+            <span class="duree-value">${data.durees.conversation_moy.toFixed(2)}s</span>
+        </div>
+        <div class="duree-stat">
+            <span class="duree-label">Sonnerie</span>
+            <span class="duree-value">${data.durees.sonnerie_moy.toFixed(2)}s</span>
+        </div>
+        <div class="duree-stat">
+            <span class="duree-label">Totale</span>
+            <span class="duree-value">${data.durees.totale_moy.toFixed(2)}s</span>
+        </div>
+    `;
+    
+    // 4. Heures de pic
+    const heuresPicDiv = document.getElementById('spamHeuresPic');
+    heuresPicDiv.className = 'analysis-table';
+    data.heures_pic.forEach(item => {
+        const row = document.createElement('div');
+        row.className = 'analysis-row';
+        row.innerHTML = `
+            <span class="analysis-label">${item.heure}h - ${item.heure + 1}h</span>
+            <span class="analysis-value">${item.count.toLocaleString()} appels</span>
+        `;
+        heuresPicDiv.appendChild(row);
+    });
+    
+    // 5. Top numéros
+    const topNumerosDiv = document.getElementById('spamTopNumeros');
+    topNumerosDiv.className = 'analysis-table';
+    data.top_numeros.forEach((item, index) => {
+        const row = document.createElement('div');
+        row.className = 'analysis-row';
+        row.innerHTML = `
+            <span class="analysis-label">
+                <span style="color: var(--text-secondary); font-weight: 400;">#${index + 1}</span>
+                <span class="numero-spam">${item.numero}</span>
+            </span>
+            <span>
+                <span class="analysis-value">${item.count.toLocaleString()}</span>
+                <span class="analysis-percentage">(${item.percentage}%)</span>
+            </span>
+        `;
+        topNumerosDiv.appendChild(row);
     });
 }
 
