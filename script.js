@@ -21,7 +21,7 @@ async function loadData() {
     try {
         const response = await fetch('dashboard_data.json');
         if (!response.ok) {
-            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+       throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
         window.dashboardData = await response.json();
         console.log('✅ Données chargées');
@@ -51,7 +51,7 @@ function populateFilters() {
     const agenceSelect = document.getElementById('agenceFilter');
     const canalSelect = document.getElementById('canalFilter');
     
-    dashboardData.liste_agences.forEach(agence => {
+    dashboardData.agences_list.forEach(agence => {
         const option = document.createElement('option');
         option.value = agence;
         option.textContent = agence;
@@ -784,7 +784,6 @@ function searchAccordion(containerId, searchTerm) {
         item.style.display = text.includes(term) ? '' : 'none';
     });
 }
-
 
 function searchAgences(searchTerm) {
     const container = document.getElementById('agencesTable');
