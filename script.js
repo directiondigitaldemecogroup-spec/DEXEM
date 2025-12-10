@@ -309,6 +309,15 @@ function createCanalRepartitionChart() {
                 <span class="canal-legend-value">${item.appels_non_spam.toLocaleString()}</span>
             </div>
             <div class="canal-legend-stat">
+                <span class="canal-legend-label">Numéros uniques</span>
+                <span class="canal-legend-value">${item.numeros_uniques.toLocaleString()}</span>
+            </div>
+            <div class="canal-legend-stat">
+                <span class="canal-legend-label">Appels en doublon</span>
+                <span class="canal-legend-value">${item.appels_doublons.toLocaleString()} <small>(${item.taux_doublons}%)</small></span>
+            </div>
+            <div class="canal-legend-divider"></div>
+            <div class="canal-legend-stat">
                 <span class="canal-legend-label">Taux spam</span>
                 <span class="canal-legend-value" style="color: ${colors.danger}">${item.taux_spam}%</span>
             </div>
