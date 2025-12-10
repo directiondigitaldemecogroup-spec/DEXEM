@@ -367,6 +367,40 @@ tbody tr:last-child td {
     margin-bottom: 1.5rem;
 }
 
+.spam-quick-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.spam-stat-card {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.spam-stat-card.warning {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.spam-stat-card.info {
+    background: linear-gradient(135deg, #6b7280, #4b5563);
+}
+
+.spam-stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.spam-stat-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
 .analysis-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
