@@ -433,7 +433,91 @@ tbody tr:last-child td {
     margin: 0.75rem 0;
 }
 
-/* Spam Analysis Section */
+/* Tableau Agences */
+.agences-table-container {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.agence-table-row {
+    display: grid;
+    grid-template-columns: 60px 2fr repeat(4, 1fr) 150px;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    align-items: center;
+}
+
+.agence-table-row:hover {
+    background: var(--bg-color);
+}
+
+.agence-table-row.header {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.agence-rank {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.agence-rank.top {
+    color: var(--primary-color);
+}
+
+.agence-name {
+    font-weight: 500;
+}
+
+.agence-canal-stat {
+    text-align: center;
+}
+
+.agence-canal-value {
+    display: block;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.agence-canal-taux {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--success-color);
+    margin-top: 0.25rem;
+}
+
+.agence-total {
+    text-align: center;
+}
+
+.agence-total-value {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.agence-total-taux {
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+.table-info {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Accordion (ancien code à garder pour compatibilité) */
+.accordion-container {
 .spam-analysis-section {
     margin-top: 2rem;
     padding-top: 2rem;
