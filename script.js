@@ -785,6 +785,7 @@ function searchAccordion(containerId, searchTerm) {
     });
 }
 
+
 function searchAgences(searchTerm) {
     const container = document.getElementById('agencesTable');
     const rows = container.querySelectorAll('.agence-table-row:not(.header)');
