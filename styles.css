@@ -516,8 +516,7 @@ tbody tr:last-child td {
     font-size: 0.9rem;
 }
 
-/* Accordion (ancien code à garder pour compatibilité) */
-.accordion-container {
+/* Spam Analysis Section */
 .spam-analysis-section {
     margin-top: 2rem;
     padding-top: 2rem;
