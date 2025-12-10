@@ -443,7 +443,7 @@ tbody tr:last-child td {
 
 .agence-table-row {
     display: grid;
-    grid-template-columns: 60px 2fr repeat(4, 1fr) 150px;
+    grid-template-columns: 60px 2fr repeat(4, 1fr) 150px 120px;
     gap: 1rem;
     padding: 1rem;
     border-bottom: 1px solid var(--border-color);
