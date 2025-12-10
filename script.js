@@ -524,14 +524,24 @@ function calculerTaux2DerniersMois() {
     // Filtrer les 2 derniers mois (2025-11 et 2025-12)
     const derniersMois = ['2025-11', '2025-12'];
     
-    // Agréger par agence
+    // Agréger par agence (en enlevant le suffixe canal)
     data.forEach(row => {
         if (derniersMois.includes(row.mois)) {
-            if (!taux[row.agence]) {
-                taux[row.agence] = { decroche: 0, total: 0 };
+            // Enlever les suffixes de canal pour matcher avec agences_list
+            let agenceName = row.agence
+                .replace(/ - GMB$/i, '')
+                .replace(/ - PJ$/i, '')
+                .replace(/ - Pages Jaunes$/i, '')
+                .replace(/ - Storelocator$/i, '')
+                .replace(/ - Store Locator$/i, '')
+                .replace(/ - SL$/i, '')
+                .replace(/ - Autres$/i, '');
+            
+            if (!taux[agenceName]) {
+                taux[agenceName] = { decroche: 0, total: 0 };
             }
-            taux[row.agence].decroche += row.decroche;
-            taux[row.agence].total += row.total;
+            taux[agenceName].decroche += row.decroche;
+            taux[agenceName].total += row.total;
         }
     });
     
