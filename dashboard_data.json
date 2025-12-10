@@ -63650,5 +63650,171 @@
     "GMB",
     "Pages Jaunes",
     "Store Locator"
-  ]
+  ],
+  "spam_pj_analysis": {
+    "total": 13797,
+    "type_numero": [
+      {
+        "type": "Fixe Sud-Est (04)",
+        "count": 3346,
+        "percentage": 24.25
+      },
+      {
+        "type": "Fixe Paris (01)",
+        "count": 3164,
+        "percentage": 22.93
+      },
+      {
+        "type": "N° non géo (09)",
+        "count": 1919,
+        "percentage": 13.91
+      },
+      {
+        "type": "Fixe Nord-Ouest (02)",
+        "count": 1695,
+        "percentage": 12.29
+      },
+      {
+        "type": "Fixe Nord-Est (03)",
+        "count": 1494,
+        "percentage": 10.83
+      },
+      {
+        "type": "Fixe Sud-Ouest (05)",
+        "count": 1164,
+        "percentage": 8.44
+      },
+      {
+        "type": "Mobile",
+        "count": 941,
+        "percentage": 6.82
+      },
+      {
+        "type": "Autre/Étranger",
+        "count": 54,
+        "percentage": 0.39
+      },
+      {
+        "type": "N° spécial (08)",
+        "count": 20,
+        "percentage": 0.14
+      }
+    ],
+    "nature_spam": [
+      {
+        "nature": "Pas de sonnerie",
+        "count": 4987,
+        "percentage": 36.15
+      },
+      {
+        "nature": "Courte (4-9s)",
+        "count": 3799,
+        "percentage": 27.53
+      },
+      {
+        "nature": "Très courte (1-3s)",
+        "count": 2253,
+        "percentage": 16.33
+      },
+      {
+        "nature": "Sonnerie très courte",
+        "count": 2041,
+        "percentage": 14.79
+      },
+      {
+        "nature": "Sonnerie courte",
+        "count": 675,
+        "percentage": 4.89
+      },
+      {
+        "nature": "Raccroché immédiat",
+        "count": 42,
+        "percentage": 0.3
+      }
+    ],
+    "durees": {
+      "conversation_moy": 2.04,
+      "sonnerie_moy": 1.49,
+      "totale_moy": 4.75
+    },
+    "top_numeros": [
+      {
+        "numero": "+33424028745",
+        "count": 994,
+        "percentage": 7.2
+      },
+      {
+        "numero": "+33424028751",
+        "count": 285,
+        "percentage": 2.07
+      },
+      {
+        "numero": "+33377134960",
+        "count": 261,
+        "percentage": 1.89
+      },
+      {
+        "numero": "+33568138420",
+        "count": 255,
+        "percentage": 1.85
+      },
+      {
+        "numero": "+33270138410",
+        "count": 247,
+        "percentage": 1.79
+      },
+      {
+        "numero": "+33162138520",
+        "count": 246,
+        "percentage": 1.78
+      },
+      {
+        "numero": "+33424138520",
+        "count": 237,
+        "percentage": 1.72
+      },
+      {
+        "numero": "+33162566608",
+        "count": 211,
+        "percentage": 1.53
+      },
+      {
+        "numero": "+33162020047",
+        "count": 182,
+        "percentage": 1.32
+      },
+      {
+        "numero": "+33162020038",
+        "count": 181,
+        "percentage": 1.31
+      },
+      {
+        "numero": "+33377144745",
+        "count": 175,
+        "percentage": 1.27
+      }
+    ],
+    "heures_pic": [
+      {
+        "heure": 14,
+        "count": 1705
+      },
+      {
+        "heure": 10,
+        "count": 1682
+      },
+      {
+        "heure": 11,
+        "count": 1676
+      },
+      {
+        "heure": 12,
+        "count": 1574
+      },
+      {
+        "heure": 15,
+        "count": 1453
+      }
+    ]
+  }
 }
