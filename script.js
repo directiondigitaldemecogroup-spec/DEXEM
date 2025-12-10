@@ -586,7 +586,7 @@ function populateAgencesTable() {
         
         // Récupérer le taux des 2 derniers mois
         const taux2M = taux2DerniersMois[agence.nom];
-        const rateClass2M = taux2M !== null ? getRateClass(taux2M) : '';
+        const rateClass2M = (taux2M !== null && taux2M !== undefined) ? getRateClass(taux2M) : '';
         
         const canauxOrder = ['GMB', 'Pages Jaunes', 'Store Locator', 'Autres'];
         let canauxHtml = '';
@@ -616,7 +616,7 @@ function populateAgencesTable() {
                 <span class="agence-total-taux rate-badge ${rateClass}">${agence.taux_global.toFixed(1)}%</span>
             </div>
             <div class="agence-total">
-                ${taux2M !== null ? 
+                ${(taux2M !== null && taux2M !== undefined) ? 
                     `<span class="agence-total-taux rate-badge ${rateClass2M}">${taux2M.toFixed(1)}%</span>` : 
                     '<span class="agence-total-taux">-</span>'
                 }
