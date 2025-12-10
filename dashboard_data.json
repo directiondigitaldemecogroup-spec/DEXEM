@@ -63652,7 +63652,9 @@
     "Store Locator"
   ],
   "spam_pj_analysis": {
-    "total": 13797,
+    "total_spam": 13797,
+    "total_appels_pj": 30554,
+    "appels_suspects_10_30s": 2974,
     "type_numero": [
       {
         "type": "Fixe Sud-Est (04)",
@@ -63660,12 +63662,12 @@
         "percentage": 24.25
       },
       {
-        "type": "Fixe Paris (01)",
+        "type": "Fixe Île-de-France (01)",
         "count": 3164,
         "percentage": 22.93
       },
       {
-        "type": "N° non géo (09)",
+        "type": "N° non géographique (09)",
         "count": 1919,
         "percentage": 13.91
       },
@@ -63690,46 +63692,56 @@
         "percentage": 6.82
       },
       {
-        "type": "Autre/Étranger",
+        "type": "Autre/International",
         "count": 54,
         "percentage": 0.39
       },
       {
-        "type": "N° spécial (08)",
+        "type": "N° spécial/surtaxé (08)",
         "count": 20,
         "percentage": 0.14
       }
     ],
-    "nature_spam": [
+    "nature_appels": [
       {
-        "nature": "Pas de sonnerie",
+        "nature": "Appel normal (>30s)",
+        "count": 11971,
+        "percentage": 39.18
+      },
+      {
+        "nature": "Raccroché avant sonnerie (ping test)",
         "count": 4987,
-        "percentage": 36.15
+        "percentage": 16.32
       },
       {
-        "nature": "Courte (4-9s)",
+        "nature": "Conversation courte (4-9s)",
         "count": 3799,
-        "percentage": 27.53
+        "percentage": 12.43
       },
       {
-        "nature": "Très courte (1-3s)",
+        "nature": "⚠️ Appel court suspect (10-30s)",
+        "count": 2974,
+        "percentage": 9.73
+      },
+      {
+        "nature": "Sonnerie 3-4s puis raccroché",
+        "count": 2487,
+        "percentage": 8.14
+      },
+      {
+        "nature": "Conversation très courte (1-3s)",
         "count": 2253,
-        "percentage": 16.33
+        "percentage": 7.37
       },
       {
-        "nature": "Sonnerie très courte",
+        "nature": "Sonnerie 1-2s puis raccroché",
         "count": 2041,
-        "percentage": 14.79
+        "percentage": 6.68
       },
       {
-        "nature": "Sonnerie courte",
-        "count": 675,
-        "percentage": 4.89
-      },
-      {
-        "nature": "Raccroché immédiat",
+        "nature": "Décroché puis raccroché immédiat (0s)",
         "count": 42,
-        "percentage": 0.3
+        "percentage": 0.14
       }
     ],
     "durees": {
