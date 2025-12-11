@@ -664,6 +664,38 @@ function toggleAgenceDetails(agenceName, rowElement) {
         return;
     }
     
+    // Grouper les appels non décrochés par canal
+    const appelsByCanal = {};
+    details.appels_non_decroche.forEach(appel => {
+        if (!appelsByCanal[appel.canal]) {
+            appelsByCanal[appel.canal] = [];
+        }
+        appelsByCanal[appel.canal].push(appel);
+    });
+    
+    // Créer les onglets
+    const canaux = Object.keys(appelsByCanal).sort();
+    const tabsHtml = `
+        <div class="details-tabs">
+            <button class="details-tab-btn active" data-tab="tous">Tous (${details.appels_non_decroche.length})</button>
+            ${canaux.map(canal => `
+                <button class="details-tab-btn" data-tab="${canal}">${canal} (${appelsByCanal[canal].length})</button>
+            `).join('')}
+        </div>
+    `;
+    
+    // Créer le contenu des onglets
+    const tabContentsHtml = `
+        <div class="details-tab-content active" data-content="tous">
+            ${createAppelsTable(details.appels_non_decroche)}
+        </div>
+        ${canaux.map(canal => `
+            <div class="details-tab-content" data-content="${canal}">
+                ${createAppelsTable(appelsByCanal[canal])}
+            </div>
+        `).join('')}
+    `;
+    
     // Créer la ligne de détails
     const detailsRow = document.createElement('div');
     detailsRow.className = 'agence-details-row';
@@ -697,28 +729,8 @@ function toggleAgenceDetails(agenceName, rowElement) {
             ${details.appels_non_decroche.length > 0 ? `
                 <div class="details-table-container">
                     <h5>📞 Appels non décrochés (max 50 derniers)</h5>
-                    <table class="details-table">
-                        <thead>
-                            <tr>
-                                <th>Numéro</th>
-                                <th>Date</th>
-                                <th>Heure</th>
-                                <th>Durée sonnerie</th>
-                                <th>Canal</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            ${details.appels_non_decroche.map(appel => `
-                                <tr>
-                                    <td>${appel.numero}</td>
-                                    <td>${appel.date}</td>
-                                    <td>${appel.heure}</td>
-                                    <td>${appel.duree_sonnerie}s</td>
-                                    <td>${appel.canal}</td>
-                                </tr>
-                            `).join('')}
-                        </tbody>
-                    </table>
+                    ${tabsHtml}
+                    ${tabContentsHtml}
                 </div>
             ` : '<p>Aucun appel non décroché</p>'}
         </div>
@@ -727,12 +739,59 @@ function toggleAgenceDetails(agenceName, rowElement) {
     // Insérer après la ligne cliquée
     rowElement.after(detailsRow);
     
+    // Ajouter les event listeners pour les onglets
+    detailsRow.querySelectorAll('.details-tab-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const tab = e.target.dataset.tab;
+            
+            // Désactiver tous les onglets et contenus
+            detailsRow.querySelectorAll('.details-tab-btn').forEach(b => b.classList.remove('active'));
+            detailsRow.querySelectorAll('.details-tab-content').forEach(c => c.classList.remove('active'));
+            
+            // Activer l'onglet et le contenu sélectionnés
+            e.target.classList.add('active');
+            detailsRow.querySelector(`[data-content="${tab}"]`).classList.add('active');
+        });
+    });
+    
     // Créer le graphique si on a des données
     if (details.decroche_par_heure_jour.length > 0) {
         setTimeout(() => {
             createAgenceHeureChart(agenceName, details.decroche_par_heure_jour);
         }, 100);
     }
+}
+
+// Créer un tableau d'appels
+function createAppelsTable(appels) {
+    if (appels.length === 0) {
+        return '<p style="padding: 1rem; color: #6b7280;">Aucun appel non décroché</p>';
+    }
+    
+    return `
+        <table class="details-table">
+            <thead>
+                <tr>
+                    <th>Numéro</th>
+                    <th>Date</th>
+                    <th>Heure</th>
+                    <th>Durée sonnerie</th>
+                    <th>Canal</th>
+                </tr>
+            </thead>
+            <tbody>
+                ${appels.map(appel => `
+                    <tr>
+                        <td>${appel.numero}</td>
+                        <td>${appel.date}</td>
+                        <td>${appel.heure}</td>
+                        <td>${appel.duree_sonnerie}s</td>
+                        <td>${appel.canal}</td>
+                    </tr>
+                `).join('')}
+            </tbody>
+        </table>
+    `;
 }
 
 // Créer le graphique par heure/jour pour une agence
