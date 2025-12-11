@@ -677,7 +677,7 @@ function toggleAgenceDetails(agenceName, rowElement) {
                     <span class="detail-stat-label">Taux décroché (dédupliqué)</span>
                 </div>
                 <div class="detail-stat-card">
-                    <span class="detail-stat-value">${details.appels_non_decroche.length}</span>
+                    <span class="detail-stat-value">${details.total_non_decroche || details.appels_non_decroche.length}</span>
                     <span class="detail-stat-label">Appels non décrochés</span>
                 </div>
             </div>
@@ -698,7 +698,7 @@ function toggleAgenceDetails(agenceName, rowElement) {
             
             ${details.appels_non_decroche.length > 0 ? `
                 <div class="details-table-container">
-                    <h5>📞 Appels non décrochés (100 derniers)</h5>
+                    <h5>📞 Appels non décrochés ${details.total_non_decroche > 100 ? `(${details.total_non_decroche} au total, 100 derniers affichés)` : `(${details.total_non_decroche})`}</h5>
                     ${tabsHtml}
                     ${tabContentsHtml}
                 </div>
