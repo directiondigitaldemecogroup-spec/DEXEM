@@ -728,7 +728,7 @@ function toggleAgenceDetails(agenceName, rowElement) {
             
             ${details.appels_non_decroche.length > 0 ? `
                 <div class="details-table-container">
-                    <h5>📞 Appels non décrochés (max 50 derniers)</h5>
+                    <h5>📞 Appels non décrochés (100 derniers)</h5>
                     ${tabsHtml}
                     ${tabContentsHtml}
                 </div>
