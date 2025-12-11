@@ -21,9 +21,10 @@ async function loadData() {
     try {
         const response = await fetch('dashboard_data.json');
         if (!response.ok) {
-       throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
         window.dashboardData = await response.json();
+        window.agencesDetails = window.dashboardData.agences_details || {};
         console.log('✅ Données chargées');
         initializeDashboard();
     } catch (error) {
@@ -633,7 +634,184 @@ function populateAgencesTable() {
             </div>
         `;
         
+        // Rendre la ligne cliquable
+        row.style.cursor = 'pointer';
+        row.addEventListener('click', () => toggleAgenceDetails(agence.nom, row));
+        
         container.appendChild(row);
+    });
+}
+
+// Toggle des détails d'une agence
+function toggleAgenceDetails(agenceName, rowElement) {
+    const container = document.getElementById('agencesTable');
+    const existingDetails = rowElement.nextElementSibling;
+    
+    // Si les détails sont déjà affichés, les masquer
+    if (existingDetails && existingDetails.classList.contains('agence-details-row')) {
+        existingDetails.remove();
+        return;
+    }
+    
+    // Fermer tous les autres détails ouverts
+    document.querySelectorAll('.agence-details-row').forEach(el => el.remove());
+    
+    // Vérifier si on a les données détaillées pour cette agence
+    const details = window.agencesDetails?.[agenceName];
+    
+    if (!details) {
+        alert(`Pas de données détaillées disponibles pour ${agenceName}`);
+        return;
+    }
+    
+    // Créer la ligne de détails
+    const detailsRow = document.createElement('div');
+    detailsRow.className = 'agence-details-row';
+    
+    detailsRow.innerHTML = `
+        <div class="agence-details-content">
+            <h4>📊 Détails pour ${agenceName}</h4>
+            
+            <div class="details-stats">
+                <div class="detail-stat-card">
+                    <span class="detail-stat-value">${details.total_appels_deduplique}</span>
+                    <span class="detail-stat-label">Appels uniques (dédupliqués)</span>
+                </div>
+                <div class="detail-stat-card">
+                    <span class="detail-stat-value">${details.taux_deduplique}%</span>
+                    <span class="detail-stat-label">Taux décroché (dédupliqué)</span>
+                </div>
+                <div class="detail-stat-card">
+                    <span class="detail-stat-value">${details.appels_non_decroche.length}</span>
+                    <span class="detail-stat-label">Appels non décrochés</span>
+                </div>
+            </div>
+            
+            ${details.decroche_par_heure_jour.length > 0 ? `
+                <div class="details-chart-container">
+                    <h5>Taux de décroché par heure et par jour</h5>
+                    <canvas id="chart-${agenceName.replace(/[^a-zA-Z0-9]/g, '_')}" height="80"></canvas>
+                </div>
+            ` : ''}
+            
+            ${details.appels_non_decroche.length > 0 ? `
+                <div class="details-table-container">
+                    <h5>📞 Appels non décrochés (max 50 derniers)</h5>
+                    <table class="details-table">
+                        <thead>
+                            <tr>
+                                <th>Numéro</th>
+                                <th>Date</th>
+                                <th>Heure</th>
+                                <th>Durée sonnerie</th>
+                                <th>Canal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${details.appels_non_decroche.map(appel => `
+                                <tr>
+                                    <td>${appel.numero}</td>
+                                    <td>${appel.date}</td>
+                                    <td>${appel.heure}</td>
+                                    <td>${appel.duree_sonnerie}s</td>
+                                    <td>${appel.canal}</td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            ` : '<p>Aucun appel non décroché</p>'}
+        </div>
+    `;
+    
+    // Insérer après la ligne cliquée
+    rowElement.after(detailsRow);
+    
+    // Créer le graphique si on a des données
+    if (details.decroche_par_heure_jour.length > 0) {
+        setTimeout(() => {
+            createAgenceHeureChart(agenceName, details.decroche_par_heure_jour);
+        }, 100);
+    }
+}
+
+// Créer le graphique par heure/jour pour une agence
+function createAgenceHeureChart(agenceName, data) {
+    const chartId = `chart-${agenceName.replace(/[^a-zA-Z0-9]/g, '_')}`;
+    const canvas = document.getElementById(chartId);
+    
+    if (!canvas) return;
+    
+    const ctx = canvas.getContext('2d');
+    
+    // Organiser les données par jour
+    const jours = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi'];
+    const heures = Array.from({length: 12}, (_, i) => i + 8); // 8h à 19h
+    
+    const datasets = jours.map((jour, index) => {
+        const jourData = data.filter(d => d.jour_fr === jour);
+        const taux = heures.map(h => {
+            const slot = jourData.find(d => d.heure === h);
+            return slot ? slot.taux_decroche : null;
+        });
+        
+        const colors = [
+            'rgba(37, 99, 235, 1)',
+            'rgba(16, 185, 129, 1)',
+            'rgba(245, 158, 11, 1)',
+            'rgba(239, 68, 68, 1)',
+            'rgba(139, 92, 246, 1)'
+        ];
+        
+        return {
+            label: jour,
+            data: taux,
+            borderColor: colors[index],
+            backgroundColor: colors[index].replace('1)', '0.1)'),
+            borderWidth: 2,
+            tension: 0.4,
+            spanGaps: true
+        };
+    });
+    
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: heures.map(h => `${h}h`),
+            datasets: datasets
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'top'
+                },
+                tooltip: {
+                    callbacks: {
+                        label: (context) => {
+                            return `${context.dataset.label}: ${context.parsed.y?.toFixed(1)}%`;
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 100,
+                    title: {
+                        display: true,
+                        text: 'Taux de décroché (%)'
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Heure de la journée'
+                    }
+                }
+            }
+        }
     });
 }
 
