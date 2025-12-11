@@ -518,44 +518,6 @@ function createDecrocheHeureMultiChart() {
 
 // NOUVEAU: Tableau simple des agences (sans regroupement par société)
 // Calculer le taux de décroché des 2 derniers mois pour chaque agence
-function calculerTaux2DerniersMois() {
-    const data = dashboardData.decroche_par_agence_canal_mois;
-    const taux = {};
-    
-    // Filtrer les 2 derniers mois (2025-11 et 2025-12)
-    const derniersMois = ['2025-11', '2025-12'];
-    
-    // Agréger par agence (en enlevant le suffixe canal)
-    data.forEach(row => {
-        if (derniersMois.includes(row.mois)) {
-            // Enlever les suffixes de canal pour matcher avec agences_list
-            let agenceName = row.agence
-                .replace(/ - GMB$/i, '')
-                .replace(/ - PJ$/i, '')
-                .replace(/ - Pages Jaunes$/i, '')
-                .replace(/ - Storelocator$/i, '')
-                .replace(/ - Store Locator$/i, '')
-                .replace(/ - SL$/i, '')
-                .replace(/ - Autres$/i, '');
-            
-            if (!taux[agenceName]) {
-                taux[agenceName] = { decroche: 0, total: 0 };
-            }
-            taux[agenceName].decroche += row.decroche;
-            taux[agenceName].total += row.total;
-        }
-    });
-    
-    // Calculer les taux
-    const result = {};
-    Object.keys(taux).forEach(agence => {
-        const { decroche, total } = taux[agence];
-        result[agence] = total > 0 ? (decroche / total) * 100 : null;
-    });
-    
-    return result;
-}
-
 function populateAgencesTable() {
     const container = document.getElementById('agencesTable');
     const agences = dashboardData.agences_list;
@@ -565,8 +527,8 @@ function populateAgencesTable() {
         return;
     }
     
-    // Calculer le taux pour les 2 derniers mois pour chaque agence
-    const taux2DerniersMois = calculerTaux2DerniersMois();
+    // UTILISER directement les données depuis agences_details (déjà calculé sans spam)
+    const agencesDetails = dashboardData.agences_details || {};
     
     // Mettre à jour le compteur
     document.getElementById('agencesCount').textContent = agences.length;
@@ -595,8 +557,9 @@ function populateAgencesTable() {
         const rankClass = index < 10 ? 'top' : '';
         const rateClass = getRateClass(agence.taux_global);
         
-        // Récupérer le taux des 2 derniers mois
-        const taux2M = taux2DerniersMois[agence.nom];
+        // Récupérer le taux des 2 derniers mois DEPUIS agences_details (déjà calculé sans spam)
+        const agenceDetail = agencesDetails[agence.nom];
+        const taux2M = agenceDetail ? agenceDetail.taux_2_derniers_mois : null;
         const rateClass2M = (taux2M !== null && taux2M !== undefined) ? getRateClass(taux2M) : '';
         
         const canauxOrder = ['GMB', 'Pages Jaunes', 'Store Locator', 'Autres'];
