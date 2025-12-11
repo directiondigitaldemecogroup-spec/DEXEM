@@ -600,6 +600,57 @@ tbody tr:last-child td {
     overflow-x: auto;
 }
 
+.details-tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--border-color);
+    flex-wrap: wrap;
+}
+
+.details-tab-btn {
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: all 0.3s;
+    font-size: 0.95rem;
+}
+
+.details-tab-btn:hover {
+    color: var(--primary-color);
+    background: var(--bg-color);
+}
+
+.details-tab-btn.active {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+    background: transparent;
+}
+
+.details-tab-content {
+    display: none;
+}
+
+.details-tab-content.active {
+    display: block;
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(10px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
 .details-table {
     width: 100%;
     border-collapse: collapse;
