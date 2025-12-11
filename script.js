@@ -719,9 +719,16 @@ function toggleAgenceDetails(agenceName, rowElement) {
                 </div>
             </div>
             
+            ${details.decroche_par_mois && details.decroche_par_mois.length > 0 ? `
+                <div class="details-chart-container">
+                    <h5>📈 Évolution mensuelle du taux de décroché</h5>
+                    <canvas id="chart-mois-${agenceName.replace(/[^a-zA-Z0-9]/g, '_')}" height="60"></canvas>
+                </div>
+            ` : ''}
+            
             ${details.decroche_par_heure_jour.length > 0 ? `
                 <div class="details-chart-container">
-                    <h5>Taux de décroché par heure et par jour</h5>
+                    <h5>🕐 Taux de décroché par heure et par jour</h5>
                     <canvas id="chart-${agenceName.replace(/[^a-zA-Z0-9]/g, '_')}" height="80"></canvas>
                 </div>
             ` : ''}
@@ -754,7 +761,14 @@ function toggleAgenceDetails(agenceName, rowElement) {
         });
     });
     
-    // Créer le graphique si on a des données
+    // Créer le graphique mensuel si on a des données
+    if (details.decroche_par_mois && details.decroche_par_mois.length > 0) {
+        setTimeout(() => {
+            createAgenceMoisChart(agenceName, details.decroche_par_mois);
+        }, 100);
+    }
+    
+    // Créer le graphique par heure/jour si on a des données
     if (details.decroche_par_heure_jour.length > 0) {
         setTimeout(() => {
             createAgenceHeureChart(agenceName, details.decroche_par_heure_jour);
@@ -792,6 +806,83 @@ function createAppelsTable(appels) {
             </tbody>
         </table>
     `;
+}
+
+// Créer le graphique mensuel pour une agence
+function createAgenceMoisChart(agenceName, data) {
+    const chartId = `chart-mois-${agenceName.replace(/[^a-zA-Z0-9]/g, '_')}`;
+    const canvas = document.getElementById(chartId);
+    
+    if (!canvas) return;
+    
+    const ctx = canvas.getContext('2d');
+    
+    // Préparer les données
+    const labels = data.map(d => {
+        const [year, month] = d.mois.split('-');
+        const date = new Date(year, month - 1);
+        return date.toLocaleDateString('fr-FR', { month: 'short', year: '2-digit' });
+    });
+    
+    const taux = data.map(d => d.taux_decroche);
+    const totaux = data.map(d => d.total);
+    
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Taux de décroché (%)',
+                data: taux,
+                borderColor: 'rgba(101, 179, 46, 1)',
+                backgroundColor: 'rgba(101, 179, 46, 0.1)',
+                borderWidth: 3,
+                tension: 0.4,
+                fill: true,
+                pointRadius: 4,
+                pointHoverRadius: 6
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    callbacks: {
+                        label: (context) => {
+                            const idx = context.dataIndex;
+                            return [
+                                `Taux: ${context.parsed.y.toFixed(1)}%`,
+                                `Appels: ${totaux[idx]}`
+                            ];
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 100,
+                    title: {
+                        display: true,
+                        text: 'Taux de décroché (%)'
+                    },
+                    ticks: {
+                        callback: (value) => value + '%'
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Mois'
+                    }
+                }
+            }
+        }
+    });
 }
 
 // Créer le graphique par heure/jour pour une agence
