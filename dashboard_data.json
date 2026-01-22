@@ -4719,38 +4719,203 @@
     "Store Locator",
     "Autres"
   ],
-  "spam_pj_analysis": [
-    {
-      "categorie": "Autre",
-      "nombre": 1168,
-      "pourcentage": 45.89
+  "spam_pj_analysis": {
+    "total_appels_pj": 2545,
+    "total_spam": 1249,
+    "appels_suspects_10_30s": 128,
+    "categories": [
+      {
+        "categorie": "🔴 Spam: Raccroché avant sonnerie",
+        "count": 784,
+        "percentage": 30.81
+      },
+      {
+        "categorie": "✅ Normal: Décroché >30s",
+        "count": 663,
+        "percentage": 26.05
+      },
+      {
+        "categorie": "🔵 Non décroché sonnerie >=5s",
+        "count": 505,
+        "percentage": 19.84
+      },
+      {
+        "categorie": "🔴 Spam: Sonnerie courte puis raccroché",
+        "count": 326,
+        "percentage": 12.81
+      },
+      {
+        "categorie": "⚠️ Suspect: Appel court (10-30s)",
+        "count": 128,
+        "percentage": 5.03
+      },
+      {
+        "categorie": "🔴 Spam: Court (4-9s)",
+        "count": 107,
+        "percentage": 4.2
+      },
+      {
+        "categorie": "🔴 Spam: Très court (1-3s)",
+        "count": 31,
+        "percentage": 1.22
+      },
+      {
+        "categorie": "🔴 Spam: Raccroché immédiat (0s)",
+        "count": 1,
+        "percentage": 0.04
+      }
+    ],
+    "type_numero": [
+      {
+        "type": "Fixe",
+        "count": 1929,
+        "percentage": 75.8
+      },
+      {
+        "type": "Mobile",
+        "count": 611,
+        "percentage": 24.01
+      },
+      {
+        "type": "Masqué",
+        "count": 5,
+        "percentage": 0.2
+      }
+    ],
+    "durees": {
+      "sonnerie_moy": 4.5,
+      "conversation_moy": 131.0
     },
-    {
-      "categorie": "Sonnerie courte puis raccroché",
-      "nombre": 1110,
-      "pourcentage": 43.61
-    },
-    {
-      "categorie": "Suspect (10-30s)",
-      "nombre": 128,
-      "pourcentage": 5.03
-    },
-    {
-      "categorie": "Court (4-9s)",
-      "nombre": 107,
-      "pourcentage": 4.2
-    },
-    {
-      "categorie": "Très court (1-3s)",
-      "nombre": 31,
-      "pourcentage": 1.22
-    },
-    {
-      "categorie": "Raccroché immédiat (0s)",
-      "nombre": 1,
-      "pourcentage": 0.04
-    }
-  ],
+    "top_numeros": [
+      {
+        "numero": "+33424028753",
+        "count": 94,
+        "percentage": 3.69
+      },
+      {
+        "numero": "+33162020038",
+        "count": 85,
+        "percentage": 3.34
+      },
+      {
+        "numero": "+33568205900",
+        "count": 50,
+        "percentage": 1.96
+      },
+      {
+        "numero": "+33948167459",
+        "count": 46,
+        "percentage": 1.81
+      },
+      {
+        "numero": "+33270145605",
+        "count": 46,
+        "percentage": 1.81
+      },
+      {
+        "numero": "+33162020047",
+        "count": 45,
+        "percentage": 1.77
+      },
+      {
+        "numero": "+33377144826",
+        "count": 42,
+        "percentage": 1.65
+      },
+      {
+        "numero": "+33270203494",
+        "count": 42,
+        "percentage": 1.65
+      },
+      {
+        "numero": "+33162218976",
+        "count": 39,
+        "percentage": 1.53
+      },
+      {
+        "numero": "+33270203023",
+        "count": 38,
+        "percentage": 1.49
+      },
+      {
+        "numero": "+33377203462",
+        "count": 37,
+        "percentage": 1.45
+      },
+      {
+        "numero": "+33424206482",
+        "count": 36,
+        "percentage": 1.41
+      },
+      {
+        "numero": "+33424209581",
+        "count": 35,
+        "percentage": 1.38
+      },
+      {
+        "numero": "+33377203539",
+        "count": 34,
+        "percentage": 1.34
+      },
+      {
+        "numero": "+33270208557",
+        "count": 33,
+        "percentage": 1.3
+      },
+      {
+        "numero": "+33377205453",
+        "count": 32,
+        "percentage": 1.26
+      },
+      {
+        "numero": "+33270203317",
+        "count": 31,
+        "percentage": 1.22
+      },
+      {
+        "numero": "+33377203650",
+        "count": 31,
+        "percentage": 1.22
+      },
+      {
+        "numero": "+33948168255",
+        "count": 30,
+        "percentage": 1.18
+      },
+      {
+        "numero": "+33948164485",
+        "count": 28,
+        "percentage": 1.1
+      }
+    ],
+    "heures_pic": [
+      {
+        "heure": "11h-12h",
+        "count": 327,
+        "percentage": 12.85
+      },
+      {
+        "heure": "10h-11h",
+        "count": 304,
+        "percentage": 11.94
+      },
+      {
+        "heure": "9h-10h",
+        "count": 298,
+        "percentage": 11.71
+      },
+      {
+        "heure": "14h-15h",
+        "count": 296,
+        "percentage": 11.63
+      },
+      {
+        "heure": "15h-16h",
+        "count": 279,
+        "percentage": 10.96
+      }
+    ]
+  },
   "canal_stats": {
     "GMB": {
       "decroche": 4228,
