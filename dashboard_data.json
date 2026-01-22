@@ -4915,28 +4915,40 @@
   "canal_stats": [
     {
       "canal": "GMB",
-      "appels_non_spam": 2651,
+      "appels_non_spam": 4347,
+      "numeros_uniques": 2651,
+      "appels_doublons": 1696,
+      "taux_doublons": 39.02,
       "decroche": 2593,
       "taux_decroche": 97.81,
       "appels_total": 4347
     },
     {
       "canal": "Pages Jaunes",
-      "appels_non_spam": 579,
+      "appels_non_spam": 830,
+      "numeros_uniques": 579,
+      "appels_doublons": 251,
+      "taux_doublons": 30.24,
       "decroche": 562,
       "taux_decroche": 97.06,
       "appels_total": 830
     },
     {
       "canal": "Store Locator",
-      "appels_non_spam": 1745,
+      "appels_non_spam": 2458,
+      "numeros_uniques": 1745,
+      "appels_doublons": 713,
+      "taux_doublons": 29.01,
       "decroche": 1628,
       "taux_decroche": 93.3,
       "appels_total": 2458
     },
     {
       "canal": "Autres",
-      "appels_non_spam": 353,
+      "appels_non_spam": 432,
+      "numeros_uniques": 353,
+      "appels_doublons": 79,
+      "taux_doublons": 18.29,
       "decroche": 348,
       "taux_decroche": 98.58,
       "appels_total": 432
