@@ -4784,7 +4784,8 @@
     ],
     "durees": {
       "sonnerie_moy": 4.5,
-      "conversation_moy": 131.0
+      "conversation_moy": 131.0,
+      "totale_moy": 135.5
     },
     "top_numeros": [
       {
@@ -4890,29 +4891,24 @@
     ],
     "heures_pic": [
       {
-        "heure": "11h-12h",
-        "count": 327,
-        "percentage": 12.85
+        "heure": 11,
+        "count": 327
       },
       {
-        "heure": "10h-11h",
-        "count": 304,
-        "percentage": 11.94
+        "heure": 10,
+        "count": 304
       },
       {
-        "heure": "9h-10h",
-        "count": 298,
-        "percentage": 11.71
+        "heure": 9,
+        "count": 298
       },
       {
-        "heure": "14h-15h",
-        "count": 296,
-        "percentage": 11.63
+        "heure": 14,
+        "count": 296
       },
       {
-        "heure": "15h-16h",
-        "count": 279,
-        "percentage": 10.96
+        "heure": 15,
+        "count": 279
       }
     ]
   },
