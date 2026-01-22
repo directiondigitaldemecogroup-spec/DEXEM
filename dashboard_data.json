@@ -1,12 +1,4 @@
 {
-  "decroche_global_mois": [
-    {
-      "mois": "2026-01",
-      "decroche": 7739,
-      "total": 8067,
-      "taux_decroche": 95.93
-    }
-  ],
   "spam_global_mois": [
     {
       "mois": "2026-01",
@@ -15,3151 +7,4717 @@
       "taux_spam": 26.9
     }
   ],
+  "spam_par_canal_mois": [
+    {
+      "mois": "2026-01",
+      "canal": "GMB",
+      "spam": 998,
+      "total": 5345,
+      "taux_spam": 18.67
+    },
+    {
+      "mois": "2026-01",
+      "canal": "Pages Jaunes",
+      "spam": 1715,
+      "total": 2545,
+      "taux_spam": 67.39
+    },
+    {
+      "mois": "2026-01",
+      "canal": "Store Locator",
+      "spam": 238,
+      "total": 2696,
+      "taux_spam": 8.83
+    },
+    {
+      "mois": "2026-01",
+      "canal": "Autres",
+      "spam": 18,
+      "total": 450,
+      "taux_spam": 4.0
+    }
+  ],
+  "decroche_global_mois": [
+    {
+      "mois": "2026-01",
+      "decroche": 7739,
+      "total": 8067,
+      "taux_decroche": 95.93
+    }
+  ],
   "decroche_par_agence_canal_mois": [
     {
+      "mois": "2026-01",
       "agence": "MATRALOC SN  - La Seyne sur Mer - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 80,
-      "total": 85
+      "total": 85,
+      "taux_decroche": 94.12
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - Atlantic Movers - Nantes - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 30,
-      "total": 31
+      "total": 31,
+      "taux_decroche": 96.77
     },
     {
+      "mois": "2026-01",
       "agence": "Emails demeco.fr - particuliers",
-      "mois": "2026-01",
+      "canal": "Autres",
       "decroche": 61,
-      "total": 62
+      "total": 62,
+      "taux_decroche": 98.39
     },
     {
+      "mois": "2026-01",
       "agence": "DEMECO WEB HP-Header",
-      "mois": "2026-01",
+      "canal": "Autres",
       "decroche": 216,
-      "total": 220
+      "total": 220,
+      "taux_decroche": 98.18
     },
     {
+      "mois": "2026-01",
       "agence": "DIDIER CHEVRIER - Paris 13 - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 74,
-      "total": 75
+      "total": 75,
+      "taux_decroche": 98.67
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - LE FLOCH DEMENAGEMENT - Brest - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 8,
-      "total": 8
+      "total": 8,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - Euroflash Roissy en France- GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 20,
-      "total": 24
+      "total": 24,
+      "taux_decroche": 83.33
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - Potiez Deman - Site Web",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 19,
-      "total": 27
+      "total": 27,
+      "taux_decroche": 70.37
     },
     {
+      "mois": "2026-01",
       "agence": "MESNAGER - Bourges - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 38,
-      "total": 38
+      "total": 38,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - GD - DUHAUT ROLLIN - Nancy - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 72,
-      "total": 74
+      "total": 74,
+      "taux_decroche": 97.3
     },
     {
+      "mois": "2026-01",
       "agence": "MESNAGER - Chateauroux - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 8,
-      "total": 8
+      "total": 8,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HEISS CLAUDE DEMENAGEMENTS - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 40,
-      "total": 41
+      "total": 41,
+      "taux_decroche": 97.56
     },
     {
+      "mois": "2026-01",
       "agence": "BLACHE - Montmelian - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 10,
-      "total": 10
+      "total": 10,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - DULAC La talaurdière - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 59,
-      "total": 60
+      "total": 60,
+      "taux_decroche": 98.33
     },
     {
+      "mois": "2026-01",
       "agence": "RAVARINO - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 25,
-      "total": 28
+      "total": 28,
+      "taux_decroche": 89.29
     },
     {
+      "mois": "2026-01",
       "agence": "NASSE MARCHAND -  Orléans - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 40,
-      "total": 41
+      "total": 41,
+      "taux_decroche": 97.56
     },
     {
+      "mois": "2026-01",
       "agence": "SANS DEMETERRE - Pamiers - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - Huet  - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 136,
-      "total": 138
+      "total": 138,
+      "taux_decroche": 98.55
     },
     {
+      "mois": "2026-01",
       "agence": "GOURDELIER  - Cherbourg en Cotentin - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 66,
-      "total": 66
+      "total": 66,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - Afradem - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - Aménageurs Orléanais- Store Locator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 14,
-      "total": 14
+      "total": 14,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "CARRE - St Pierre des Corps - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 14,
-      "total": 14
+      "total": 14,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "NASSE MARCHAND - Saint jean de la ruelle - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 125,
-      "total": 128
+      "total": 128,
+      "taux_decroche": 97.66
     },
     {
+      "mois": "2026-01",
       "agence": "DAVIN - Ales - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 24,
-      "total": 24
+      "total": 24,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - Aménageurs Orléanais - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 36,
-      "total": 38
+      "total": 38,
+      "taux_decroche": 94.74
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - GD - JAUFFRET DEMENAGEMENTS - Avignon - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 78,
-      "total": 80
+      "total": 80,
+      "taux_decroche": 97.5
     },
     {
+      "mois": "2026-01",
       "agence": "Valette MARTIN - Bruges - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 115,
-      "total": 119
+      "total": 119,
+      "taux_decroche": 96.64
     },
     {
+      "mois": "2026-01",
       "agence": "HEISS CLAUDE DEMENAGEMENTS - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 116,
-      "total": 118
+      "total": 118,
+      "taux_decroche": 98.31
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - ACE GIBOUIN Cholet - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 17,
-      "total": 17
+      "total": 17,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DAZIN BESNIER - Les Pennes Mirabeau - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 93,
-      "total": 95
+      "total": 95,
+      "taux_decroche": 97.89
     },
     {
+      "mois": "2026-01",
       "agence": "LDPC - La Rochelle - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 24,
-      "total": 24
+      "total": 24,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "MESNAGER - Chateauroux - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 78,
-      "total": 78
+      "total": 78,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - LE FLOCH DEMENAGEMENT - Saint Divy - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 65,
-      "total": 66
+      "total": 66,
+      "taux_decroche": 98.48
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - DROUIN DEMENAGEMENT - Nantes - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 76,
-      "total": 76
+      "total": 76,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco TORRENS - Villabé - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 73,
-      "total": 73
+      "total": 73,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - ATLANTIC MOVERS - Saint Herblain  - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 77,
-      "total": 79
+      "total": 79,
+      "taux_decroche": 97.47
     },
     {
+      "mois": "2026-01",
       "agence": "BLACHE - Annecy - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 21,
-      "total": 22
+      "total": 22,
+      "taux_decroche": 95.45
     },
     {
+      "mois": "2026-01",
       "agence": "BLACHE - Montmelian - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 57,
-      "total": 59
+      "total": 59,
+      "taux_decroche": 96.61
     },
     {
+      "mois": "2026-01",
       "agence": "MESNAGER - Chateauroux 02 - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 17,
-      "total": 17
+      "total": 17,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "ABER ROUSSEL - Lorient - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 60,
-      "total": 64
+      "total": 64,
+      "taux_decroche": 93.75
     },
     {
+      "mois": "2026-01",
       "agence": "Hors Dem - Huet - Site web",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 30,
-      "total": 30
+      "total": 30,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "MATRALOC SN - Brignoles- GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 26,
-      "total": 27
+      "total": 27,
+      "taux_decroche": 96.3
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco GRIMAUD - Luçon - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 39,
-      "total": 43
+      "total": 43,
+      "taux_decroche": 90.7
     },
     {
+      "mois": "2026-01",
       "agence": "Emails demeco.fr - partenariat",
-      "mois": "2026-01",
+      "canal": "Autres",
       "decroche": 41,
-      "total": 44
+      "total": 44,
+      "taux_decroche": 93.18
     },
     {
+      "mois": "2026-01",
       "agence": "HEISS CLAUDE DEMENAGEMENTS - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 12,
-      "total": 12
+      "total": 12,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "LDPC - Cognac - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 13,
-      "total": 14
+      "total": 14,
+      "taux_decroche": 92.86
     },
     {
+      "mois": "2026-01",
       "agence": "JCS - Laval - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DAZIN BESNIER - Les Pennes Mirabeau - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 22,
-      "total": 23
+      "total": 23,
+      "taux_decroche": 95.65
     },
     {
+      "mois": "2026-01",
       "agence": "VANDENABEELE -  Dunkerque - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - ATLANTIC MOVERS - Saint Herblain  -  Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 12,
-      "total": 12
+      "total": 12,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "VANDENABEELE - Divion - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - Atlantic Movers - Nantes - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 21,
-      "total": 21
+      "total": 21,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "ABER ROUSSEL - Guer - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 60,
-      "total": 61
+      "total": 61,
+      "taux_decroche": 98.36
     },
     {
+      "mois": "2026-01",
       "agence": "DAZIN - Marseille 8 - GMB (ex Marseille 16)",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 21,
-      "total": 22
+      "total": 22,
+      "taux_decroche": 95.45
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - DEMENA Longjumeau - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 20,
-      "total": 21
+      "total": 21,
+      "taux_decroche": 95.24
     },
     {
+      "mois": "2026-01",
       "agence": "CARRE - Tours - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "JCS - Beaucouze - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 61,
-      "total": 62
+      "total": 62,
+      "taux_decroche": 98.39
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - LE FLOCH DEMENAGEMENT - Saint Divy- PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 8,
-      "total": 8
+      "total": 8,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "A LA VERSAILLAISE Maisons-Laffitte – store locator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 10,
-      "total": 11
+      "total": 11,
+      "taux_decroche": 90.91
     },
     {
+      "mois": "2026-01",
       "agence": "GRIMONPONT - Hallennes-lez-Haubourdin - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DEMECORSE NOUVELLE - Bastia - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 8,
-      "total": 10
+      "total": 10,
+      "taux_decroche": 80.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - BEAUDART Enghien - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - Blanquart Lille - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 34,
-      "total": 35
+      "total": 35,
+      "taux_decroche": 97.14
     },
     {
+      "mois": "2026-01",
       "agence": "LDPC - Tonnay Charente - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 72,
-      "total": 73
+      "total": 73,
+      "taux_decroche": 98.63
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM Bigaut - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 23,
-      "total": 23
+      "total": 23,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "CHEUNG  - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "SANS DEMETERRE - Toulouse - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "LDPC - Poitiers  - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 101,
-      "total": 101
+      "total": 101,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "ABER ROUSSEL - Rennes - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 22,
-      "total": 23
+      "total": 23,
+      "taux_decroche": 95.65
     },
     {
+      "mois": "2026-01",
       "agence": "Emoovz - Signature email",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 72,
-      "total": 73
+      "total": 73,
+      "taux_decroche": 98.63
     },
     {
+      "mois": "2026-01",
       "agence": "DS 54 SOLODEM  - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 89,
-      "total": 89
+      "total": 89,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - ACE GIBOUIN Niort - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 61,
-      "total": 62
+      "total": 62,
+      "taux_decroche": 98.39
     },
     {
+      "mois": "2026-01",
       "agence": "ADN - Le Havre - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 36,
-      "total": 36
+      "total": 36,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "RIVALIER - Moulins - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "JCS - Beaucouze - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 22,
-      "total": 22
+      "total": 22,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - ANDRE RAYNAL - Agen - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 13,
-      "total": 13
+      "total": 13,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "CARRE - St Pierre des Corps - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 53,
-      "total": 53
+      "total": 53,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - LE FLOCH DEMENAGEMENT - Cherbourg - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 30,
-      "total": 32
+      "total": 32,
+      "taux_decroche": 93.75
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - DEMENAGEMENT VALETTE - Bordeaux - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 29,
-      "total": 29
+      "total": 29,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - LE FLOCH DEMENAGEMENT - Brest - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 62,
-      "total": 63
+      "total": 63,
+      "taux_decroche": 98.41
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - GUIGARD DEMENAGEMENT - Lyon 3- GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 23,
-      "total": 24
+      "total": 24,
+      "taux_decroche": 95.83
     },
     {
+      "mois": "2026-01",
       "agence": "Emoovz - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 10,
-      "total": 10
+      "total": 10,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "GRIMONPONT - Lille - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 55,
-      "total": 58
+      "total": 58,
+      "taux_decroche": 94.83
     },
     {
+      "mois": "2026-01",
       "agence": "CHALLENGE - Nanterre - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "ABER ROUSSEL - Saint Malo - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 30,
-      "total": 31
+      "total": 31,
+      "taux_decroche": 96.77
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - AE MALLET - Orleans - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 37,
-      "total": 37
+      "total": 37,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "LDPC - La Creche - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 10,
-      "total": 10
+      "total": 10,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "VANDENABEELE - Dunkerque - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 41,
-      "total": 42
+      "total": 42,
+      "taux_decroche": 97.62
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - DROUIN DEMENAGEMENT - Nantes - SiteWeb",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 27,
-      "total": 27
+      "total": 27,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DAZIN - Aix en Provence - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 8,
-      "total": 9
+      "total": 9,
+      "taux_decroche": 88.89
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - LE FLOCH DEMENAGEMENT - Brest - SiteWeb",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 12,
-      "total": 13
+      "total": 13,
+      "taux_decroche": 92.31
     },
     {
+      "mois": "2026-01",
       "agence": "DAVIN - Avignon - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 75,
-      "total": 77
+      "total": 77,
+      "taux_decroche": 97.4
     },
     {
+      "mois": "2026-01",
       "agence": "Siège Montreuil Demeco",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 26,
-      "total": 26
+      "total": 26,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "ABER ROUSSEL - Vannes - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 27,
-      "total": 29
+      "total": 29,
+      "taux_decroche": 93.1
     },
     {
+      "mois": "2026-01",
       "agence": "SANS DEMETERRE - Muret - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 5,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 83.33
     },
     {
+      "mois": "2026-01",
       "agence": "entreprises.demeco.fr",
-      "mois": "2026-01",
+      "canal": "Autres",
       "decroche": 43,
-      "total": 43
+      "total": 43,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "ATLANTIC MOVERS - Saint Nazaire - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 30,
-      "total": 30
+      "total": 30,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Déménagements Demantes - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "JCS - Beaucouze  - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 20,
-      "total": 20
+      "total": 20,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco industrie - Optima - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 12,
-      "total": 12
+      "total": 12,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Hors Dem - Martin Renard - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 7,
-      "total": 7
+      "total": 7,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "CHALLENGE - Levallois - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 21,
-      "total": 21
+      "total": 21,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco SOLODEM - Epinal - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 20,
-      "total": 20
+      "total": 20,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "SANS DEMETERRE - Toulouse - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 34,
-      "total": 34
+      "total": 34,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "JCS - Saumur - StoreLocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 10,
-      "total": 11
+      "total": 11,
+      "taux_decroche": 90.91
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - Blanquart Lille -  PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 21,
-      "total": 22
+      "total": 22,
+      "taux_decroche": 95.45
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco SOLODEM - Bar-Le-Duc  - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 3,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "SMDT - Carcassonne - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 8,
-      "total": 8
+      "total": 8,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "QUALI DEM - Paris - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 16,
-      "total": 20
+      "total": 20,
+      "taux_decroche": 80.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco A la versaillaise de déménagements - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 26,
-      "total": 26
+      "total": 26,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DESJOUIS - Ifs - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 15,
-      "total": 17
+      "total": 17,
+      "taux_decroche": 88.24
     },
     {
+      "mois": "2026-01",
       "agence": "MARTIN - Gradignan - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 9,
-      "total": 9
+      "total": 9,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco Seegmuler Pantin - Seegmuler",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 13,
-      "total": 13
+      "total": 13,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco Valette Libourne - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 12,
-      "total": 12
+      "total": 12,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "JCS - Saumur - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 21,
-      "total": 22
+      "total": 22,
+      "taux_decroche": 95.45
     },
     {
+      "mois": "2026-01",
       "agence": "RIVALIER - Gerzat - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 37,
-      "total": 38
+      "total": 38,
+      "taux_decroche": 97.37
     },
     {
+      "mois": "2026-01",
       "agence": "DAVIN - Avignon - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 14,
-      "total": 14
+      "total": 14,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "MARTIN - Arcachon - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 15,
-      "total": 15
+      "total": 15,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "MAIF - demeco.fr",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 25,
-      "total": 25
+      "total": 25,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco industrie - E2MI Montmelian - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DIDIER CHEVRIER - Paris 13 - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 12,
-      "total": 13
+      "total": 13,
+      "taux_decroche": 92.31
     },
     {
+      "mois": "2026-01",
       "agence": "DAVIN - Nîmes - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 39,
-      "total": 41
+      "total": 41,
+      "taux_decroche": 95.12
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco TORRENS - Fontainebleau - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 7,
-      "total": 7
+      "total": 7,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "ADN - Evreux - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 23,
-      "total": 23
+      "total": 23,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Emails demeco.fr - mutation",
-      "mois": "2026-01",
+      "canal": "Autres",
       "decroche": 19,
-      "total": 20
+      "total": 20,
+      "taux_decroche": 95.0
     },
     {
+      "mois": "2026-01",
       "agence": "JCS CARRE - Cholet - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "CARRE - St Pierre des Corps - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 12,
-      "total": 12
+      "total": 12,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "GOURDELIER - Saint Lô - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 10,
-      "total": 10
+      "total": 10,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "CARRE - Blois - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 20,
-      "total": 20
+      "total": 20,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Emoovz - Paris - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - DEMENAGEMENTS BOULOUARD - Lorient - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 32,
-      "total": 33
+      "total": 33,
+      "taux_decroche": 96.97
     },
     {
+      "mois": "2026-01",
       "agence": "DAZIN - Marseille 8 - PJ (ex marseille 16)",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 13,
-      "total": 13
+      "total": 13,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "LDPC - Poitiers - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 10,
-      "total": 10
+      "total": 10,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Heiss Claude Déménagement - Metz- Site Web",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DESJOUIS DEMENAGEMENTS - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 3,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 60.0
     },
     {
+      "mois": "2026-01",
       "agence": "LDPC - La Rochelle - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 8,
-      "total": 8
+      "total": 8,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "RIVALIER - Moulins - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 8,
-      "total": 8
+      "total": 8,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - DULAC Cussac - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 27,
-      "total": 27
+      "total": 27,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Guy Hoquet - demeco.fr",
-      "mois": "2026-01",
+      "canal": "Autres",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "CARRE - Pruniers - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 9,
-      "total": 9
+      "total": 9,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "CARRE - Pruniers - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "NASSE MARCHAND - Saint jean de la ruelle - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 23,
-      "total": 23
+      "total": 23,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "MARTIN - Bordeaux - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 20,
-      "total": 21
+      "total": 21,
+      "taux_decroche": 95.24
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco TORRENS OUDINOT - Paris 7 - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 16,
-      "total": 17
+      "total": 17,
+      "taux_decroche": 94.12
     },
     {
+      "mois": "2026-01",
       "agence": "TEILLOT - Vitry - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 8,
-      "total": 8
+      "total": 8,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "JCS - Saumur - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 6,
-      "total": 7
+      "total": 7,
+      "taux_decroche": 85.71
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - Demena Longjumeau - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 28,
-      "total": 29
+      "total": 29,
+      "taux_decroche": 96.55
     },
     {
+      "mois": "2026-01",
       "agence": "SANS DEMETERRE - Bruguières - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 17,
-      "total": 19
+      "total": 19,
+      "taux_decroche": 89.47
     },
     {
+      "mois": "2026-01",
       "agence": "SEEGMULLER Colmar -Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 10,
-      "total": 10
+      "total": 10,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "OCEAN - Brest - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 12,
-      "total": 12
+      "total": 12,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "RIVALIER - Moulins - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 7,
-      "total": 7
+      "total": 7,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DAZIN - Marseille 8 - Storelocator (ex Marseille 16)",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 21,
-      "total": 23
+      "total": 23,
+      "taux_decroche": 91.3
     },
     {
+      "mois": "2026-01",
       "agence": "RIVALIER - Vichy - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 17,
-      "total": 17
+      "total": 17,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "JCS - Laval - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 15,
-      "total": 15
+      "total": 15,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "SANS DEMETERRE - Bruguières - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 56,
-      "total": 56
+      "total": 56,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DESJOUIS - Le Mans - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 15,
-      "total": 17
+      "total": 17,
+      "taux_decroche": 88.24
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco industrie - E2MI Beligneux - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 3,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - LE FLOCH DEMENAGEMENT - Cherbourg - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 7,
-      "total": 7
+      "total": 7,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DS 54 SOLODEM Nancy - Storeloc",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 14,
-      "total": 15
+      "total": 15,
+      "taux_decroche": 93.33
     },
     {
+      "mois": "2026-01",
       "agence": "DTP - Pau - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 11,
-      "total": 12
+      "total": 12,
+      "taux_decroche": 91.67
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco GRIMAUD - Challans - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 10,
-      "total": 10
+      "total": 10,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco TORRENS - Villabé - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 23,
-      "total": 23
+      "total": 23,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - GD - JAUFFRET DEMENAGEMENTS - Avignon - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - APR - Tours - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 54,
-      "total": 55
+      "total": 55,
+      "taux_decroche": 98.18
     },
     {
+      "mois": "2026-01",
       "agence": "JCS CARRE - Cholet - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "CARRE - Blois - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - ACE GIBOUIN Niort - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 18,
-      "total": 19
+      "total": 19,
+      "taux_decroche": 94.74
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - DULAC Roanne - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 15,
-      "total": 15
+      "total": 15,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - AUBOISE Auxerre - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 4,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 80.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco GRIMAUD - Challans - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 3,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - APR - Blois - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Emails demeco.fr - international",
-      "mois": "2026-01",
+      "canal": "Autres",
       "decroche": 13,
-      "total": 14
+      "total": 14,
+      "taux_decroche": 92.86
     },
     {
+      "mois": "2026-01",
       "agence": "MESNAGER - Bourges - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 13,
-      "total": 13
+      "total": 13,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "NASSE MARCHAND - Amilly - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 20,
-      "total": 20
+      "total": 20,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DEM 66 - Perpignan - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 13,
-      "total": 13
+      "total": 13,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "JCS CARRE - Cholet - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 9,
-      "total": 11
+      "total": 11,
+      "taux_decroche": 81.82
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - Demena Chartres - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 44,
-      "total": 46
+      "total": 46,
+      "taux_decroche": 95.65
     },
     {
+      "mois": "2026-01",
       "agence": "DAZIN - Arles - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 4,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 80.0
     },
     {
+      "mois": "2026-01",
       "agence": "BLACHE - Grenoble - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 7,
-      "total": 7
+      "total": 7,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - AUBOISE Pont Sainte Marie - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 6,
-      "total": 8
+      "total": 8,
+      "taux_decroche": 75.0
     },
     {
+      "mois": "2026-01",
       "agence": "GRIMONPONT - Hallennes-lez-Haubourdin - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 36,
-      "total": 37
+      "total": 37,
+      "taux_decroche": 97.3
     },
     {
+      "mois": "2026-01",
       "agence": "DAZIN - Aix en Provence - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 27,
-      "total": 27
+      "total": 27,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Hors Dem - La Mauldre - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "GRIMONPONT - Hallennes-lez-Haubourdin - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 2,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 66.67
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - DEMENA Chartres - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 12,
-      "total": 13
+      "total": 13,
+      "taux_decroche": 92.31
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - Beaudart Beauvais - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "FERLAY JANIN - Saint Priest  - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 12,
-      "total": 12
+      "total": 12,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "SANS DEMETERRE - Montauban - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 10,
-      "total": 10
+      "total": 10,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DAZIN - AIME - Martigues - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 18,
-      "total": 18
+      "total": 18,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - ANDRE RAYNAL - Montauban - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 7,
-      "total": 7
+      "total": 7,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "SEBA DGTS - Campagnan - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 5,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 83.33
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - DEMENAGEMENTS BOULOUARD - Lorient - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 9,
-      "total": 9
+      "total": 9,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "BLACHE - Montmelian - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 14,
-      "total": 14
+      "total": 14,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "BLACHE - Grenoble - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "SMDT - Béziers - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 17,
-      "total": 17
+      "total": 17,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco CAILLE Neuilly - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 13,
-      "total": 18
+      "total": 18,
+      "taux_decroche": 72.22
     },
     {
+      "mois": "2026-01",
       "agence": "Plateforme E-Demeco",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "NASSE MARCHAND - Amilly - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 9,
-      "total": 10
+      "total": 10,
+      "taux_decroche": 90.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco TORRENS - Paris 3 - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 9,
-      "total": 9
+      "total": 9,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - Afradem - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - Huet  - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 7,
-      "total": 7
+      "total": 7,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DIDIER CHEVRIER - Paris 13 - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 13,
-      "total": 13
+      "total": 13,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "FERLAY JANIN - Lyon 2 - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 27,
-      "total": 27
+      "total": 27,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "ADN - Rouen - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 98,
-      "total": 100
+      "total": 100,
+      "taux_decroche": 98.0
     },
     {
+      "mois": "2026-01",
       "agence": "GRIMONPONT - Lille - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 20,
-      "total": 21
+      "total": 21,
+      "taux_decroche": 95.24
     },
     {
+      "mois": "2026-01",
       "agence": "MATRALOC SN  - La Seyne sur Mer - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco SOLODEM - Bar-Le-Duc  - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 10,
-      "total": 10
+      "total": 10,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "RIVALIER - Gerzat - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 19,
-      "total": 19
+      "total": 19,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - ANDRE RAYNAL - Toulouse - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 12,
-      "total": 12
+      "total": 12,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "LDPC - Cognac - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 9,
-      "total": 9
+      "total": 9,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - GD - JAUFFRET DEMENAGEMENTS - Avignon - Web",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 16,
-      "total": 16
+      "total": 16,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "ADN - Le Havre - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 22,
-      "total": 23
+      "total": 23,
+      "taux_decroche": 95.65
     },
     {
+      "mois": "2026-01",
       "agence": "ABER ROUSSEL - Guer - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 3,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 60.0
     },
     {
+      "mois": "2026-01",
       "agence": "Industrie.demeco.fr",
-      "mois": "2026-01",
+      "canal": "Autres",
       "decroche": 21,
-      "total": 21
+      "total": 21,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "BLACHE - Grenoble - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 24,
-      "total": 24
+      "total": 24,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco GRIMAUD - Les Sables d'Olonne - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 21,
-      "total": 21
+      "total": 21,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "SEEGMULLER - Strasbourg - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 23,
-      "total": 23
+      "total": 23,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "FERLAY JANIN - Lyon 2  - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 10,
-      "total": 10
+      "total": 10,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "RIVALIER - Vichy - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 7,
-      "total": 7
+      "total": 7,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "SEEGMULLER - Saint Louis - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "NASSE MARCHAND - Amilly - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 7,
-      "total": 7
+      "total": 7,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - DROUIN DEMENAGEMENT - Nantes - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 14,
-      "total": 14
+      "total": 14,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "NASSE MARCHAND - Saint jean de la ruelle- Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 11,
-      "total": 11
+      "total": 11,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco ABD - Sance - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 10,
-      "total": 10
+      "total": 10,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "ABER ROUSSEL - Lorient - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 14,
-      "total": 14
+      "total": 14,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco AVEC MATHEY Déménagements Besancon - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 3,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 75.0
     },
     {
+      "mois": "2026-01",
       "agence": "GRIMONPONT - Calais - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 16,
-      "total": 16
+      "total": 16,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - AE MALLET - Orleans - SiteWeb",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 42,
-      "total": 42
+      "total": 42,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco SOLODEM - Epinal  - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "LADREYT POTTU ET JULLIANT - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 13,
-      "total": 13
+      "total": 13,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - ACE GIBOUIN Saint Gilles Croix de Vie - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 4,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 80.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco Champagne Compiegne - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 4,
-      "total": 14
+      "total": 14,
+      "taux_decroche": 28.57
     },
     {
+      "mois": "2026-01",
       "agence": "VANDENABEELE - Divion - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 7,
-      "total": 7
+      "total": 7,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "LDPC - La Creche - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 7,
-      "total": 8
+      "total": 8,
+      "taux_decroche": 87.5
     },
     {
+      "mois": "2026-01",
       "agence": "LDPC - Poitiers - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 31,
-      "total": 32
+      "total": 32,
+      "taux_decroche": 96.88
     },
     {
+      "mois": "2026-01",
       "agence": "GRIMONPONT - Calais - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - Euroflash Garonor - SiteWeb",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 7,
-      "total": 9
+      "total": 9,
+      "taux_decroche": 77.78
     },
     {
+      "mois": "2026-01",
       "agence": "TAURISSON - Brive - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 27,
-      "total": 44
+      "total": 44,
+      "taux_decroche": 61.36
     },
     {
+      "mois": "2026-01",
       "agence": "ADN - Rouen - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "VANDENABEELE - Boulogne s/ Mer - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "SANS DEMETERRE - Pamiers - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 9,
-      "total": 9
+      "total": 9,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "GRIMONPONT - Calais - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 7,
-      "total": 7
+      "total": 7,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "SANS DEMETERRE - Toulouse - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 49,
-      "total": 50
+      "total": 50,
+      "taux_decroche": 98.0
     },
     {
+      "mois": "2026-01",
       "agence": "ABER ROUSSEL - Lorient - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 17,
-      "total": 17
+      "total": 17,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Heiss Claude Déménagement - Luxembourg - Site web",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 0,
-      "total": 7
+      "total": 7,
+      "taux_decroche": 0.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco Beaudart AMIENS - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 12,
-      "total": 14
+      "total": 14,
+      "taux_decroche": 85.71
     },
     {
+      "mois": "2026-01",
       "agence": "Valette MARTIN - Bruges - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 17,
-      "total": 18
+      "total": 18,
+      "taux_decroche": 94.44
     },
     {
+      "mois": "2026-01",
       "agence": "DIDIER CHEVRIER - Paris 01 - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 9,
-      "total": 10
+      "total": 10,
+      "taux_decroche": 90.0
     },
     {
+      "mois": "2026-01",
       "agence": "ATLANTIC MOVERS - Saint Nazaire - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 12,
-      "total": 13
+      "total": 13,
+      "taux_decroche": 92.31
     },
     {
+      "mois": "2026-01",
       "agence": "DAZIN - AIME - Martigues - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 9,
-      "total": 9
+      "total": 9,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco TORRENS - Villabé - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 8,
-      "total": 8
+      "total": 8,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - DULAC Saint Etienne  - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DTP - Tarbes - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 8,
-      "total": 8
+      "total": 8,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - Blanquart Renescure - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 19,
-      "total": 20
+      "total": 20,
+      "taux_decroche": 95.0
     },
     {
+      "mois": "2026-01",
       "agence": "MATRALOC - Brignoles - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 7,
-      "total": 8
+      "total": 8,
+      "taux_decroche": 87.5
     },
     {
+      "mois": "2026-01",
       "agence": "ABER ROUSSEL - Rennes - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 16,
-      "total": 16
+      "total": 16,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - DULAC Roanne - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 3,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Valette MARTIN - Bruges - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 16,
-      "total": 16
+      "total": 16,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - DULAC Saint Etienne  - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 10,
-      "total": 10
+      "total": 10,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco GRIMAUD - La Roche Sur Yon - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 7,
-      "total": 7
+      "total": 7,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DMD Déménagements Paris - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 18,
-      "total": 19
+      "total": 19,
+      "taux_decroche": 94.74
     },
     {
+      "mois": "2026-01",
       "agence": "Gourdelier BEAULIEU - Granville - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 31,
-      "total": 31
+      "total": 31,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - Potiez Deman - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 30,
-      "total": 42
+      "total": 42,
+      "taux_decroche": 71.43
     },
     {
+      "mois": "2026-01",
       "agence": "DAZIN BESNIER - Les Pennes Mirabeau  - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 13,
-      "total": 13
+      "total": 13,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "ABER ROUSSEL - Quimper - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 18,
-      "total": 20
+      "total": 20,
+      "taux_decroche": 90.0
     },
     {
+      "mois": "2026-01",
       "agence": "Gourdelier BEAULIEU - Granville - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 10,
-      "total": 10
+      "total": 10,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "CHALLENGE - Gennevilliers - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DAVIN - Avignon - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 30,
-      "total": 30
+      "total": 30,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Horizon Boulogne - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 13,
-      "total": 16
+      "total": 16,
+      "taux_decroche": 81.25
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco TORRENS - Paris 3 - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 15,
-      "total": 15
+      "total": 15,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "MATRALOC SN - La Seyne s/ Mer - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 15,
-      "total": 15
+      "total": 15,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco Caille Meaux - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 3,
-      "total": 11
+      "total": 11,
+      "taux_decroche": 27.27
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco CHAMPAGNE - Reims - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 9,
-      "total": 16
+      "total": 16,
+      "taux_decroche": 56.25
     },
     {
+      "mois": "2026-01",
       "agence": "QUALI DEM  - Antony - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 10,
-      "total": 12
+      "total": 12,
+      "taux_decroche": 83.33
     },
     {
+      "mois": "2026-01",
       "agence": "DMD Déménagement - Valenton - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "GOURDELIER - Saint Lô - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 13,
-      "total": 13
+      "total": 13,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - Blanquart Renescure - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 16,
-      "total": 16
+      "total": 16,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "MESNAGER - Bourges - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 13,
-      "total": 13
+      "total": 13,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "MAZUCCO - Marseille - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 7,
-      "total": 9
+      "total": 9,
+      "taux_decroche": 77.78
     },
     {
+      "mois": "2026-01",
       "agence": "NASSE MARCHAND - Orléans - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 2,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 66.67
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco GRIMAUD - Fontenay - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 0,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 0.0
     },
     {
+      "mois": "2026-01",
       "agence": "ABER ROUSSEL - Quimper - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 33,
-      "total": 34
+      "total": 34,
+      "taux_decroche": 97.06
     },
     {
+      "mois": "2026-01",
       "agence": "GOURDELIER - Cherbourg en Cotentin - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 10,
-      "total": 10
+      "total": 10,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "RIVALIER - Gerzat - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 3,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "SEEGMULLER - Belfort - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "ABER ROUSSEL - Vannes - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 23,
-      "total": 23
+      "total": 23,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco TORRENS - Paris 3 - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "BLACHE - Annemasse - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 3,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "SEEGMULLER - Paris 10 - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 16,
-      "total": 16
+      "total": 16,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "PORRE - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 5,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 83.33
     },
     {
+      "mois": "2026-01",
       "agence": "LDPC - Chatellerault - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - LE FLOCH DEMENAGEMENT - Cherbourg - SiteWeb",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "GRIMONPONT - Lille - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 17,
-      "total": 19
+      "total": 19,
+      "taux_decroche": 89.47
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - DULAC  Vienne - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco TORRENS - Fontainebleau - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 16,
-      "total": 16
+      "total": 16,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco TORRENS - Fontainebleau - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 13,
-      "total": 13
+      "total": 13,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "FERLAY JANIN - Bourgoin Jallieu - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 8,
-      "total": 8
+      "total": 8,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "MARTIN - Bordeaux - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "ABER ROUSSEL - Saint Malo - StoreLocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 3,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "MACIF - demeco.fr",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "SANS DEMETERRE - Pamiers - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco industrie - Optima OMD - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 3,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 75.0
     },
     {
+      "mois": "2026-01",
       "agence": "BLACHE - Annemasse - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 10,
-      "total": 10
+      "total": 10,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "JCS - Laval - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 13,
-      "total": 13
+      "total": 13,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco SOLODEM - Epinal - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 6,
-      "total": 7
+      "total": 7,
+      "taux_decroche": 85.71
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco TORRENS OUDINOT - Paris 7 - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 13,
-      "total": 13
+      "total": 13,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "RIVALIER - Vichy - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 12,
-      "total": 12
+      "total": 12,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "SEBA DGTS - Albi - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 12,
-      "total": 12
+      "total": 12,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - Afradem - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 8,
-      "total": 8
+      "total": 8,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DS 54 SOLODEM  - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 24,
-      "total": 24
+      "total": 24,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DS 54 SOLODEM  - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DIDIER CHEVRIER - Paris 01 - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 12,
-      "total": 12
+      "total": 12,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "PERRUCHE - Dijon - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "SEBA DGTS - Montpellier - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 16,
-      "total": 17
+      "total": 17,
+      "taux_decroche": 94.12
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco entreprises - Aulnay Sous Bois - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco TORRENS - Paris 8 - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 8,
-      "total": 8
+      "total": 8,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "GOURDELIER - Cherbourg en Cotentin - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "SEEGMULLER - Paris 14 - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 9,
-      "total": 9
+      "total": 9,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "MATRALOC SN - Hyeres - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 21,
-      "total": 21
+      "total": 21,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco TORRENS - Paris 8 - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "ABER ROUSSEL - Saint Malo - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "ABER ROUSSEL - Guer - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "LDPC - Chatellerault - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 5,
-      "total": 7
+      "total": 7,
+      "taux_decroche": 71.43
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco GRIMAUD - Challans - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco SOLODEM - Bar-Le-Duc  - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "MATRALOC SN - Hyeres - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "VANDENABEELE - Boulogne-sur-mer - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 14,
-      "total": 14
+      "total": 14,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco ABD - Bourg en Bresse - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 7,
-      "total": 7
+      "total": 7,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "TAURISSON - Marsac Parichon - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 3,
-      "total": 7
+      "total": 7,
+      "taux_decroche": 42.86
     },
     {
+      "mois": "2026-01",
       "agence": "DAVIN - Nimes - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 17,
-      "total": 17
+      "total": 17,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco AVEC MATHEY Déménagements - Pontarlier - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "SEEGMULLER - Lyon 3 - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 3,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 60.0
     },
     {
+      "mois": "2026-01",
       "agence": "ADN - Rouen - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 20,
-      "total": 20
+      "total": 20,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco Argoat Dinan - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco Seegmuler Montbeliard - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 3,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "SEEGMULLER - Paris 8 - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Heiss Claude Déménagement - Luxembourg - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 5,
-      "total": 14
+      "total": 14,
+      "taux_decroche": 35.71
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco entreprises - Roissy en france - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 9,
-      "total": 9
+      "total": 9,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - ANDRE RAYNAL - Bruguière- GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 8,
-      "total": 9
+      "total": 9,
+      "taux_decroche": 88.89
     },
     {
+      "mois": "2026-01",
       "agence": "SANS DEMETERRE - Montauban - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 17,
-      "total": 19
+      "total": 19,
+      "taux_decroche": 89.47
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - Huet Self Stockage - PJ",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "ADN - Evreux - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 7,
-      "total": 7
+      "total": 7,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - Hidem - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 31,
-      "total": 31
+      "total": 31,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - ATLANTIC MOVERS - Nantes - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - Demena Rambouillet - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 8,
-      "total": 8
+      "total": 8,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco industrie - E2MI Beligneux - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 8,
-      "total": 8
+      "total": 8,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "SEEGMULLER - Vénissieux  - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 9,
-      "total": 9
+      "total": 9,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "MAZUCCO - La Ciotat - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 3,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Avantages IEG - demeco.fr",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 3,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco Champagne Charleville Mézières - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 2,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 33.33
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco Seegmuler Paris 19 - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "VANDENABEELE - Hallennes-lez-Haubourdin - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 3,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco TORRENS OUDINOT - Paris 7 - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 11,
-      "total": 12
+      "total": 12,
+      "taux_decroche": 91.67
     },
     {
+      "mois": "2026-01",
       "agence": "FERLAY JANIN - Saint Priest  - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - BIGAUT - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Hors dem - Martin Renard - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "VISA PREMIER - demeco.fr",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Hidem - site web",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 4,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 80.0
     },
     {
+      "mois": "2026-01",
       "agence": "ADN - Arques La Bataille - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - GD - Duhaut Rollin - Site web",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - Hidem - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 12,
-      "total": 13
+      "total": 13,
+      "taux_decroche": 92.31
     },
     {
+      "mois": "2026-01",
       "agence": "SEEGMULLER - Le Bourget - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - APR - Blois - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 17,
-      "total": 17
+      "total": 17,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "ADN - Evreux - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 8,
-      "total": 8
+      "total": 8,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - GUIGARD DEMENAGEMENT - Chassieu - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 17,
-      "total": 17
+      "total": 17,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DAZIN - Arles - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "SANS DEMETERRE - Bruguières - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - ANDRE RAYNAL - Toulouse - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 3,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - GD - DUHAUT ROLLIN - Nancy - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 9,
-      "total": 9
+      "total": 9,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "MARTIN - Gradignan - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "FERLAY JANIN - Tassin - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 13,
-      "total": 13
+      "total": 13,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "TAURISSON  - Cahors - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 7,
-      "total": 7
+      "total": 7,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco GRIMAUD - La Roche Sur Yon - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco GRIMAUD - Les Sables d'Olonne - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "MMA - demeco.fr",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 3,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "LDPC - La Rochelle - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 8,
-      "total": 8
+      "total": 8,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "FERLAY JANIN - Tassin - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 18,
-      "total": 18
+      "total": 18,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco ABD - Villefranche s/ Saone - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 9,
-      "total": 9
+      "total": 9,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DEMECO - MONAGO  Menton storeloc",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "VANDENABEELE - Renescure - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "FERLAY JANIN - Bourgoin Jallieu - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - GUIGARD DEMENAGEMENT - Chassieu - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 9,
-      "total": 10
+      "total": 10,
+      "taux_decroche": 90.0
     },
     {
+      "mois": "2026-01",
       "agence": "SANS DEMETERRE - Muret - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 10,
-      "total": 12
+      "total": 12,
+      "taux_decroche": 83.33
     },
     {
+      "mois": "2026-01",
       "agence": "CHALLENGE - Paris 17 - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Pôle Mutation - demeco.fr",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco GRIMAUD - Fontenay - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - LE FLOCH DEMENAGEMENT - Saint Divy- SiteWeb",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 2,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 50.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco Champagne - Châlons-en-Champagne - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 5,
-      "total": 7
+      "total": 7,
+      "taux_decroche": 71.43
     },
     {
+      "mois": "2026-01",
       "agence": "Abscisse déménagements _ site web",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DAVIN - Ales - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 3,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco AUBOISE YONNE DEMENAGEMENTS - Sens - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 3,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DTP - Bayonne - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 8,
-      "total": 13
+      "total": 13,
+      "taux_decroche": 61.54
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - Huet  Montigny - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco ABD - Chalon s/ Saone - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - ANDRE RAYNAL - Toulouse - Website",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "FERLAY JANIN - Saint Priest  - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 2,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 40.0
     },
     {
+      "mois": "2026-01",
       "agence": "TAURISSON - Pont du Casse Parichon - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 8,
-      "total": 9
+      "total": 9,
+      "taux_decroche": 88.89
     },
     {
+      "mois": "2026-01",
       "agence": "CAILLE DEM 58 Nevers_site web",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 1,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 33.33
     },
     {
+      "mois": "2026-01",
       "agence": "BLACHE - Annecy - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DAVIN - Nimes - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 13,
-      "total": 14
+      "total": 14,
+      "taux_decroche": 92.86
     },
     {
+      "mois": "2026-01",
       "agence": "GMF - demeco.fr",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "CHALLENGE - Gennevilliers - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - DEMENA Etampes - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "CARRE - Blois  - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 9,
-      "total": 9
+      "total": 9,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "VANDENABEELE - Valenciennes - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 11,
-      "total": 11
+      "total": 11,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "VANDENABEELE - Valenciennes - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 15,
-      "total": 16
+      "total": 16,
+      "taux_decroche": 93.75
     },
     {
+      "mois": "2026-01",
       "agence": "LDPC - Chatellerault - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 13,
-      "total": 13
+      "total": 13,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco GRIMAUD - Les Sables d'Olonne - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 7,
-      "total": 7
+      "total": 7,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "LDPC - La Creche - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Groupama - demeco.fr",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - Demena Dreux - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 4,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 80.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - Auboise Pont Sainte Marie - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 3,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - Beaudart Senlis - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "ABER ROUSSEL - Rennes - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco GRIMAUD - Luçon - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 3,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco ARGOAT Pordic - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 12,
-      "total": 12
+      "total": 12,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DAVIN - Ales - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 50.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM Demonceau - SiteWeb",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM  - ACE Gibouin  - Niort - Site web",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 12,
-      "total": 12
+      "total": 12,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "MATRALOC SN - Hyeres - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 11,
-      "total": 12
+      "total": 12,
+      "taux_decroche": 91.67
     },
     {
+      "mois": "2026-01",
       "agence": "BLACHE - Annemasse - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 8,
-      "total": 8
+      "total": 8,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM Demonceau- GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco Valette Libourne - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeo siège - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - APR - Tours - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 9,
-      "total": 9
+      "total": 9,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Hors Dem - La Mauldre - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "PERRUCHE - Beaune - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 3,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - DULAC Cussac - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "MARTIN - Gradignan - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "CHALLENGE - Levallois - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 15,
-      "total": 15
+      "total": 15,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - ATLANTIC MOVERS - St Herblain- Opé Wellpack",
-      "mois": "2026-01",
+      "canal": "Autres",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "MAZUCCO - Marseille 10  - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 3,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "MARTIN - Arcachon - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco Beaudart Beauvais  - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 14,
-      "total": 17
+      "total": 17,
+      "taux_decroche": 82.35
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - ATLANTIC MOVERS - Saint Herblain  - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "LDPC - Tonnay Charente - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 21,
-      "total": 22
+      "total": 22,
+      "taux_decroche": 95.45
     },
     {
+      "mois": "2026-01",
       "agence": "CARRE - Pruniers - StoreLocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - DEMENAGEMENT VALETTE - Bordeaux - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 50.0
     },
     {
+      "mois": "2026-01",
       "agence": "Ekoya- demeco.fr",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "MATRALOC SN - Brignoles- PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - Blanquart Renescure - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - DEMENA Rambouillet - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 4,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 80.0
     },
     {
+      "mois": "2026-01",
       "agence": "Hors Dem - La Mauldre - Site Web",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 0,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 0.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco GRIMAUD - La Roche Sur Yon - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "SANS DEMETERRE - Montauban - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "CARRE - Tours - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 11,
-      "total": 11
+      "total": 11,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "VANDENABEELE - Renescure - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 9,
-      "total": 9
+      "total": 9,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "UNÉO - demeco.fr",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "ABER ROUSSEL - Vannes - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 7,
-      "total": 7
+      "total": 7,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - ANDRE RAYNAL - Agen - SiteWeb",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - Euroflash Garonor- PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 33.33
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco GRIMAUD - Luçon - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco CAILLE - Laon - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "JEAMMET EGT 87_Limoges_StoreLocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - Demena Chartres - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco industrie - Optima OMD - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - Demena Chateaudun - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "ADN - Arques La Bataille - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 10,
-      "total": 12
+      "total": 12,
+      "taux_decroche": 83.33
     },
     {
+      "mois": "2026-01",
       "agence": "DS 54 SOLODEM Nancy - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - GUIGARD DEMENAGEMENT - Chassieu - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 4,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 66.67
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - Demena Etampes - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "FERLAY JANIN - Lyon - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 7,
-      "total": 7
+      "total": 7,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco Argoat Lannion - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "ATLANTIC MOVERS - Saint Nazaire - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DTL - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 9,
-      "total": 12
+      "total": 12,
+      "taux_decroche": 75.0
     },
     {
+      "mois": "2026-01",
       "agence": "LDPC - Cognac - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "VANDENABEELE - Hallennes-lez-Haubourdin - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 3,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 75.0
     },
     {
+      "mois": "2026-01",
       "agence": "CHALLENGE - Paris 17 - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Gourdelier BEAULIEU - Granville - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "ADN - Le Havre - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "ADN - Arques La Bataille - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "ABER ROUSSEL - Cesson Sévigné - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "ABER ROUSSEL - Quimper - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 3,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "CHALLENGE - Levallois - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - AE MALLET - Orleans - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "MARTIN - Bordeaux - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DAZIN - Aix en Provence - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - APR - Tours - SiteWeb",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 8,
-      "total": 10
+      "total": 10,
+      "taux_decroche": 80.0
     },
     {
+      "mois": "2026-01",
       "agence": "TAURISSON  - Angoulême Parichon - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 3,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "LDPC - Tonnay Charente - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "MAZUCCO - Marseille 11 - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco Valette Libourne - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "BLACHE - Annecy - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 7,
-      "total": 8
+      "total": 8,
+      "taux_decroche": 87.5
     },
     {
+      "mois": "2026-01",
       "agence": "CHALLENGE - Nanterre - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "CTD THOIRY - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "VANDENABEELE - Dunkerque - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 3,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "MAAF - demeco.fr",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco industrie - Optima - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - ANDRE RAYNAL - Agen  - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "FERLAY JANIN - Bourgoin Jallieu - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco Entreprises - TORRENS - Villabé - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "SEEGMULLER - Mulhouse  - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "VANDENABEELE - Valenciennes - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "SEEGMULLER - Lyon 4 - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 4,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 80.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - DULAC Vienne - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "VANDENABEELE - Divion - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "CHALLENGE - Paris 17 - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 5,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - DEMENA Dreux - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - Huet Montigny  -  PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - Euroflash Garonor - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 0,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 0.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - ANDRE RAYNAL - Montauban - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 4,
-      "total": 5
+      "total": 5,
+      "taux_decroche": 80.0
     },
     {
+      "mois": "2026-01",
       "agence": "CRÉDIT AGRICOLE - demeco.fr",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - ACE GIBOUIN Saint Gilles Croix de Vie - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 50.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - Blanquart Lille - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "CHALLENGE -  Nanterre  - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "GOURDELIER - Saint Lô - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 6,
-      "total": 6
+      "total": 6,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - ACE GIBOUIN Cholet - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - Auboise Nevers - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco industrie - E2MI Montmelian - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - Huet  Versailles - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DEMECO WEB Tunnel - email",
-      "mois": "2026-01",
+      "canal": "Autres",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "DAZIN - Arles - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 50.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco Champagne Ay Champagne -  Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "SMDT - Narbonne - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco Caille Archives - Tergnier - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 0,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 0.0
     },
     {
+      "mois": "2026-01",
       "agence": "VITREY - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 0,
-      "total": 3
+      "total": 3,
+      "taux_decroche": 0.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - DEMENAGEMENT VALETTE - Bordeaux - SiteWeb",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 2,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco - Beaudart Enghein les bains - GMB",
-      "mois": "2026-01",
+      "canal": "GMB",
       "decroche": 0,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 0.0
     },
     {
+      "mois": "2026-01",
       "agence": "HORS DEM - DEMENAGEMENTS BOULOUARD - Lorient - SiteWeb",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 4,
-      "total": 4
+      "total": 4,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco TORRENS - Paris 8 - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "FERLAY JANIN - Tassin  - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 2
+      "total": 2,
+      "taux_decroche": 50.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco Champagne Ay-Champagne - PJ",
-      "mois": "2026-01",
+      "canal": "Pages Jaunes",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
+      "mois": "2026-01",
       "agence": "Demeco ABD - Peronnas - Storelocator",
-      "mois": "2026-01",
+      "canal": "Store Locator",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     },
     {
-      "agence": "Emoovz - MIOM",
       "mois": "2026-01",
+      "agence": "Emoovz - MIOM",
+      "canal": "Autres",
       "decroche": 1,
-      "total": 1
+      "total": 1,
+      "taux_decroche": 100.0
     }
+  ],
+  "decroche_jour_heure": [
+    {
+      "jour_semaine": "Monday",
+      "heure": 8,
+      "decroche": 67,
+      "total": 71,
+      "taux_decroche": 94.37,
+      "jour_fr": "Lundi"
+    },
+    {
+      "jour_semaine": "Monday",
+      "heure": 9,
+      "decroche": 250,
+      "total": 261,
+      "taux_decroche": 95.79,
+      "jour_fr": "Lundi"
+    },
+    {
+      "jour_semaine": "Monday",
+      "heure": 10,
+      "decroche": 319,
+      "total": 331,
+      "taux_decroche": 96.37,
+      "jour_fr": "Lundi"
+    },
+    {
+      "jour_semaine": "Monday",
+      "heure": 11,
+      "decroche": 292,
+      "total": 297,
+      "taux_decroche": 98.32,
+      "jour_fr": "Lundi"
+    },
+    {
+      "jour_semaine": "Monday",
+      "heure": 12,
+      "decroche": 60,
+      "total": 66,
+      "taux_decroche": 90.91,
+      "jour_fr": "Lundi"
+    },
+    {
+      "jour_semaine": "Monday",
+      "heure": 13,
+      "decroche": 59,
+      "total": 63,
+      "taux_decroche": 93.65,
+      "jour_fr": "Lundi"
+    },
+    {
+      "jour_semaine": "Monday",
+      "heure": 14,
+      "decroche": 284,
+      "total": 288,
+      "taux_decroche": 98.61,
+      "jour_fr": "Lundi"
+    },
+    {
+      "jour_semaine": "Monday",
+      "heure": 15,
+      "decroche": 260,
+      "total": 269,
+      "taux_decroche": 96.65,
+      "jour_fr": "Lundi"
+    },
+    {
+      "jour_semaine": "Monday",
+      "heure": 16,
+      "decroche": 215,
+      "total": 223,
+      "taux_decroche": 96.41,
+      "jour_fr": "Lundi"
+    },
+    {
+      "jour_semaine": "Monday",
+      "heure": 17,
+      "decroche": 136,
+      "total": 147,
+      "taux_decroche": 92.52,
+      "jour_fr": "Lundi"
+    },
+    {
+      "jour_semaine": "Monday",
+      "heure": 18,
+      "decroche": 16,
+      "total": 18,
+      "taux_decroche": 88.89,
+      "jour_fr": "Lundi"
+    },
+    {
+      "jour_semaine": "Tuesday",
+      "heure": 8,
+      "decroche": 85,
+      "total": 87,
+      "taux_decroche": 97.7,
+      "jour_fr": "Mardi"
+    },
+    {
+      "jour_semaine": "Tuesday",
+      "heure": 9,
+      "decroche": 220,
+      "total": 228,
+      "taux_decroche": 96.49,
+      "jour_fr": "Mardi"
+    },
+    {
+      "jour_semaine": "Tuesday",
+      "heure": 10,
+      "decroche": 244,
+      "total": 255,
+      "taux_decroche": 95.69,
+      "jour_fr": "Mardi"
+    },
+    {
+      "jour_semaine": "Tuesday",
+      "heure": 11,
+      "decroche": 229,
+      "total": 237,
+      "taux_decroche": 96.62,
+      "jour_fr": "Mardi"
+    },
+    {
+      "jour_semaine": "Tuesday",
+      "heure": 12,
+      "decroche": 69,
+      "total": 70,
+      "taux_decroche": 98.57,
+      "jour_fr": "Mardi"
+    },
+    {
+      "jour_semaine": "Tuesday",
+      "heure": 13,
+      "decroche": 54,
+      "total": 58,
+      "taux_decroche": 93.1,
+      "jour_fr": "Mardi"
+    },
+    {
+      "jour_semaine": "Tuesday",
+      "heure": 14,
+      "decroche": 239,
+      "total": 258,
+      "taux_decroche": 92.64,
+      "jour_fr": "Mardi"
+    },
+    {
+      "jour_semaine": "Tuesday",
+      "heure": 15,
+      "decroche": 225,
+      "total": 232,
+      "taux_decroche": 96.98,
+      "jour_fr": "Mardi"
+    },
+    {
+      "jour_semaine": "Tuesday",
+      "heure": 16,
+      "decroche": 197,
+      "total": 205,
+      "taux_decroche": 96.1,
+      "jour_fr": "Mardi"
+    },
+    {
+      "jour_semaine": "Tuesday",
+      "heure": 17,
+      "decroche": 152,
+      "total": 152,
+      "taux_decroche": 100.0,
+      "jour_fr": "Mardi"
+    },
+    {
+      "jour_semaine": "Tuesday",
+      "heure": 18,
+      "decroche": 14,
+      "total": 15,
+      "taux_decroche": 93.33,
+      "jour_fr": "Mardi"
+    },
+    {
+      "jour_semaine": "Tuesday",
+      "heure": 19,
+      "decroche": 1,
+      "total": 3,
+      "taux_decroche": 33.33,
+      "jour_fr": "Mardi"
+    },
+    {
+      "jour_semaine": "Wednesday",
+      "heure": 8,
+      "decroche": 49,
+      "total": 53,
+      "taux_decroche": 92.45,
+      "jour_fr": "Mercredi"
+    },
+    {
+      "jour_semaine": "Wednesday",
+      "heure": 9,
+      "decroche": 226,
+      "total": 233,
+      "taux_decroche": 97.0,
+      "jour_fr": "Mercredi"
+    },
+    {
+      "jour_semaine": "Wednesday",
+      "heure": 10,
+      "decroche": 219,
+      "total": 227,
+      "taux_decroche": 96.48,
+      "jour_fr": "Mercredi"
+    },
+    {
+      "jour_semaine": "Wednesday",
+      "heure": 11,
+      "decroche": 215,
+      "total": 222,
+      "taux_decroche": 96.85,
+      "jour_fr": "Mercredi"
+    },
+    {
+      "jour_semaine": "Wednesday",
+      "heure": 12,
+      "decroche": 48,
+      "total": 50,
+      "taux_decroche": 96.0,
+      "jour_fr": "Mercredi"
+    },
+    {
+      "jour_semaine": "Wednesday",
+      "heure": 13,
+      "decroche": 36,
+      "total": 43,
+      "taux_decroche": 83.72,
+      "jour_fr": "Mercredi"
+    },
+    {
+      "jour_semaine": "Wednesday",
+      "heure": 14,
+      "decroche": 220,
+      "total": 230,
+      "taux_decroche": 95.65,
+      "jour_fr": "Mercredi"
+    },
+    {
+      "jour_semaine": "Wednesday",
+      "heure": 15,
+      "decroche": 180,
+      "total": 185,
+      "taux_decroche": 97.3,
+      "jour_fr": "Mercredi"
+    },
+    {
+      "jour_semaine": "Wednesday",
+      "heure": 16,
+      "decroche": 196,
+      "total": 203,
+      "taux_decroche": 96.55,
+      "jour_fr": "Mercredi"
+    },
+    {
+      "jour_semaine": "Wednesday",
+      "heure": 17,
+      "decroche": 116,
+      "total": 118,
+      "taux_decroche": 98.31,
+      "jour_fr": "Mercredi"
+    },
+    {
+      "jour_semaine": "Wednesday",
+      "heure": 18,
+      "decroche": 15,
+      "total": 15,
+      "taux_decroche": 100.0,
+      "jour_fr": "Mercredi"
+    },
+    {
+      "jour_semaine": "Wednesday",
+      "heure": 19,
+      "decroche": 2,
+      "total": 2,
+      "taux_decroche": 100.0,
+      "jour_fr": "Mercredi"
+    },
+    {
+      "jour_semaine": "Thursday",
+      "heure": 8,
+      "decroche": 63,
+      "total": 63,
+      "taux_decroche": 100.0,
+      "jour_fr": "Jeudi"
+    },
+    {
+      "jour_semaine": "Thursday",
+      "heure": 9,
+      "decroche": 170,
+      "total": 174,
+      "taux_decroche": 97.7,
+      "jour_fr": "Jeudi"
+    },
+    {
+      "jour_semaine": "Thursday",
+      "heure": 10,
+      "decroche": 201,
+      "total": 212,
+      "taux_decroche": 94.81,
+      "jour_fr": "Jeudi"
+    },
+    {
+      "jour_semaine": "Thursday",
+      "heure": 11,
+      "decroche": 182,
+      "total": 190,
+      "taux_decroche": 95.79,
+      "jour_fr": "Jeudi"
+    },
+    {
+      "jour_semaine": "Thursday",
+      "heure": 12,
+      "decroche": 45,
+      "total": 48,
+      "taux_decroche": 93.75,
+      "jour_fr": "Jeudi"
+    },
+    {
+      "jour_semaine": "Thursday",
+      "heure": 13,
+      "decroche": 36,
+      "total": 42,
+      "taux_decroche": 85.71,
+      "jour_fr": "Jeudi"
+    },
+    {
+      "jour_semaine": "Thursday",
+      "heure": 14,
+      "decroche": 211,
+      "total": 218,
+      "taux_decroche": 96.79,
+      "jour_fr": "Jeudi"
+    },
+    {
+      "jour_semaine": "Thursday",
+      "heure": 15,
+      "decroche": 123,
+      "total": 124,
+      "taux_decroche": 99.19,
+      "jour_fr": "Jeudi"
+    },
+    {
+      "jour_semaine": "Thursday",
+      "heure": 16,
+      "decroche": 108,
+      "total": 110,
+      "taux_decroche": 98.18,
+      "jour_fr": "Jeudi"
+    },
+    {
+      "jour_semaine": "Thursday",
+      "heure": 17,
+      "decroche": 83,
+      "total": 85,
+      "taux_decroche": 97.65,
+      "jour_fr": "Jeudi"
+    },
+    {
+      "jour_semaine": "Thursday",
+      "heure": 18,
+      "decroche": 8,
+      "total": 9,
+      "taux_decroche": 88.89,
+      "jour_fr": "Jeudi"
+    },
+    {
+      "jour_semaine": "Thursday",
+      "heure": 19,
+      "decroche": 1,
+      "total": 1,
+      "taux_decroche": 100.0,
+      "jour_fr": "Jeudi"
+    },
+    {
+      "jour_semaine": "Friday",
+      "heure": 8,
+      "decroche": 36,
+      "total": 45,
+      "taux_decroche": 80.0,
+      "jour_fr": "Vendredi"
+    },
+    {
+      "jour_semaine": "Friday",
+      "heure": 9,
+      "decroche": 158,
+      "total": 163,
+      "taux_decroche": 96.93,
+      "jour_fr": "Vendredi"
+    },
+    {
+      "jour_semaine": "Friday",
+      "heure": 10,
+      "decroche": 181,
+      "total": 185,
+      "taux_decroche": 97.84,
+      "jour_fr": "Vendredi"
+    },
+    {
+      "jour_semaine": "Friday",
+      "heure": 11,
+      "decroche": 195,
+      "total": 205,
+      "taux_decroche": 95.12,
+      "jour_fr": "Vendredi"
+    },
+    {
+      "jour_semaine": "Friday",
+      "heure": 12,
+      "decroche": 41,
+      "total": 42,
+      "taux_decroche": 97.62,
+      "jour_fr": "Vendredi"
+    },
+    {
+      "jour_semaine": "Friday",
+      "heure": 13,
+      "decroche": 31,
+      "total": 34,
+      "taux_decroche": 91.18,
+      "jour_fr": "Vendredi"
+    },
+    {
+      "jour_semaine": "Friday",
+      "heure": 14,
+      "decroche": 157,
+      "total": 166,
+      "taux_decroche": 94.58,
+      "jour_fr": "Vendredi"
+    },
+    {
+      "jour_semaine": "Friday",
+      "heure": 15,
+      "decroche": 167,
+      "total": 176,
+      "taux_decroche": 94.89,
+      "jour_fr": "Vendredi"
+    },
+    {
+      "jour_semaine": "Friday",
+      "heure": 16,
+      "decroche": 158,
+      "total": 162,
+      "taux_decroche": 97.53,
+      "jour_fr": "Vendredi"
+    },
+    {
+      "jour_semaine": "Friday",
+      "heure": 17,
+      "decroche": 56,
+      "total": 58,
+      "taux_decroche": 96.55,
+      "jour_fr": "Vendredi"
+    },
+    {
+      "jour_semaine": "Friday",
+      "heure": 18,
+      "decroche": 5,
+      "total": 6,
+      "taux_decroche": 83.33,
+      "jour_fr": "Vendredi"
+    },
+    {
+      "jour_semaine": "Friday",
+      "heure": 19,
+      "decroche": 1,
+      "total": 2,
+      "taux_decroche": 50.0,
+      "jour_fr": "Vendredi"
+    }
+  ],
+  "liste_canaux": [
+    "GMB",
+    "Pages Jaunes",
+    "Store Locator",
+    "Autres"
   ],
   "spam_pj_analysis": [
     {
@@ -3193,13 +4751,28 @@
       "pourcentage": 0.04
     }
   ],
-  "spam_par_canal_cat": [],
-  "liste_canaux": [
-    "Autres",
-    "GMB",
-    "Pages Jaunes",
-    "Store Locator"
-  ],
+  "canal_stats": {
+    "GMB": {
+      "decroche": 4228,
+      "total": 4347,
+      "taux_decroche": 97.26
+    },
+    "Pages Jaunes": {
+      "decroche": 804,
+      "total": 830,
+      "taux_decroche": 96.87
+    },
+    "Store Locator": {
+      "decroche": 2285,
+      "total": 2458,
+      "taux_decroche": 92.96
+    },
+    "Autres": {
+      "decroche": 422,
+      "total": 432,
+      "taux_decroche": 97.69
+    }
+  },
   "agences_list": [
     {
       "nom": "DEMECO WEB HP-Header",
