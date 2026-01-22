@@ -4915,27 +4915,31 @@
   "canal_stats": [
     {
       "canal": "GMB",
-      "appels_non_spam": 4347,
-      "decroche": 4228,
-      "taux_decroche": 97.26
+      "appels_non_spam": 2651,
+      "decroche": 2593,
+      "taux_decroche": 97.81,
+      "appels_total": 4347
     },
     {
       "canal": "Pages Jaunes",
-      "appels_non_spam": 830,
-      "decroche": 804,
-      "taux_decroche": 96.87
+      "appels_non_spam": 579,
+      "decroche": 562,
+      "taux_decroche": 97.06,
+      "appels_total": 830
     },
     {
       "canal": "Store Locator",
-      "appels_non_spam": 2458,
-      "decroche": 2285,
-      "taux_decroche": 92.96
+      "appels_non_spam": 1745,
+      "decroche": 1628,
+      "taux_decroche": 93.3,
+      "appels_total": 2458
     },
     {
       "canal": "Autres",
-      "appels_non_spam": 432,
-      "decroche": 422,
-      "taux_decroche": 97.69
+      "appels_non_spam": 353,
+      "decroche": 348,
+      "taux_decroche": 98.58,
+      "appels_total": 432
     }
   ],
   "agences_list": [
